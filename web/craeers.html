@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>應徵職缺 - Nexelink</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0fff8, #e0f7ff);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+      max-width: 720px;
+      margin: 80px auto;
+      padding: 0 20px 80px;
+    }
+    h1 {
+      text-align: center;
+      color: #00bfa5;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+    form {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+    label {
+      display: block;
+      margin-top: 18px;
+      font-weight: 600;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    button {
+      margin-top: 25px;
+      background: linear-gradient(to right, #00c9ff, #00bfa5);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: linear-gradient(to right, #00bfa5, #00c9ff);
+    }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+  <main>
+    <h1><i class="fas fa-file-signature"></i> 應徵表單</h1>
+    <form>
+      <label for="name">姓名</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">聯絡 Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="role">應徵職位</label>
+      <select id="role" name="role" required>
+        <option value="">請選擇</option>
+        <option>遊戲設計師</option>
+        <option>動畫製作</option>
+        <option>後端工程師</option>
+        <option>平面設計師</option>
+        <option>材質包繪製</option>
+        <option>插件模組安裝</option>
+        <option>建築師</option>
+        <option>副本編撰</option>
+      </select>
+
+      <label for="portfolio">作品連結（可填多個）</label>
+      <input type="url" id="portfolio" name="portfolio" placeholder="https://example.com">
+
+      <label for="message">自我介紹 / 想說的話</label>
+      <textarea id="message" name="message"></textarea>
+
+      <button type="submit">提交應徵</button>
+    </form>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script>
+    // 導入 nav 與 footer
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('nav.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('nav-placeholder').innerHTML = data);
+      fetch('footer.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('footer-placeholder').innerHTML = data;
+
+          // 滾動隱藏/顯示 footer 效果
+          let lastScrollTop = 0;
+          const footer = document.getElementById('footer');
+          window.addEventListener('scroll', () => {
+            const st = window.pageYOffset || document.documentElement.scrollTop;
+            if (st > lastScrollTop) {
+              footer.classList.add('hide');
+            } else {
+              footer.classList.remove('hide');
+            }
+            lastScrollTop = st <= 0 ? 0 : st;
+          });
+        });
+    });
+  </script>
+</body>
+</html>
