@@ -1,0 +1,212 @@
+<!-- about.html Nexelink 關於我們頁面 -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>關於我們 | Nexelink</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    html, body {
+      margin: 0; padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f9fb;
+      scroll-behavior: smooth;
+    }
+    .section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+    .fade-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .hero {
+      background: linear-gradient(to right, #00C9FF, #92FE9D);
+      color: white;
+      padding: 120px 20px 80px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .vision {
+      background: #ffffff;
+      text-align: center;
+    }
+    .vision h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+    .vision-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .vision-card {
+      background: #f0faff;
+      padding: 30px;
+      border-radius: 16px;
+      width: 260px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .vision-card:hover {
+      transform: translateY(-8px);
+      background: linear-gradient(to bottom right, #92FE9D, #00C9FF);
+      color: white;
+    }
+    .team-section {
+      background: #fdfdfd;
+      text-align: center;
+    }
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+    .team-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      width: 220px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .team-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .timeline {
+      padding: 60px 0;
+      background: #f0f0f0;
+    }
+    .timeline h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .timeline ul {
+      list-style: none;
+      padding: 0;
+      max-width: 800px;
+      margin: auto;
+    }
+    .timeline li {
+      position: relative;
+      padding: 20px;
+      border-left: 4px solid #00C9FF;
+      margin-left: 20px;
+      background: white;
+      margin-bottom: 20px;
+    }
+    main {
+    padding-bottom: 120px; /* 預留空間給 footer */
+    }
+    .timeline li::before {
+      content: '\f111';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      position: absolute;
+      left: -14px;
+      top: 20px;
+      color: #00C9FF;
+    }
+    @media(max-width: 768px) {
+      .vision-cards, .team-members {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <section class="hero fade-up">
+    <h1><i class="fas fa-building"></i> 關於 Nexelink</h1>
+    <p><i class="fas fa-bolt"></i> 我們是一群融合設計與技術、充滿熱情的開發者與創造者。</p>
+  </section>
+
+  <section class="section vision fade-up">
+    <h2><i class="fas fa-seedling"></i> 品牌理念</h2>
+    <div class="vision-cards">
+      <div class="vision-card">
+        <h3><i class="fas fa-star"></i> 願景</h3>
+        <p>讓設計成為數位的靈魂，引領每一個互動。</p>
+      </div>
+      <div class="vision-card">
+        <h3><i class="fas fa-cogs"></i> 技術</h3>
+        <p>我們用最佳技術打造高效與可延展的系統。</p>
+      </div>
+      <div class="vision-card">
+        <h3><i class="fas fa-comments"></i> 溝通</h3>
+        <p>與每一位合作夥伴用心對話，發掘真正需求。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section team-section fade-up">
+    <h2><i class="fas fa-users"></i> 團隊成員</h2>
+    <div class="team-members">
+      <div class="team-card">
+        <img src="https://i.pravatar.cc/100?u=ceo" alt="CEO">
+        <h4>治閎 Huang</h4>
+        <p>創辦人 / 總監</p>
+      </div>
+      <div class="team-card">
+        <img src="https://i.pravatar.cc/100?u=design" alt="Designer">
+        <h4>小芸</h4>
+        <p>UI 設計師</p>
+      </div>
+      <div class="team-card">
+        <img src="https://i.pravatar.cc/100?u=dev" alt="Dev">
+        <h4>阿誠</h4>
+        <p>前端工程師</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="timeline fade-up">
+    <h2><i class="fas fa-clock"></i> 品牌沿革</h2>
+    <ul>
+      <li><strong>2019 年：</strong> Nexelink 團隊在台灣成立</li>
+      <li><strong>2021 年：</strong> 正式提供網站與系統外包服務</li>
+      <li><strong>2023 年：</strong> 擴展為跨平台設計開發團隊</li>
+      <li><strong>2025 年：</strong> 建構自有品牌與托管產品平台</li>
+    </ul>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script>
+    fetch('nav.html').then(res => res.text()).then(html => {
+      document.getElementById('nav-placeholder').innerHTML = html;
+    });
+    fetch('footer.html').then(res => res.text()).then(html => {
+      document.getElementById('footer-placeholder').innerHTML = html;
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

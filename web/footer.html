@@ -1,62 +1,74 @@
-
-<!-- footer.html -->
-<style>
-  .site-footer {
-    background: linear-gradient(to right, #111, #333);
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-    font-size: 0.95rem;
-  }
-  .footer-container {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  .footer-logo img {
-    height: 32px;
-    margin-bottom: 10px;
-  }
-  .footer-links, .footer-social {
-    margin: 12px 0;
-  }
-  .footer-links a {
-    margin: 0 12px;
-    color: #ccc;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  .footer-links a:hover {
-    color: #fff;
-  }
-  .footer-social a {
-    margin: 0 6px;
-    color: #ccc;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-  }
-  .footer-social a:hover {
-    color: #fff;
-  }
-  .site-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-</style>
-<footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-logo">
-      <p>© 2025 Nexelink. All rights reserved.</p>
-    </div>
+<!-- footer.html Nexelink 頁尾區塊 -->
+<footer id="footer" class="footer">
+  <div class="footer-content">
     <div class="footer-links">
-      <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
-      <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
-      <a href="#">常見問題</a>
-      <a href="#">人才招募</a>
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="#faq"><i class="fas fa-question-circle"></i> 常見問題</a>
+      <a href="#jobs"><i class="fas fa-briefcase"></i> 人才招募</a>
     </div>
-    <div class="footer-social">
-    </div>
+    <p class="footer-note">&copy; 2025 Nexelink. All rights reserved.</p>
   </div>
 </footer>
+<script>
+  let lastScrollTop = window.scrollY || 0;
+  const footer = document.getElementById("footer");
+
+  window.addEventListener("scroll", function () {
+    const currentScroll = window.scrollY || 0;
+    const scrollDiff = Math.abs(currentScroll - lastScrollTop);
+
+    if (scrollDiff < 10) return; // 避免微小滑動導致閃爍
+
+    if (currentScroll > lastScrollTop && currentScroll > 100) {
+      footer.classList.add("hide");
+    } else {
+      footer.classList.remove("hide");
+    }
+
+    lastScrollTop = currentScroll;
+  });
+</script>
+
+<style>
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #00C9FF, #92FE9D);
+    color: white;
+    padding: 20px 10px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.5s ease;
+    z-index: 999;
+  }
+  .footer.hide {
+    transform: translateY(100%);
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+  }
+  .footer-links a:hover {
+    opacity: 0.8;
+  }
+  .footer-note {
+    font-size: 0.85rem;
+  }
+</style>
