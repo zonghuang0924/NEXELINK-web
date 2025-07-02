@@ -1,0 +1,176 @@
+<!-- index.html Nexelink 官網首頁完整版 -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexelink | 科技 × 美感</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    html, body {
+      margin: 0; padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #00C9FF, #92FE9D);
+      scroll-behavior: smooth;
+    }
+    .lang-toggle {
+      position: fixed;
+      top: 14px;
+      right: 14px;
+      z-index: 999;
+    }
+    .lang-toggle button {
+      background: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .nav-toggle {
+      position: fixed;
+      top: 14px;
+      left: 14px;
+      z-index: 999;
+      background: none;
+      border: none;
+      font-size: 1.6rem;
+      color: white;
+      display: none;
+    }
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: block;
+      }
+    }
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .hero {
+      background: linear-gradient(to right, #00C9FF, #92FE9D);
+      color: white;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .cta-btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1rem;
+      background: linear-gradient(to right, #92FE9D, #00C9FF);
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .cta-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #00C9FF, #92FE9D);
+    }
+    .services {
+      background: #f9f9f9;
+    }
+    .service-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .service-card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      width: 260px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+      transition: transform 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+    }
+    .service-card i {
+      font-size: 2rem;
+      color: #00bfa5;
+      margin-bottom: 12px;
+    }
+    .cta-section {
+      background: #e0fff7;
+    }
+    .cta-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <button class="nav-toggle" onclick="toggleNav()"><i class="fas fa-bars"></i></button>
+  <div class="lang-toggle">
+    <button onclick="switchLang()"><i class="fas fa-globe"></i> <span id="langLabel">中文</span></button>
+  </div>
+
+  <div id="nav-placeholder"></div>
+
+  <main>
+    <section class="hero">
+      <h1><i class="fas fa-rocket"></i> 融合設計與技術，打造最具美感的網站體驗</h1>
+      <p><i class="fas fa-lightbulb"></i> Nexelink — 專屬你的數位夥伴</p>
+      <button class="cta-btn"><i class="fas fa-paper-plane"></i> 立即合作</button>
+    </section>
+
+    <section class="services">
+      <h2><i class="fas fa-toolbox"></i> 我們的服務</h2>
+      <div class="service-wrapper">
+        <div class="service-card">
+          <i class="fas fa-server"></i>
+          <h3>主機託管</h3>
+          <p>高穩定、低延遲，適合各類網站與遊戲服務需求。</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>網站設計</h3>
+          <p>客製化視覺與互動，打造具專業感與品牌形象的網站。</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-cogs"></i>
+          <h3>系統整合</h3>
+          <p>整合雲端、資料庫與 API，提升營運效率與自動化。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>準備好展開你的數位計畫了嗎？</h2>
+      <button class="cta-btn"><i class="fas fa-envelope"></i> 聯絡我們</button>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script>
+    fetch('nav.html').then(res => res.text()).then(html => {
+      document.getElementById('nav-placeholder').innerHTML = html;
+    });
+    fetch('footer.html').then(res => res.text()).then(html => {
+      document.getElementById('footer-placeholder').innerHTML = html;
+    });
+
+    function switchLang() {
+      const current = document.documentElement.lang;
+      const next = current === 'zh' ? 'en' : 'zh';
+      document.documentElement.lang = next;
+      document.getElementById('langLabel').innerText = next === 'zh' ? '中文' : 'EN';
+    }
+
+    function toggleNav() {
+      const nav = document.querySelector('nav ul') || document.getElementById('navMenu');
+      if (nav) nav.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
