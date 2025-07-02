@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>會員專區 - Nexelink</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #d0f2f2, #e8fff3);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+      padding: 60px 20px;
+    }
+    .dashboard-container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .dashboard-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .dashboard-header h1 {
+      font-size: 2.4rem;
+      color: #00bfa6;
+    }
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+    }
+    .card i {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #00c9ff;
+    }
+    .card h3 {
+      margin: 10px 0 0;
+      font-size: 1.1rem;
+    }
+    .card a {
+      text-decoration: none;
+      color: inherit;
+    }
+    @media (max-width: 600px) {
+      .dashboard-header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+  <main>
+    <div class="dashboard-container">
+      <div class="dashboard-header">
+        <h1><i class="fas fa-user-circle"></i> 會員專區</h1>
+        <p>歡迎回來，請選擇下方功能操作</p>
+      </div>
+      <div class="dashboard-grid">
+        <div class="card"><i class="fas fa-id-badge"></i><h3>會員資料</h3></div>
+        <div class="card"><i class="fas fa-bullhorn"></i><h3>最新消息</h3></div>
+        <div class="card"><i class="fas fa-gift"></i><h3>兌換專區</h3></div>
+        <div class="card"><i class="fas fa-shopping-cart"></i><h3>購物歷史</h3></div>
+        <div class="card"><i class="fas fa-edit"></i><h3>資料修改</h3></div>
+        <div class="card"><i class="fas fa-heart"></i><h3>收藏清單</h3></div>
+        <div class="card"><i class="fas fa-ticket-alt"></i><h3>優惠券</h3></div>
+        <div class="card"><i class="fas fa-star"></i><h3>會員等級</h3></div>
+        <div class="card"><i class="fas fa-headset"></i><h3>客服紀錄</h3></div>
+        <div class="card"><i class="fas fa-bell"></i><h3>通知中心</h3></div>
+        <div class="card"><i class="fas fa-credit-card"></i><h3>付款與訂閱</h3></div>
+        <div class="card"><i class="fas fa-lock"></i><h3>安全設定</h3></div>
+        <div class="card"><i class="fas fa-medal"></i><h3>會員徽章</h3></div>
+        <div class="card"><i class="fas fa-tasks"></i><h3>任務中心</h3></div>
+        <div class="card"><i class="fas fa-comments"></i><h3>留言 / 回饋</h3></div>
+        <div class="card">
+          <a href="tse-server.html">
+            <i class="fas fa-gamepad"></i>
+            前往 SOV TSE 遊戲伺服器
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('nav.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('nav-placeholder').innerHTML = data);
+      fetch('footer.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    });
+  </script>
+</body>
+</html>

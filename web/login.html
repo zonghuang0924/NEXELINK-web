@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>會員登入 / 註冊 - Nexelink</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #d4fc79, #96e6a1);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    .form-wrapper {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+      animation: fadeIn 0.5s ease;
+    }
+    .form-wrapper h2 {
+      text-align: center;
+      color: #00C9FF;
+      margin-bottom: 20px;
+    }
+    .form-wrapper label {
+      display: block;
+      margin: 12px 0 6px;
+      font-weight: bold;
+    }
+    .form-wrapper input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    .form-wrapper button {
+      width: 100%;
+      margin-top: 20px;
+      background: linear-gradient(to right, #00C9FF, #92FE9D);
+      border: none;
+      padding: 12px;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .form-wrapper button:hover {
+      opacity: 0.9;
+    }
+    .toggle-link {
+      text-align: center;
+      margin-top: 16px;
+    }
+    .toggle-link a {
+      color: #00C9FF;
+      text-decoration: none;
+    }
+    .toggle-link a:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+  <main>
+    <div class="form-wrapper" id="login-box">
+      <h2><i class="fas fa-sign-in-alt"></i> 會員登入</h2>
+      <form>
+        <label for="login-email">電子郵件</label>
+        <input type="email" id="login-email" name="login-email" required />
+
+        <label for="login-password">密碼</label>
+        <input type="password" id="login-password" name="login-password" required />
+
+        <button type="submit">登入</button>
+      </form>
+      <div class="toggle-link">
+        尚未有帳號？<a href="#" onclick="toggleForm('register')">立即註冊</a>
+      </div>
+    </div>
+
+    <div class="form-wrapper" id="register-box" style="display: none;">
+      <h2><i class="fas fa-user-plus"></i> 建立帳號</h2>
+      <form>
+        <label for="register-name">姓名</label>
+        <input type="text" id="register-name" name="register-name" required />
+
+        <label for="register-email">電子郵件</label>
+        <input type="email" id="register-email" name="register-email" required />
+        
+
+        <label for="register-phone">電話號碼</label>
+        <input type="phone" id="register-phone" name="register-phone" required />
+
+        <label for="register-password">密碼</label>
+        <input type="password" id="register-password" name="register-password" required />
+
+        <button type="submit">註冊</button>
+      </form>
+      <div class="toggle-link">
+        已有帳號？<a href="#" onclick="toggleForm('login')">返回登入</a>
+      </div>
+    </div>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script>
+    function toggleForm(mode) {
+      document.getElementById('login-box').style.display = mode === 'login' ? 'block' : 'none';
+      document.getElementById('register-box').style.display = mode === 'register' ? 'block' : 'none';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('nav.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('nav-placeholder').innerHTML = data);
+      fetch('footer.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    });
+  </script>
+</body>
+</html>

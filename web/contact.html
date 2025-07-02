@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>聯絡我們 - Nexelink</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #f4ffff, #d8f5f0);
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+    }
+    .contact-hero {
+      background: linear-gradient(to right, #00C9FF, #92FE9D);
+      color: white;
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+    .contact-hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .contact-form {
+      padding: 40px 10%;
+      max-width: 800px;
+      margin: auto;
+    }
+    .contact-form label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      margin-top: 30px;
+      background: linear-gradient(to right, #00C9FF, #92FE9D);
+      color: white;
+      font-size: 1rem;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .contact-form button:hover {
+      transform: scale(1.05);
+    }
+    .contact-info {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .contact-info i {
+      margin-right: 6px;
+      color: #00C9FF;
+    }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+  <main>
+    <section class="contact-hero">
+      <h1><i class="fas fa-envelope"></i> 聯絡我們</h1>
+      <p>無論合作提案、技術諮詢或一般問題，我們都樂意聆聽</p>
+    </section>
+
+    <div class="contact-form">
+      <form>
+        <label for="name">姓名</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">電子郵件</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="subject">主旨</label>
+        <input type="text" id="subject" name="subject" />
+
+        <label for="message">內容</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit"><i class="fas fa-paper-plane"></i> 送出訊息</button>
+      </form>
+
+      <div class="contact-info">
+        <p><i class="fas fa-phone"></i> 02-1234-5678</p>
+        <p><i class="fas fa-map-marker-alt"></i> 台北市中正區某某路 123 號</p>
+        <p><i class="fas fa-clock"></i> 服務時間：週一至週五 9:00 - 18:00</p>
+      </div>
+    </div>
+  </main>
+  <div id="footer-placeholder"></div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('nav.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('nav-placeholder').innerHTML = data);
+      fetch('footer.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    });
+  </script>
+</body>
+</html>

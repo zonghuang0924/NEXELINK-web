@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>常見問題 FAQ - Nexelink</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #d0f2f2, #e0f7fa);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+      padding: 80px 20px 40px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      color: #00bfa5;
+      margin-bottom: 40px;
+    }
+    .faq-item {
+      background: #ffffff;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .faq-question {
+      padding: 20px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      position: relative;
+    }
+    .faq-question i {
+      margin-right: 10px;
+      color: #00bfa5;
+    }
+    .faq-answer {
+      display: none;
+      padding: 0 20px 20px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+    .faq-item.active .faq-question::after {
+      content: "-";
+      position: absolute;
+      right: 20px;
+      font-size: 1.2rem;
+    }
+    .faq-question::after {
+      content: "+";
+      position: absolute;
+      right: 20px;
+      font-size: 1.2rem;
+      color: #00bfa5;
+    }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+  <main>
+    <h1><i class="fas fa-question-circle"></i> 常見問題 FAQ</h1>
+
+    <div class="faq-item">
+      <div class="faq-question"><i class="fas fa-user"></i>我要怎麼註冊 Nexelink 會員？</div>
+      <div class="faq-answer">您可以點選右上角「登入 / 註冊」，填寫基本資料後即可成為 Nexelink 會員。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question"><i class="fas fa-shopping-cart"></i>請問付款方式有哪些？</div>
+      <div class="faq-answer">目前支援信用卡、LINE Pay、街口支付與綠界系統付款。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question"><i class="fas fa-wallet"></i>SOV 幣可以退費嗎？</div>
+      <div class="faq-answer">SOV 幣一經購買無法退費，但可使用於全平台服務與遊戲內消費。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question"><i class="fas fa-server"></i>如何進入 Minecraft 遊戲伺服器？</div>
+      <div class="faq-answer">請先完成 Discord 驗證與白名單申請，登入遊戲後輸入伺服器位址即可連線。</div>
+    </div>
+
+  </main>
+  <div id="footer-placeholder"></div>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('nav.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('nav-placeholder').innerHTML = data);
+      fetch('footer.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+
+      document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+          const parent = item.parentElement;
+          parent.classList.toggle('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

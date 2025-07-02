@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexelink 商品頁面</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #f8fdfc, #e0f7f6);
+      color: #222;
+    }
+    header {
+      background: linear-gradient(to right, #00C9FF, #92FE9D);
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .category-buttons {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .category-buttons button {
+      background: linear-gradient(to right, #00C9FF, #92FE9D);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .category-buttons button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(0, 201, 255, 0.4);
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      padding: 40px 5% 100px;
+    }
+    .product-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .product-card i {
+      font-size: 2rem;
+      color: #00C9FF;
+      margin-bottom: 10px;
+    }
+    .product-title {
+      font-size: 1.2rem;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+    .product-desc {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .product-card a {
+      display: inline-block;
+      margin-top: 12px;
+      color: #00C9FF;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .cta {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .cta a {
+      background: linear-gradient(to right, #00C9FF, #92FE9D);
+      padding: 12px 24px;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .cta a:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- 導覽列導入 -->
+  <div id="nav-placeholder"></div>
+
+  <header>
+    <h1><i class="fas fa-box"></i> Nexelink 商品一覽</h1>
+    <p>我們提供專業、穩定、高效率的技術產品與服務</p>
+  </header>
+
+  <section class="category-buttons">
+    <button><i class="fas fa-globe"></i> Web & App</button>
+    <button><i class="fas fa-server"></i> 主機與雲端</button>
+    <button><i class="fas fa-paint-brush"></i> 設計品牌</button>
+  </section>
+
+  <section class="product-grid">
+    <div class="product-card">
+      <i class="fas fa-code"></i>
+      <div class="product-title">企業網站建置</div>
+      <div class="product-desc">量身打造您的專屬形象網站，RWD + SEO 一次到位。</div>
+      <a href="/web/detial.html">查看更多</a>
+    </div>
+    <div class="product-card">
+      <i class="fas fa-cloud"></i>
+      <div class="product-title">雲端主機託管</div>
+      <div class="product-desc">高速穩定主機租用，含備份、監控、安全機制。</div>
+      <a href="#">查看更多</a>
+    </div>
+    <div class="product-card">
+      <i class="fas fa-palette"></i>
+      <div class="product-title">LOGO 與品牌設計</div>
+      <div class="product-desc">打造符合市場與定位的視覺風格，強化品牌印象。</div>
+      <a href="#">查看更多</a>
+    </div>
+    <div class="product-card">
+      <i class="fas fa-mobile-alt"></i>
+      <div class="product-title">行動應用程式</div>
+      <div class="product-desc">iOS/Android 混合式開發，快速部署與維護。</div>
+      <a href="#">查看更多</a>
+    </div>
+    <div class="product-card">
+      <i class="fas fa-network-wired"></i>
+      <div class="product-title">整合系統開發</div>
+      <div class="product-desc">從前台到後台，完整串接 ERP、CRM、資料分析平台。</div>
+      <a href="#">查看更多</a>
+    </div>
+    <div class="product-card">
+      <i class="fas fa-desktop"></i>
+      <div class="product-title">UI/UX 視覺設計</div>
+      <div class="product-desc">高互動介面設計，強化使用者體驗與品牌轉換率。</div>
+      <a href="#">查看更多</a>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>找不到你要的服務？我們支援客製化！</h2>
+    <a href="contact.html"><i class="fas fa-envelope"></i> 聯絡我們</a>
+  </section>
+
+  <!-- 頁尾導入 -->
+  <div id="footer-placeholder"></div>
+
+  <script>
+    // 動態載入 nav 與 footer
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('nav.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('nav-placeholder').innerHTML = data);
+
+      fetch('footer.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    });
+  </script>
+</body>
+</html>

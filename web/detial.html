@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>企業網站建置 - Nexelink</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #f5fffe, #e2f6f4);
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+    }
+    .hero {
+      background: url('images/web-bg.jpg') center/cover no-repeat;
+      padding: 100px 20px;
+      color: white;
+      text-align: center;
+      background-blend-mode: overlay;
+      background-color: rgba(0, 180, 180, 0.6);
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .section {
+      padding: 60px 10% 40px;
+    }
+    .section h2 {
+      color: #00C9FF;
+      margin-bottom: 20px;
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+    .features li::before {
+      content: "\f058";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      color: #00C9FF;
+      margin-right: 10px;
+    }
+    .preview img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .price-contact {
+      background: linear-gradient(to right, #00C9FF, #92FE9D);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 12px;
+    }
+    .price-contact h3 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .price-contact a {
+      display: inline-block;
+      margin-top: 20px;
+      background: white;
+      color: #00C9FF;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .price-contact a:hover {
+      background: #f0f0f0;
+    }
+    .faq ul {
+      list-style: none;
+      padding: 0;
+    }
+    .faq li {
+      background: #fff;
+      border-left: 5px solid #00C9FF;
+      margin-bottom: 10px;
+      padding: 12px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .others ul {
+      padding-left: 20px;
+    }
+    .others a {
+      color: #00C9FF;
+      text-decoration: none;
+    }
+    .others a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+  <main>
+    <section class="hero">
+      <h1><i class="fas fa-code"></i> 企業網站建置</h1>
+      <p>打造獨一無二的品牌門面網站，結合 RWD、SEO 與美感</p>
+    </section>
+
+    <div class="section features">
+      <h2>服務特色</h2>
+      <ul>
+        <li>RWD 響應式設計，手機電腦平板完美呈現</li>
+        <li>支援多語系切換與 SEO 最佳化</li>
+        <li>表單串接、Google Map、社群連結</li>
+        <li>可延伸加入後台管理系統與會員登入</li>
+      </ul>
+    </div>
+
+    <div class="section preview">
+      <h2>畫面預覽</h2>
+      <img src="images/web-preview.jpg" alt="網站預覽圖">
+    </div>
+
+    <div class="section price-contact">
+      <h3>專案價格：NT$25,000 起</h3>
+      <a href="contact.html"><i class="fas fa-envelope"></i> 聯絡我們估價</a>
+    </div>
+
+    <div class="section faq">
+      <h2>常見問題</h2>
+      <ul>
+        <li>是否包含圖片與文案設計？可另行加購</li>
+        <li>開發時間多久？約 14～30 工作天</li>
+        <li>是否提供維護與更新？可選擇保固方案</li>
+      </ul>
+    </div>
+
+    <div class="section others">
+      <h2>推薦其他服務</h2>
+      <ul>
+        <li><a href="product-detail-app.html">行動應用程式開發</a></li>
+        <li><a href="product-detail-design.html">品牌設計與 LOGO</a></li>
+      </ul>
+    </div>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('nav.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('nav-placeholder').innerHTML = data);
+      fetch('footer.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    });
+  </script>
+</body>
+</html>
