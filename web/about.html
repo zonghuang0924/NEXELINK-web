@@ -163,18 +163,24 @@
     <div class="team-members">
       <div class="team-card">
         <img src="https://i.pravatar.cc/100?u=ceo" alt="CEO">
-        <h4>治閎 Huang</h4>
-        <p>創辦人 / 總監</p>
+        <h4>治閎</h4>
+        <p>創辦人暨執行長</p>
+        <p>前端工程師</p>
+        <p>專案總監</p>
       </div>
       <div class="team-card">
         <img src="https://i.pravatar.cc/100?u=design" alt="Designer">
-        <h4>小芸</h4>
-        <p>UI 設計師</p>
+        <h4>珊樺</h4>
+        <p>美術總監</p>
+        <p>平面設計師</p>
       </div>
       <div class="team-card">
         <img src="https://i.pravatar.cc/100?u=dev" alt="Dev">
-        <h4>阿誠</h4>
+        <h4>宗穎</h4>
+        <p>團隊負責人</p>
         <p>前端工程師</p>
+        <p>後端工程師</p>
+        <p>系統開發工程師</p>
       </div>
     </div>
   </section>
@@ -182,20 +188,17 @@
   <section class="timeline fade-up">
     <h2><i class="fas fa-clock"></i> 品牌沿革</h2>
     <ul>
-      <li><strong>2019 年：</strong> Nexelink 團隊在台灣成立</li>
-      <li><strong>2021 年：</strong> 正式提供網站與系統外包服務</li>
-      <li><strong>2023 年：</strong> 擴展為跨平台設計開發團隊</li>
-      <li><strong>2025 年：</strong> 建構自有品牌與托管產品平台</li>
+      <li><strong>2025 年：</strong> 由一群台南應用科技大學的同學所創立的品牌:NEXELINK</li>
     </ul>
   </section>
 
   <div id="footer-placeholder"></div>
 
   <script>
-    fetch('nav.html').then(res => res.text()).then(html => {
+    fetch('../components/nav.html').then(res => res.text()).then(html => {
       document.getElementById('nav-placeholder').innerHTML = html;
     });
-    fetch('footer.html').then(res => res.text()).then(html => {
+    fetch('../components/footer.html').then(res => res.text()).then(html => {
       document.getElementById('footer-placeholder').innerHTML = html;
     });
 

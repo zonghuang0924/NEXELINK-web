@@ -132,7 +132,7 @@
 
     <div class="section price-contact">
       <h3>專案價格：NT$25,000 起</h3>
-      <a href="contact.html"><i class="fas fa-envelope"></i> 聯絡我們估價</a>
+      <a href="/web/contact.html"><i class="fas fa-envelope"></i> 聯絡我們估價</a>
     </div>
 
     <div class="section faq">
@@ -155,10 +155,10 @@
   <div id="footer-placeholder"></div>
   <script>
     window.addEventListener('DOMContentLoaded', () => {
-      fetch('nav.html')
+      fetch('/components/nav.html')
         .then(res => res.text())
         .then(data => document.getElementById('nav-placeholder').innerHTML = data);
-      fetch('footer.html')
+      fetch('/components/footer.html')
         .then(res => res.text())
         .then(data => document.getElementById('footer-placeholder').innerHTML = data);
     });
