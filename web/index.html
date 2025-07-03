@@ -69,6 +69,9 @@
       cursor: pointer;
       transition: all 0.3s ease;
     }
+    .page-wrapper {
+      animation: slideFadeIn 1s ease-out;
+    }
     .cta-btn:hover {
       transform: scale(1.05);
       background: linear-gradient(to right, #00C9FF, #92FE9D);
@@ -156,12 +159,12 @@
   <div id="footer-placeholder"></div>
 
   <script>
-    fetch('nav.html').then(res => res.text()).then(html => {
-      document.getElementById('nav-placeholder').innerHTML = html;
+    fetch('/components/nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
     });
-    fetch('footer.html').then(res => res.text()).then(html => {
-      document.getElementById('footer-placeholder').innerHTML = html;
-    });
+
 
     function switchLang() {
       const current = document.documentElement.lang;
@@ -176,11 +179,11 @@
     }
 
     // 建議放在頁面底部的 <script> 中
-  window.addEventListener('DOMContentLoaded', () => {
-    fetch('footer.html')
+    fetch('/components/footer.html')
       .then(res => res.text())
-      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-  });
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+    });
 
   </script>
 </body>
