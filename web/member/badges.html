@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>會員徽章 - 會員中心</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <script src="https://kit.fontawesome.com/5dd66c6b59.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f7fbff, #e0f0ff);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1 i {
+      color: #ffca28;
+    }
+
+    .badge-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .badge-card {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 16px;
+      text-align: center;
+      flex: 1 1 200px;
+      position: relative;
+    }
+
+    .badge-card img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 12px;
+    }
+
+    .badge-title {
+      font-weight: bold;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .badge-desc {
+      font-size: 14px;
+      color: #666;
+      margin-top: 6px;
+    }
+
+    .badge-tag {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 12px;
+      padding: 4px 8px;
+      background: #eeeeee;
+      border-radius: 8px;
+    }
+
+    .tag-achievement {
+      background: #81c784;
+      color: white;
+    }
+
+    .tag-event {
+      background: #4fc3f7;
+      color: white;
+    }
+
+    .tag-honor {
+      background: #ba68c8;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .badge-grid {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔼 nav -->
+  <div id="nav-container"></div>
+  <script>
+    fetch('/components/nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-container').innerHTML = data;
+      });
+  </script>
+
+  <!-- 🔽 主內容 -->
+  <div class="container">
+    <h1><i class="fas fa-medal"></i> 會員徽章</h1>
+
+    <div class="badge-grid">
+
+      <div class="badge-card">
+        <span class="badge-tag tag-achievement">達成</span>
+        <img src="https://i.imgur.com/ZKXLhZz.png" alt="初次登入徽章">
+        <div class="badge-title">初次登入</div>
+        <div class="badge-desc">首次登入會員中心即可獲得</div>
+      </div>
+
+      <div class="badge-card">
+        <span class="badge-tag tag-event">活動</span>
+        <img src="https://i.imgur.com/yXm7ZL4.png" alt="夏季活動">
+        <div class="badge-title">夏季活動參與</div>
+        <div class="badge-desc">參與 7 月 Ely 夏日活動</div>
+      </div>
+
+      <div class="badge-card">
+        <span class="badge-tag tag-honor">榮譽</span>
+        <img src="https://i.imgur.com/kG3hRx0.png" alt="VIP會員">
+        <div class="badge-title">尊榮 VIP</div>
+        <div class="badge-desc">升級為鑽石會員後自動授予</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 🔽 footer -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/components/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

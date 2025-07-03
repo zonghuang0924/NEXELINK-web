@@ -62,6 +62,36 @@
       text-decoration: none;
       color: inherit;
     }
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      flex: 1 1 200px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      color: #333;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .card i {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #00a8cc;
+    }
+
     @media (max-width: 600px) {
       .dashboard-header h1 {
         font-size: 1.8rem;
@@ -78,21 +108,66 @@
         <p>歡迎回來，請選擇下方功能操作</p>
       </div>
       <div class="dashboard-grid">
-        <div class="card"><i class="fas fa-id-badge"></i><h3>會員資料</h3></div>
-        <div class="card"><i class="fas fa-bullhorn"></i><h3>最新消息</h3></div>
-        <div class="card"><i class="fas fa-gift"></i><h3>兌換專區</h3></div>
-        <div class="card"><i class="fas fa-shopping-cart"></i><h3>購物歷史</h3></div>
-        <div class="card"><i class="fas fa-edit"></i><h3>資料修改</h3></div>
-        <div class="card"><i class="fas fa-heart"></i><h3>收藏清單</h3></div>
-        <div class="card"><i class="fas fa-ticket-alt"></i><h3>優惠券</h3></div>
-        <div class="card"><i class="fas fa-star"></i><h3>會員等級</h3></div>
-        <div class="card"><i class="fas fa-headset"></i><h3>客服紀錄</h3></div>
-        <div class="card"><i class="fas fa-bell"></i><h3>通知中心</h3></div>
-        <div class="card"><i class="fas fa-credit-card"></i><h3>付款與訂閱</h3></div>
-        <div class="card"><i class="fas fa-lock"></i><h3>安全設定</h3></div>
-        <div class="card"><i class="fas fa-medal"></i><h3>會員徽章</h3></div>
-        <div class="card"><i class="fas fa-tasks"></i><h3>任務中心</h3></div>
-        <div class="card"><i class="fas fa-comments"></i><h3>留言 / 回饋</h3></div>
+        <a href="/web/member/profile.html" class="card">
+          <i class="fas fa-id-badge"></i>
+          <h3>會員資料</h3>
+        </a>
+        <a href="/web/member/news.html" class="card">
+          <i class="fas fa-bullhorn"></i>
+          <h3>最新消息</h3>
+        </a>
+        <a href="/web/member/redeem.html" class="card">
+          <i class="fas fa-gift"></i>
+          <h3>兌換專區</h3>
+        </a>
+        <a href="/web/member/orders.html" class="card">
+          <i class="fas fa-shopping-cart"></i>
+          <h3>購物歷史</h3>
+        </a>
+        <a href="/web/member/edit.html" class="card">
+          <i class="fas fa-edit"></i>
+          <h3>資料修改</h3>
+        </a>
+        <a href="/web/member/favorites.html" class="card">
+          <i class="fas fa-heart"></i>
+          <h3>收藏清單</h3>
+        </a>
+        <a href="/web/member/coupons.html" class="card">
+          <i class="fas fa-ticket-alt"></i>
+          <h3>優惠券</h3>
+        </a>
+        <a href="/web/member/level.html" class="card">
+          <i class="fas fa-star"></i>
+          <h3>會員等級</h3>
+        </a>
+        <a href="/web/member/support.html" class="card">
+          <i class="fas fa-headset"></i>
+          <h3>客服紀錄</h3>
+        </a>
+        <a href="/web/member/notifications.html" class="card">
+          <i class="fas fa-bell"></i>
+          <h3>通知中心</h3>
+        </a>
+        <a href="/web/member/payment.html" class="card">
+          <i class="fas fa-credit-card"></i>
+          <h3>付款與訂閱</h3>
+        </a>
+        <a href="/web/member/security.html" class="card">
+          <i class="fas fa-lock"></i>
+          <h3>安全設定</h3>
+        </a>
+        <a href="/web/member/badges.html" class="card">
+          <i class="fas fa-medal"></i>
+          <h3>會員徽章</h3>
+        </a>
+        <a href="/web/member/missions.html" class="card">
+          <i class="fas fa-tasks"></i>
+          <h3>任務中心</h3>
+        </a>
+        <a href="/web/member/comments.html" class="card">
+          <i class="fas fa-comments"></i>
+          <h3>留言 / 回饋</h3>
+        </a>
         <div class="card">
           <a href="tse-server.html">
             <i class="fas fa-gamepad"></i>

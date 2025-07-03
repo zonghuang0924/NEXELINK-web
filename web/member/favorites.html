@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>收藏清單 - 會員中心</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <script src="https://kit.fontawesome.com/5dd66c6b59.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0faff, #e3f6f5);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1 i {
+      color: #e84a5f;
+    }
+
+    .favorites-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .fav-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 16px;
+      flex: 1 1 250px;
+      text-align: center;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .fav-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .fav-card img {
+      width: 100%;
+      max-height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+
+    .fav-card h3 {
+      font-size: 18px;
+      margin-bottom: 6px;
+      color: #333;
+    }
+
+    .price {
+      color: #009688;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 8px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.2s ease;
+    }
+
+    .btn-cart {
+      background: #00bfa6;
+      color: white;
+    }
+
+    .btn-cart:hover {
+      background: #009e8e;
+    }
+
+    .btn-remove {
+      background: #f8d7da;
+      color: #a00000;
+    }
+
+    .btn-remove:hover {
+      background: #f1b0b7;
+    }
+
+    @media (max-width: 768px) {
+      .favorites-grid {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔼 nav -->
+  <div id="nav-container"></div>
+  <script>
+    fetch('/components/nav.html').then(res => res.text()).then(data => {
+      document.getElementById('nav-container').innerHTML = data;
+    });
+  </script>
+
+  <!-- 🔽 主內容 -->
+  <div class="container">
+    <h1><i class="fas fa-heart"></i> 收藏清單</h1>
+
+    <div class="favorites-grid">
+
+      <div class="fav-card" id="fav1">
+        <img src="https://i.imgur.com/Y8bQX4t.png" alt="收藏商品1">
+        <h3>Ely 限定武器包</h3>
+        <div class="price">350 Ely幣</div>
+        <div class="btn-group">
+          <button class="btn btn-cart" onclick="addToCart('Ely 限定武器包')">加入購物車</button>
+          <button class="btn btn-remove" onclick="removeFav('fav1')">移除</button>
+        </div>
+      </div>
+
+      <div class="fav-card" id="fav2">
+        <img src="https://i.imgur.com/LtTzK9G.png" alt="收藏商品2">
+        <h3>7月活動徽章</h3>
+        <div class="price">150 Ely幣</div>
+        <div class="btn-group">
+          <button class="btn btn-cart" onclick="addToCart('7月活動徽章')">加入購物車</button>
+          <button class="btn btn-remove" onclick="removeFav('fav2')">移除</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 🔽 footer -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/components/footer.html').then(res => res.text()).then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+
+    function addToCart(item) {
+      alert(`✅「${item}」已加入購物車！`);
+    }
+
+    function removeFav(id) {
+      const card = document.getElementById(id);
+      if (card && confirm("你確定要移除這項收藏嗎？")) {
+        card.remove();
+      }
+    }
+  </script>
+
+</body>
+</html>

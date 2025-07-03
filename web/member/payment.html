@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>付款與訂閱 - 會員中心</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <script src="https://kit.fontawesome.com/5dd66c6b59.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0faff, #e3f6f5);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1 i {
+      color: #2196f3;
+    }
+
+    .subscription-box {
+      background: white;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .subscription-box p {
+      font-size: 16px;
+      margin: 6px 0;
+    }
+
+    .subscription-box .actions {
+      margin-top: 10px;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: 0.3s;
+    }
+
+    .btn-edit {
+      background: #2196f3;
+      color: white;
+    }
+
+    .btn-cancel {
+      background: #f44336;
+      color: white;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    thead {
+      background: #f1f1f1;
+    }
+
+    th, td {
+      padding: 14px 16px;
+      text-align: left;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    .status-success {
+      color: #2e7d32;
+      font-weight: bold;
+    }
+
+    .status-failed {
+      color: #c62828;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        background: white;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        border-radius: 10px;
+        padding: 10px;
+      }
+
+      td {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #eee;
+      }
+
+      td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #666;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔼 nav -->
+  <div id="nav-container"></div>
+  <script>
+    fetch('/components/nav.html').then(res => res.text()).then(data => {
+      document.getElementById('nav-container').innerHTML = data;
+    });
+  </script>
+
+  <!-- 🔽 主內容 -->
+  <div class="container">
+    <h1><i class="fas fa-credit-card"></i> 付款與訂閱</h1>
+
+    <div class="subscription-box">
+      <p>目前訂閱方案：<strong>白金會員（月付制）</strong></p>
+      <p>到期日：2025/08/05</p>
+      <div class="actions">
+        <button class="btn btn-edit">更改付款方式</button>
+        <button class="btn btn-cancel" onclick="cancelSub()">取消訂閱</button>
+      </div>
+    </div>
+
+    <h2 style="font-size: 20px; margin-bottom: 12px;">歷史付款紀錄</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>項目</th>
+          <th>金額</th>
+          <th>付款方式</th>
+          <th>時間</th>
+          <th>狀態</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="項目">白金會員（7月）</td>
+          <td data-label="金額">NT$199</td>
+          <td data-label="付款方式">信用卡</td>
+          <td data-label="時間">2025/07/05</td>
+          <td data-label="狀態"><span class="status-success">已完成</span></td>
+        </tr>
+        <tr>
+          <td data-label="項目">Ely 幣包（500）</td>
+          <td data-label="金額">NT$100</td>
+          <td data-label="付款方式">LINE Pay</td>
+          <td data-label="時間">2025/06/28</td>
+          <td data-label="狀態"><span class="status-success">已完成</span></td>
+        </tr>
+        <tr>
+          <td data-label="項目">白金會員（6月）</td>
+          <td data-label="金額">NT$199</td>
+          <td data-label="付款方式">信用卡</td>
+          <td data-label="時間">2025/06/05</td>
+          <td data-label="狀態"><span class="status-failed">失敗</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 🔽 footer -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/components/footer.html').then(res => res.text()).then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+
+    function cancelSub() {
+      if (confirm("你確定要取消訂閱嗎？到期後將不再自動續費。")) {
+        alert("✅ 訂閱已取消。你仍可使用至目前到期日。");
+      }
+    }
+  </script>
+
+</body>
+</html>

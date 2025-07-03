@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>優惠券 - 會員中心</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <script src="https://kit.fontawesome.com/5dd66c6b59.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0faff, #e3f6f5);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1 i {
+      color: #ff6f61;
+    }
+
+    .tab-buttons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tab-buttons button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #ffffff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: background 0.2s;
+    }
+
+    .tab-buttons button.active {
+      background: #ff6f61;
+      color: white;
+    }
+
+    .coupon-list {
+      display: none;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .coupon-list.active {
+      display: flex;
+    }
+
+    .coupon-card {
+      background: white;
+      border-left: 8px solid #ff6f61;
+      border-radius: 12px;
+      padding: 16px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .coupon-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 6px;
+      color: #333;
+    }
+
+    .coupon-info {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .expired {
+      opacity: 0.5;
+      border-left-color: #999;
+    }
+
+    .used {
+      border-left-color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      .tab-buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔼 nav -->
+  <div id="nav-container"></div>
+  <script>
+    fetch('/components/nav.html').then(res => res.text()).then(data => {
+      document.getElementById('nav-container').innerHTML = data;
+    });
+  </script>
+
+  <!-- 🔽 主內容 -->
+  <div class="container">
+    <h1><i class="fas fa-ticket-alt"></i> 優惠券</h1>
+
+    <div class="tab-buttons">
+      <button class="active" onclick="showTab('available')">可使用</button>
+      <button onclick="showTab('used')">已使用</button>
+      <button onclick="showTab('expired')">已過期</button>
+    </div>
+
+    <!-- ✅ 可使用 -->
+    <div class="coupon-list active" id="available">
+      <div class="coupon-card">
+        <div class="coupon-title">🎁 滿500 Ely 幣折100</div>
+        <div class="coupon-info">使用期限：2025/07/31</div>
+      </div>
+      <div class="coupon-card">
+        <div class="coupon-title">🎊 註冊禮：95折優惠券</div>
+        <div class="coupon-info">使用期限：2025/08/15</div>
+      </div>
+    </div>
+
+    <!-- ✅ 已使用 -->
+    <div class="coupon-list" id="used">
+      <div class="coupon-card used">
+        <div class="coupon-title">🎁 6月活動折價券</div>
+        <div class="coupon-info">使用日期：2025/06/18</div>
+      </div>
+    </div>
+
+    <!-- ✅ 已過期 -->
+    <div class="coupon-list" id="expired">
+      <div class="coupon-card expired">
+        <div class="coupon-title">🎁 春季限定9折券</div>
+        <div class="coupon-info">到期日：2025/05/01</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔽 footer -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/components/footer.html').then(res => res.text()).then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+
+    // 分頁切換邏輯
+    function showTab(tabId) {
+      document.querySelectorAll('.coupon-list').forEach(list => {
+        list.classList.remove('active');
+      });
+      document.getElementById(tabId).classList.add('active');
+
+      document.querySelectorAll('.tab-buttons button').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      event.target.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>

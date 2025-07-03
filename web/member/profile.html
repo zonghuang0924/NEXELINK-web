@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>會員資料 - 會員中心</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0faff, #e3f6f5);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1 i {
+      font-size: 28px;
+      color: #00a8cc;
+    }
+
+    .profile-card {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 300px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .card h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #007c91;
+    }
+
+    .card p {
+      margin: 4px 0;
+      font-size: 15px;
+      color: #333;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #00c2cb;
+      margin-bottom: 10px;
+    }
+    main {
+      padding-bottom: 120px; /* 預留空間給 footer */
+    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/5dd66c6b59.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- 🔼 導覽列 -->
+  <div id="nav-container"></div>
+  <script>
+    fetch('/components/nav.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('nav-container').innerHTML = data);
+  </script>
+
+  <!-- 🔽 主體內容 -->
+  <div class="container">
+    <h1><i class="fas fa-user-circle"></i> 會員資料</h1>
+
+    <div class="profile-card">
+      <div class="card" style="text-align: center;">
+        <img src="https://i.imgur.com/8Km9tLL.png" alt="會員頭像" class="avatar" />
+        <h2>暱稱：小治閎</h2>
+        <p>會員等級：金會員</p>
+        <p>加入日期：2023-08-10</p>
+        <p>Ely 幣餘額：2,450</p>
+      </div>
+
+      <div class="card">
+        <h2>聯絡資訊</h2>
+        <p>📧 信箱：user@example.com</p>
+        <p>📱 電話：0912-345-678</p>
+        <p>📍 地址：台北市信義區未來大道77號</p>
+      </div>
+
+      <div class="card">
+        <h2>帳戶狀態</h2>
+        <p>帳戶安全：✅ 已開啟雙重驗證</p>
+        <p>最後登入：2025-07-03 23:42</p>
+        <p>裝置紀錄：iPhone、Windows</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔽 頁尾 -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/components/footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer-container').innerHTML = data);
+  </script>
+</body>
+</html>

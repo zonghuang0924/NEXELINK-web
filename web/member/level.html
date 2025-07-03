@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>會員等級 - 會員中心</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <script src="https://kit.fontawesome.com/5dd66c6b59.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0faff, #e3f6f5);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1 i {
+      color: #f4c542;
+    }
+
+    .level-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .level-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .progress-container {
+      background: #eee;
+      border-radius: 10px;
+      height: 20px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      background: linear-gradient(to right, #ffc107, #ff9800);
+      height: 100%;
+      width: 65%;
+      transition: width 0.3s ease;
+    }
+
+    .level-stats {
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    .benefits-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .benefits-table th, .benefits-table td {
+      padding: 12px;
+      border: 1px solid #eee;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .benefits-table thead {
+      background: #f7f7f7;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #f9a825;
+    }
+
+    @media (max-width: 768px) {
+      .benefits-table th, .benefits-table td {
+        font-size: 13px;
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔼 nav -->
+  <div id="nav-container"></div>
+  <script>
+    fetch('/components/nav.html').then(res => res.text()).then(data => {
+      document.getElementById('nav-container').innerHTML = data;
+    });
+  </script>
+
+  <!-- 🔽 主內容 -->
+  <div class="container">
+    <h1><i class="fas fa-star"></i> 會員等級</h1>
+
+    <div class="level-box">
+      <div class="level-title">目前等級：<span class="highlight">金會員</span></div>
+
+      <div class="progress-container">
+        <div class="progress-bar" style="width: 65%;"></div>
+      </div>
+
+      <div class="level-stats">累積消費：3250 Ely幣｜升級條件：5000 Ely幣（還差 1750 Ely幣）</div>
+    </div>
+
+    <table class="benefits-table">
+      <thead>
+        <tr>
+          <th>等級</th>
+          <th>條件</th>
+          <th>每月獎勵</th>
+          <th>折扣</th>
+          <th>專屬徽章</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>普通會員</td>
+          <td>註冊即加入</td>
+          <td>無</td>
+          <td>無</td>
+          <td>❌</td>
+        </tr>
+        <tr>
+          <td class="highlight">金會員</td>
+          <td>累積消費 3000 Ely幣</td>
+          <td>每月 +100 Ely幣</td>
+          <td>全站 95 折</td>
+          <td>✅</td>
+        </tr>
+        <tr>
+          <td>鑽石會員</td>
+          <td>累積消費 5000 Ely幣</td>
+          <td>每月 +300 Ely幣</td>
+          <td>全站 9 折</td>
+          <td>✅</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 🔽 footer -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/components/footer.html').then(res => res.text()).then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+  </script>
+
+</body>
+</html>

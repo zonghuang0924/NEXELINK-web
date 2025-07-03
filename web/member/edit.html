@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>資料修改 - 會員中心</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <script src="https://kit.fontawesome.com/5dd66c6b59.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0faff, #e3f6f5);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1 i {
+      color: #006d77;
+    }
+
+    form {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .btn-save {
+      background: #00bfa6;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn-save:hover {
+      background: #009e8e;
+    }
+
+    .success-message {
+      background: #d0f5e6;
+      padding: 12px 16px;
+      border-radius: 8px;
+      color: #207f5d;
+      margin-bottom: 16px;
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔼 nav -->
+  <div id="nav-container"></div>
+  <script>
+    fetch('/components/nav.html').then(res => res.text()).then(data => {
+      document.getElementById('nav-container').innerHTML = data;
+    });
+  </script>
+
+  <!-- 🔽 主內容 -->
+  <div class="container">
+    <h1><i class="fas fa-edit"></i> 資料修改</h1>
+
+    <div class="success-message" id="successMessage">✅ 資料已成功儲存！</div>
+
+    <form id="editForm">
+      <label for="nickname">暱稱</label>
+      <input type="text" id="nickname" value="小治閎" required />
+
+      <label for="phone">電話</label>
+      <input type="tel" id="phone" value="0912-345-678" pattern="^09\d{2}-\d{3}-\d{3}$" required />
+
+      <label for="address">地址</label>
+      <input type="text" id="address" value="台北市信義區未來大道77號" />
+
+      <label for="birthday">生日</label>
+      <input type="date" id="birthday" value="2005-09-15" />
+
+      <button type="submit" class="btn-save">儲存變更</button>
+    </form>
+  </div>
+
+  <!-- 🔽 footer -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/components/footer.html').then(res => res.text()).then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+
+    document.getElementById('editForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // 基本驗證（可擴充）
+      const phone = document.getElementById('phone');
+      if (!phone.checkValidity()) {
+        alert('電話格式錯誤，請使用 0912-345-678 格式');
+        return;
+      }
+
+      document.getElementById('successMessage').style.display = 'block';
+
+      setTimeout(() => {
+        document.getElementById('successMessage').style.display = 'none';
+      }, 3000);
+    });
+  </script>
+
+</body>
+</html>

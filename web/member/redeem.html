@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>兌換專區 - 會員中心</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <script src="https://kit.fontawesome.com/5dd66c6b59.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0faff, #e3f6f5);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1 i {
+      color: #0099a8;
+    }
+
+    .redeem-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .redeem-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 16px;
+      flex: 1 1 250px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .redeem-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .redeem-card img {
+      width: 100%;
+      max-height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+
+    .redeem-card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .price {
+      color: #009688;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .stock {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 12px;
+    }
+
+    .redeem-btn {
+      background: #00bfa6;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .redeem-btn:hover {
+      background: #009b88;
+    }
+
+    @media (max-width: 768px) {
+      .redeem-grid {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔼 nav -->
+  <div id="nav-container"></div>
+  <script>
+    fetch('/components/nav.html').then(res => res.text()).then(data => {
+      document.getElementById('nav-container').innerHTML = data;
+    });
+  </script>
+
+  <!-- 🔽 主內容 -->
+  <div class="container">
+    <h1><i class="fas fa-gift"></i> 兌換專區</h1>
+
+    <div class="redeem-grid">
+
+      <div class="redeem-card">
+        <img src="https://i.imgur.com/Y8bQX4t.png" alt="虛寶A">
+        <h3>Ely 限定武器包</h3>
+        <div class="price">350 Ely幣</div>
+        <div class="stock">剩餘：25 組</div>
+        <button class="redeem-btn" onclick="confirmRedeem('Ely 限定武器包')">立即兌換</button>
+      </div>
+
+      <div class="redeem-card">
+        <img src="https://i.imgur.com/LtTzK9G.png" alt="虛寶B">
+        <h3>7月活動徽章</h3>
+        <div class="price">150 Ely幣</div>
+        <div class="stock">剩餘：48 枚</div>
+        <button class="redeem-btn" onclick="confirmRedeem('7月活動徽章')">立即兌換</button>
+      </div>
+
+      <div class="redeem-card">
+        <img src="https://i.imgur.com/dsQGjDT.png" alt="虛寶C">
+        <h3>每日補給 Ely 幣 +100</h3>
+        <div class="price">100 Ely幣</div>
+        <div class="stock">剩餘：不限</div>
+        <button class="redeem-btn" onclick="confirmRedeem('每日補給 Ely 幣 +100')">立即兌換</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 🔽 footer -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/components/footer.html').then(res => res.text()).then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+
+    // 彈出確認視窗
+    function confirmRedeem(item) {
+      if (confirm(`你確定要兌換「${item}」嗎？此動作無法復原喔！`)) {
+        alert(`✅ 你已成功兌換「${item}」！請至通知中心確認領取。`);
+      }
+    }
+  </script>
+
+</body>
+</html>

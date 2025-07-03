@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>通知中心 - 會員中心</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <script src="https://kit.fontawesome.com/5dd66c6b59.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0faff, #e3f6f5);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1 i {
+      color: #ff9800;
+    }
+
+    .notif-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .notif {
+      background: white;
+      border-left: 6px solid #ff9800;
+      border-radius: 12px;
+      padding: 16px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .notif:hover {
+      transform: translateY(-3px);
+    }
+
+    .notif.unread {
+      background: #fffaf0;
+    }
+
+    .notif-title {
+      font-weight: bold;
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 6px;
+    }
+
+    .notif-time {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .notif-content {
+      font-size: 15px;
+      color: #444;
+      display: none;
+    }
+
+    .notif.open .notif-content {
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .notif-title {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔼 nav -->
+  <div id="nav-container"></div>
+  <script>
+    fetch('/components/nav.html').then(res => res.text()).then(data => {
+      document.getElementById('nav-container').innerHTML = data;
+    });
+  </script>
+
+  <!-- 🔽 主內容 -->
+  <div class="container">
+    <h1><i class="fas fa-bell"></i> 通知中心</h1>
+
+    <div class="notif-list">
+
+      <div class="notif unread" onclick="toggleNotif(this)">
+        <div class="notif-title">✅ 成功兌換 Ely 限定武器包</div>
+        <div class="notif-time">2025/07/03 20:15</div>
+        <div class="notif-content">
+          你已成功兌換「Ely 限定武器包」，請至遊戲內 Ely 郵箱領取。
+        </div>
+      </div>
+
+      <div class="notif" onclick="toggleNotif(this)">
+        <div class="notif-title">🎖️ 你升級為金會員啦！</div>
+        <div class="notif-time">2025/06/30 18:01</div>
+        <div class="notif-content">
+          恭喜你累積 Ely 幣達標，晉升為「金會員」！快去查看你的新特權吧。
+        </div>
+      </div>
+
+      <div class="notif unread" onclick="toggleNotif(this)">
+        <div class="notif-title">📬 客服單已處理完成</div>
+        <div class="notif-time">2025/06/28 12:44</div>
+        <div class="notif-content">
+          你的客服申請「登入 Ely 幣異常」已審核補償完成，請查看客服紀錄詳情。
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 🔽 footer -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/components/footer.html').then(res => res.text()).then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+
+    function toggleNotif(el) {
+      el.classList.toggle('open');
+      el.classList.remove('unread'); // 標記為已讀
+    }
+  </script>
+
+</body>
+</html>

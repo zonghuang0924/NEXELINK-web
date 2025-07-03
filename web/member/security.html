@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>安全設定 - 會員中心</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <script src="https://kit.fontawesome.com/5dd66c6b59.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #eef9ff, #d9f1ff);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1 i {
+      color: #007bff;
+    }
+
+    .section {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    .btn {
+      margin-top: 15px;
+      padding: 10px 16px;
+      font-size: 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .btn-save {
+      background: #007bff;
+      color: white;
+    }
+
+    .btn-toggle {
+      background: #00c2a8;
+      color: white;
+    }
+
+    .login-info {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .status-text {
+      font-weight: bold;
+      color: green;
+    }
+
+    .warning-text {
+      color: red;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      input {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔼 nav -->
+  <div id="nav-container"></div>
+  <script>
+    fetch('/components/nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-container').innerHTML = data;
+      });
+  </script>
+
+  <!-- 🔽 主內容 -->
+  <div class="container">
+    <h1><i class="fas fa-lock"></i> 安全設定</h1>
+
+    <!-- 密碼修改 -->
+    <div class="section">
+      <h2 style="font-size: 18px;">更改密碼</h2>
+      <label for="currentPwd">目前密碼</label>
+      <input type="password" id="currentPwd" />
+
+      <label for="newPwd">新密碼</label>
+      <input type="password" id="newPwd" />
+
+      <label for="confirmPwd">確認新密碼</label>
+      <input type="password" id="confirmPwd" />
+
+      <button class="btn btn-save" onclick="changePassword()">儲存變更</button>
+      <p id="passwordMsg"></p>
+    </div>
+
+    <!-- 裝置紀錄與登入資訊 -->
+    <div class="section">
+      <h2 style="font-size: 18px;">登入紀錄</h2>
+      <div class="login-info">
+        最近一次登入時間：<strong>2025/07/03 22:58</strong><br />
+        最近登入裝置：<strong>iPhone 14 Pro、Windows 11</strong><br />
+        IP 位址：<strong>123.456.78.90</strong>
+      </div>
+    </div>
+
+    <!-- 雙重驗證 -->
+    <div class="section">
+      <h2 style="font-size: 18px;">雙重驗證</h2>
+      <p>目前狀態：<span class="status-text" id="twoFAStatus">已啟用</span></p>
+      <button class="btn btn-toggle" onclick="toggleTwoFA()">停用雙重驗證</button>
+    </div>
+  </div>
+
+  <!-- 🔽 footer -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('/components/footer-container').innerHTML = data;
+      });
+
+    // 密碼儲存邏輯
+    function changePassword() {
+      const newPwd = document.getElementById('newPwd').value;
+      const confirmPwd = document.getElementById('confirmPwd').value;
+      const msg = document.getElementById('passwordMsg');
+
+      if (newPwd.length < 6) {
+        msg.innerHTML = "⚠️ 密碼長度需至少 6 位數";
+        msg.className = "warning-text";
+        return;
+      }
+
+      if (newPwd !== confirmPwd) {
+        msg.innerHTML = "⚠️ 新密碼與確認密碼不一致";
+        msg.className = "warning-text";
+        return;
+      }
+
+      msg.innerHTML = "✅ 密碼變更成功";
+      msg.className = "status-text";
+    }
+
+    // 雙重驗證切換
+    let is2FA = true;
+    function toggleTwoFA() {
+      is2FA = !is2FA;
+      const status = document.getElementById('twoFAStatus');
+      status.textContent = is2FA ? "已啟用" : "已停用";
+      alert(`雙重驗證已${is2FA ? '啟用' : '停用'}。`);
+    }
+  </script>
+
+</body>
+</html>

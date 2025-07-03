@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>購物歷史 - 會員中心</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <script src="https://kit.fontawesome.com/5dd66c6b59.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0faff, #e3f6f5);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1 i {
+      color: #007c91;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    thead {
+      background: #00bfa6;
+      color: white;
+    }
+
+    th, td {
+      padding: 14px 16px;
+      text-align: left;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f7fdfd;
+    }
+
+    .status {
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+      display: inline-block;
+    }
+
+    .completed {
+      background: #c8f7dc;
+      color: #2d8659;
+    }
+
+    .processing {
+      background: #ffeaa7;
+      color: #b38f00;
+    }
+
+    .failed {
+      background: #ffcccc;
+      color: #a80000;
+    }
+
+    .product-img {
+      width: 50px;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        background: white;
+        margin-bottom: 15px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        border-radius: 10px;
+        padding: 10px;
+      }
+
+      td {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #555;
+      }
+
+      .product-img {
+        width: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔼 nav -->
+  <div id="nav-container"></div>
+  <script>
+    fetch('/components/nav.html').then(res => res.text()).then(data => {
+      document.getElementById('nav-container').innerHTML = data;
+    });
+  </script>
+
+  <!-- 🔽 主內容 -->
+  <div class="container">
+    <h1><i class="fas fa-shopping-cart"></i> 購物歷史</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>商品</th>
+          <th>名稱</th>
+          <th>金額</th>
+          <th>時間</th>
+          <th>狀態</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="商品">
+            <img src="https://i.imgur.com/Y8bQX4t.png" class="product-img" />
+          </td>
+          <td data-label="名稱">Ely 限定武器包</td>
+          <td data-label="金額">350 Ely幣</td>
+          <td data-label="時間">2025/07/02 14:22</td>
+          <td data-label="狀態"><span class="status completed">已完成</span></td>
+        </tr>
+
+        <tr>
+          <td data-label="商品">
+            <img src="https://i.imgur.com/dsQGjDT.png" class="product-img" />
+          </td>
+          <td data-label="名稱">每日補給 Ely 幣 +100</td>
+          <td data-label="金額">100 Ely幣</td>
+          <td data-label="時間">2025/07/01 09:45</td>
+          <td data-label="狀態"><span class="status processing">處理中</span></td>
+        </tr>
+
+        <tr>
+          <td data-label="商品">
+            <img src="https://i.imgur.com/LtTzK9G.png" class="product-img" />
+          </td>
+          <td data-label="名稱">7月活動徽章</td>
+          <td data-label="金額">150 Ely幣</td>
+          <td data-label="時間">2025/06/30 20:11</td>
+          <td data-label="狀態"><span class="status failed">失敗</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 🔽 footer -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/components/footer.html').then(res => res.text()).then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+  </script>
+
+</body>
+</html>

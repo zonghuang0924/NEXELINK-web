@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>任務中心 - 會員中心</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <script src="https://kit.fontawesome.com/5dd66c6b59.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f5fafe, #e3f2fd);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1 i {
+      color: #4caf50;
+    }
+
+    .mission-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .mission-card {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 20px;
+      flex: 1 1 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .mission-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 6px;
+      color: #333;
+    }
+
+    .mission-desc {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .progress-bar-container {
+      background: #eee;
+      height: 14px;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    .progress-bar {
+      background: #4caf50;
+      height: 100%;
+      width: 60%;
+      transition: width 0.3s ease;
+    }
+
+    .mission-reward {
+      font-size: 14px;
+      color: #2e7d32;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .btn-claim {
+      background: #00bfa5;
+      color: white;
+    }
+
+    .btn-claim:hover {
+      background: #009e8f;
+    }
+
+    .claimed {
+      background: #ccc;
+      color: #555;
+      cursor: default;
+    }
+
+    @media (max-width: 768px) {
+      .mission-grid {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔼 nav -->
+  <div id="nav-container"></div>
+  <script>
+    fetch('/components/nav.html').then(res => res.text()).then(data => {
+      document.getElementById('nav-container').innerHTML = data;
+    });
+  </script>
+
+  <!-- 🔽 主內容 -->
+  <div class="container">
+    <h1><i class="fas fa-tasks"></i> 任務中心</h1>
+
+    <div class="mission-grid">
+
+      <div class="mission-card">
+        <div>
+          <div class="mission-title">📅 連續登入 3 天</div>
+          <div class="mission-desc">連續三天登入會員中心即可完成任務。</div>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 66%;"></div>
+          </div>
+          <div class="mission-reward">🎁 獎勵：50 Ely 幣</div>
+        </div>
+        <button class="btn claimed" disabled>進行中</button>
+      </div>
+
+      <div class="mission-card">
+        <div>
+          <div class="mission-title">🛒 完成一筆兌換</div>
+          <div class="mission-desc">在兌換專區成功完成任務兌換一次。</div>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 100%;"></div>
+          </div>
+          <div class="mission-reward">🎁 獎勵：徽章「初次兌換」</div>
+        </div>
+        <button class="btn btn-claim" onclick="claim(this, '🛒 完成一筆兌換')">領取獎勵</button>
+      </div>
+
+      <div class="mission-card">
+        <div>
+          <div class="mission-title">✍️ 留言一則評論</div>
+          <div class="mission-desc">在任何商品頁面留下評論即可完成。</div>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 100%;"></div>
+          </div>
+          <div class="mission-reward">🎁 獎勵：20 Ely 幣</div>
+        </div>
+        <button class="btn claimed" disabled>已領取</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 🔽 footer -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/components/footer.html').then(res => res.text()).then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+
+    function claim(button, missionName) {
+      alert(`✅ 任務「${missionName}」獎勵已領取！`);
+      button.innerText = "已領取";
+      button.classList.remove('btn-claim');
+      button.classList.add('claimed');
+      button.disabled = true;
+    }
+  </script>
+
+</body>
+</html>

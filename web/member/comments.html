@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>留言 / 回饋 - 會員中心</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <script src="https://kit.fontawesome.com/5dd66c6b59.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f5fafe, #edf6fc);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1 i {
+      color: #607d8b;
+    }
+
+    .comment-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .comment-card {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 16px 20px;
+    }
+
+    .comment-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .comment-target {
+      font-weight: bold;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .comment-time {
+      font-size: 13px;
+      color: #999;
+    }
+
+    .stars {
+      color: #ffc107;
+      font-size: 15px;
+      margin: 6px 0;
+    }
+
+    .comment-text {
+      font-size: 15px;
+      color: #444;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      font-size: 13px;
+      padding: 6px 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .btn-edit {
+      background: #1976d2;
+      color: white;
+    }
+
+    .btn-delete {
+      background: #e53935;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .comment-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔼 nav -->
+  <div id="nav-container"></div>
+  <script>
+    fetch('/components/nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-container').innerHTML = data;
+      });
+  </script>
+
+  <!-- 🔽 主內容 -->
+  <div class="container">
+    <h1><i class="fas fa-comments"></i> 留言 / 回饋</h1>
+
+    <div class="comment-list">
+
+      <div class="comment-card" id="comment1">
+        <div class="comment-header">
+          <div class="comment-target">Ely 限定武器包</div>
+          <div class="comment-time">2025/07/02 19:30</div>
+        </div>
+        <div class="stars">★★★★★</div>
+        <div class="comment-text">
+          很酷的武器包！希望之後能出更多像這樣的隨機組合包～
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-edit" onclick="editComment('comment1')">編輯</button>
+          <button class="btn btn-delete" onclick="deleteComment('comment1')">刪除</button>
+        </div>
+      </div>
+
+      <div class="comment-card" id="comment2">
+        <div class="comment-header">
+          <div class="comment-target">每日登入任務</div>
+          <div class="comment-time">2025/06/29 08:12</div>
+        </div>
+        <div class="stars">★★★★☆</div>
+        <div class="comment-text">
+          登入任務有點單調，建議加入更多互動玩法！
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-edit" onclick="editComment('comment2')">編輯</button>
+          <button class="btn btn-delete" onclick="deleteComment('comment2')">刪除</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 🔽 footer -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/components/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+
+    function editComment(id) {
+      alert("⚙️ 開啟編輯功能（示意）：" + id);
+      // 可連結到編輯頁或開啟編輯彈窗
+    }
+
+    function deleteComment(id) {
+      if (confirm("你確定要刪除這則留言嗎？")) {
+        document.getElementById(id).remove();
+        alert("✅ 留言已刪除");
+      }
+    }
+  </script>
+
+</body>
+</html>

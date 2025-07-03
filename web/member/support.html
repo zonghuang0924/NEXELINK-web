@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>客服紀錄 - 會員中心</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <script src="https://kit.fontawesome.com/5dd66c6b59.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0faff, #e3f6f5);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1 i {
+      color: #3f51b5;
+    }
+
+    .ticket-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .ticket {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 16px 20px;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .ticket:hover {
+      transform: translateY(-3px);
+    }
+
+    .ticket-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .ticket-title {
+      font-weight: bold;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .ticket-date {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .ticket-status {
+      font-size: 13px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      color: white;
+    }
+
+    .status-pending {
+      background-color: #ff9800;
+    }
+
+    .status-resolved {
+      background-color: #4caf50;
+    }
+
+    .status-closed {
+      background-color: #9e9e9e;
+    }
+
+    .ticket-content {
+      margin-top: 10px;
+      font-size: 15px;
+      color: #444;
+      display: none;
+    }
+
+    .ticket.open .ticket-content {
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .ticket-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔼 nav -->
+  <div id="nav-container"></div>
+  <script>
+    fetch('/components/nav.html').then(res => res.text()).then(data => {
+      document.getElementById('nav-container').innerHTML = data;
+    });
+  </script>
+
+  <!-- 🔽 主內容 -->
+  <div class="container">
+    <h1><i class="fas fa-headset"></i> 客服紀錄</h1>
+
+    <div class="ticket-list">
+
+      <div class="ticket" onclick="toggleTicket(this)">
+        <div class="ticket-header">
+          <div>
+            <div class="ticket-title">補償申請：登入異常損失 Ely 幣</div>
+            <div class="ticket-date">2025/07/01 13:45</div>
+          </div>
+          <div class="ticket-status status-resolved">已完成</div>
+        </div>
+        <div class="ticket-content">
+          玩家反映 6/30 晚間登入時 Ely 幣顯示異常，導致損失 200 Ely 幣，經查屬實，已補償並通知。
+        </div>
+      </div>
+
+      <div class="ticket" onclick="toggleTicket(this)">
+        <div class="ticket-header">
+          <div>
+            <div class="ticket-title">BUG 回報：兌換頁面錯誤</div>
+            <div class="ticket-date">2025/06/28 09:10</div>
+          </div>
+          <div class="ticket-status status-pending">處理中</div>
+        </div>
+        <div class="ticket-content">
+          使用者回報在 Safari 瀏覽器中進行 Ely 幣兌換時，按鈕無反應，技術團隊正在處理中。
+        </div>
+      </div>
+
+      <div class="ticket" onclick="toggleTicket(this)">
+        <div class="ticket-header">
+          <div>
+            <div class="ticket-title">建議回饋：每日登入 UI 太簡單</div>
+            <div class="ticket-date">2025/06/20 17:25</div>
+          </div>
+          <div class="ticket-status status-closed">已結案</div>
+        </div>
+        <div class="ticket-content">
+          玩家希望能強化每日登入畫面動畫與提示音效，讓使用體驗更有感，目前已交由美術與音效團隊備案。
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 🔽 footer -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/components/footer.html').then(res => res.text()).then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+
+    function toggleTicket(el) {
+      el.classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>

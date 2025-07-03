@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>最新消息 - 會員中心</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <script src="https://kit.fontawesome.com/5dd66c6b59.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0faff, #e3f6f5);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1 i {
+      color: #007b9a;
+    }
+
+    .news-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .news-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .news-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .news-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .news-date {
+      font-size: 14px;
+      color: #999;
+      margin-top: 5px;
+    }
+
+    .news-content {
+      display: none;
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .news-card.open .news-content {
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ⬆️ nav -->
+  <div id="nav-container"></div>
+  <script>
+    fetch('/components/nav.html').then(res => res.text()).then(data => {
+      document.getElementById('nav-container').innerHTML = data;
+    });
+  </script>
+
+  <!-- ⬇️ 主體內容 -->
+  <div class="container">
+    <h1><i class="fas fa-bullhorn"></i> 最新消息</h1>
+
+    <div class="news-list">
+
+      <div class="news-card">
+        <div class="news-title"><i class="fas fa-star text-gold"></i> 📣 夏日活動開跑！</div>
+        <div class="news-date">2025/07/01</div>
+        <div class="news-content">
+          🎉 一年一度的 Ely 夏季活動即日起正式開跑！  
+          完成任務中心挑戰即可獲得限定 Ely 幣與專屬徽章！  
+          活動時間至 7/31 止，千萬別錯過～
+        </div>
+      </div>
+
+      <div class="news-card">
+        <div class="news-title"><i class="fas fa-bell"></i> 系統更新通知</div>
+        <div class="news-date">2025/06/28</div>
+        <div class="news-content">
+          🔧 我們剛完成一次重大系統優化，速度與穩定度皆有提升。  
+          若發現任何錯誤，請前往「客服紀錄」回報，我們會儘速處理。
+        </div>
+      </div>
+
+      <div class="news-card">
+        <div class="news-title"><i class="fas fa-gift"></i> 7月登入送好禮！</div>
+        <div class="news-date">2025/06/25</div>
+        <div class="news-content">
+          🎁 只要每天登入會員中心即可累積簽到紀錄，  
+          累計滿 7 天可獲得「七月限定 Ely 幣禮包」，快來參加！
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ⬇️ footer -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/components/footer.html').then(res => res.text()).then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+
+    // 展開與收合訊息內容
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.news-card').forEach(card => {
+        card.addEventListener('click', () => {
+          card.classList.toggle('open');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
