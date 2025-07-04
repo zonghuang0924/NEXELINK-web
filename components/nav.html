@@ -19,15 +19,22 @@
   .logo {
     display: flex;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
     color: #fff;
   }
   .logo img {
-    height: 32px;
-    margin-right: 8px;
+    height: 75px;
+    margin-right: 16px;
   }
+  img {
+    width: 100px;     /* 寬度固定 */
+    height: 100px;    /* 高度固定（保持正方形） */
+    object-fit: auto; /* 確保圖片不會變形 */
+    border-radius: 9%;
+  }
+
   .nav-links {
     list-style: none;
     display: flex;
@@ -73,7 +80,7 @@
 <nav class="navbar">
   <div class="nav-container">
     <a href="/web/index.html" class="logo">
-      <img src="assets/icons/logo.svg" alt="">
+      <img src="/image/LOGO.jpg" alt="">
       <span>Nexelink</span>
     </a>
     <ul class="nav-links" id="navMenu">
