@@ -136,27 +136,41 @@
       </button>
     </div>
   </nav>
-
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const menu = document.getElementById('navMenu');
-      const btn = document.getElementById('hamburgerBtn');
+  window.addEventListener('DOMContentLoaded', () => {
+    // 載入 nav 並綁定漢堡選單事件
+    fetch('/components/nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
 
-      document.addEventListener('click', function (e) {
-        const clickedInsideBtn = (e.target === btn || btn.contains(e.target));
-        const clickedInsideMenu = menu.contains(e.target);
-        const clickedLink = e.target.closest('a');
+        requestAnimationFrame(() => {
+          const menu = document.getElementById('navMenu');
+          const btn = document.getElementById('hamburgerBtn');
 
-        if (clickedInsideBtn) {
-          menu.classList.toggle('open');
-        } else if (clickedLink && clickedInsideMenu) {
-          menu.classList.remove('open');
-        } else if (!clickedInsideMenu) {
-          menu.classList.remove('open');
-        }
+          document.addEventListener('click', function (e) {
+            const clickedInsideBtn = (e.target === btn || btn.contains(e.target));
+            const clickedInsideMenu = menu.contains(e.target);
+            const clickedLink = e.target.closest('a');
+
+            if (clickedInsideBtn) {
+              menu.classList.toggle('open');
+            } else if (clickedLink && clickedInsideMenu) {
+              menu.classList.remove('open');
+            } else if (!clickedInsideMenu) {
+              menu.classList.remove('open');
+            }
+          });
+        });
       });
-    });
-  </script>
 
+    // 載入 footer（如需）
+    fetch('/components/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  });
+</script>
 </body>
 </html>

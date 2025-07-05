@@ -105,10 +105,26 @@
   <!-- 🔼 nav -->
   <div id="nav-container"></div>
   <script>
-    fetch('/components/nav.html').then(res => res.text()).then(data => {
+  fetch('/components/nav.html')
+    .then(res => res.text())
+    .then(data => {
       document.getElementById('nav-container').innerHTML = data;
+
+      // 等待 DOM 插入後再綁定漢堡選單功能
+      requestAnimationFrame(() => {
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-links');
+
+        if (hamburger && navMenu) {
+          hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+          });
+        } else {
+          console.warn('⚠️ hamburger 或 nav-links 沒找到，請檢查 nav.html 結構');
+        }
+      });
     });
-  </script>
+</script>
 
   <!-- 🔽 主內容 -->
   <div class="container">

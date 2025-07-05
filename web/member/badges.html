@@ -149,7 +149,7 @@
     fetch('/components/nav.html')
       .then(res => res.text())
       .then(data => {
-        document.getElementById('nav-placeholder').innerHTML = data;
+        document.getElementById('nav-container').innerHTML = data;
 
         // 等 DOM 插入後綁定事件
         requestAnimationFrame(() => {
@@ -172,8 +172,6 @@
         document.getElementById('footer-container').innerHTML = data;
       });
   });
-</script>
-
-
+  </script>
 </body>
 </html>

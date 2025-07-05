@@ -92,12 +92,13 @@
   <!-- 🔼 nav -->
   <div id="nav-container"></div>
   <script>
-    fetch('/components/nav.html').then(res => res.text()).then(data => {
-      document.getElementById('nav-container').innerHTML = data;
-    });
+    fetch('/components/nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-container').innerHTML = data;
+      });
   </script>
-
-  <!-- 🔽 主內容 -->
+  <!-- 🔽 主內 -->
   <div class="container">
     <h1><i class="fas fa-edit"></i> 資料修改</h1>
 
@@ -123,27 +124,53 @@
   <!-- 🔽 footer -->
   <div id="footer-container"></div>
   <script>
-    fetch('/components/footer.html').then(res => res.text()).then(data => {
-      document.getElementById('footer-container').innerHTML = data;
+  // ✅ 載入 footer
+  fetch('/components/footer.html').then(res => res.text()).then(data => {
+    document.getElementById('footer-container').innerHTML = data;
+  });
+
+  // ✅ 載入 nav 並綁定漢堡選單事件
+  fetch('/components/nav.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('nav-placeholder').innerHTML = data;
+
+      // 綁定漢堡選單功能
+      requestAnimationFrame(() => {
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-links');
+
+        if (hamburger && navMenu) {
+          hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+          });
+        }
+      });
     });
 
-    document.getElementById('editForm').addEventListener('submit', function(e) {
-      e.preventDefault();
+  // ✅ 表單送出驗證與顯示成功訊息
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('editForm');
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-      // 基本驗證（可擴充）
-      const phone = document.getElementById('phone');
-      if (!phone.checkValidity()) {
-        alert('電話格式錯誤，請使用 0912-345-678 格式');
-        return;
-      }
+        const phone = document.getElementById('phone');
+        if (!phone.checkValidity()) {
+          alert('電話格式錯誤，請使用 0912-345-678 格式');
+          return;
+        }
 
-      document.getElementById('successMessage').style.display = 'block';
+        document.getElementById('successMessage').style.display = 'block';
 
-      setTimeout(() => {
-        document.getElementById('successMessage').style.display = 'none';
-      }, 3000);
-    });
-  </script>
+        setTimeout(() => {
+          document.getElementById('successMessage').style.display = 'none';
+        }, 3000);
+      });
+    }
+  });
+</script>
+
 
 </body>
 </html>

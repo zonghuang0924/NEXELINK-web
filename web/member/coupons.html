@@ -107,11 +107,12 @@
   <!-- 🔼 nav -->
   <div id="nav-container"></div>
   <script>
-    fetch('/components/nav.html').then(res => res.text()).then(data => {
-      document.getElementById('nav-container').innerHTML = data;
-    });
+    fetch('/components/nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-container').innerHTML = data;
+      });
   </script>
-
   <!-- 🔽 主內容 -->
   <div class="container">
     <h1><i class="fas fa-ticket-alt"></i> 優惠券</h1>
@@ -154,23 +155,45 @@
   <!-- 🔽 footer -->
   <div id="footer-container"></div>
   <script>
-    fetch('/components/footer.html').then(res => res.text()).then(data => {
+  // ✅ 載入 footer
+  fetch('/components/footer.html')
+    .then(res => res.text())
+    .then(data => {
       document.getElementById('footer-container').innerHTML = data;
     });
 
-    // 分頁切換邏輯
-    function showTab(tabId) {
-      document.querySelectorAll('.coupon-list').forEach(list => {
-        list.classList.remove('active');
-      });
-      document.getElementById(tabId).classList.add('active');
+  // ✅ 載入 nav 並綁定漢堡選單
+  fetch('/components/nav.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('nav-container').innerHTML = data;
 
-      document.querySelectorAll('.tab-buttons button').forEach(btn => {
-        btn.classList.remove('active');
+      // ⏳ 等載入完成後綁定事件
+      requestAnimationFrame(() => {
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-links');
+
+        if (hamburger && navMenu) {
+          hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+          });
+        }
       });
-      event.target.classList.add('active');
-    }
-  </script>
+    });
+
+  // ✅ 分頁切換邏輯
+  function showTab(tabId, event) {
+    document.querySelectorAll('.coupon-list').forEach(list => {
+      list.classList.remove('active');
+    });
+    document.getElementById(tabId).classList.add('active');
+
+    document.querySelectorAll('.tab-buttons button').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    event.target.classList.add('active');
+  }
+</script>
 
 </body>
 </html>
