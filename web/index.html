@@ -113,6 +113,46 @@
     main {
     padding-bottom: 120px; /* 預留空間給 footer */
   }
+  /* === 手機版樣式 === */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 64px;
+        right: 24px;
+        flex-direction: column;
+        background: linear-gradient(to right, #00c9ff, #92fe9d);
+        border-radius: 8px;
+        padding: 12px;
+        min-width: 160px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+        /* 初始狀態隱藏 */
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+      }
+
+      .nav-links.open {
+        max-height: 500px;
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .nav-links li {
+        margin: 8px 0;
+      }
+
+      .hamburger {
+        display: block;
+        margin-left: auto;
+      }
+
+      .nav-links.desktop-only {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -167,31 +207,32 @@
 
   <script>
     fetch('../components/nav.html')
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('nav-placeholder').innerHTML = data;
-    });
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('nav-placeholder').innerHTML = data;
 
-
-    function switchLang() {
-      const current = document.documentElement.lang;
-      const next = current === 'zh' ? 'en' : 'zh';
-      document.documentElement.lang = next;
-      document.getElementById('langLabel').innerText = next === 'zh' ? '中文' : 'EN';
-    }
-
-    function toggleNav() {
-      const nav = document.querySelector('nav ul') || document.getElementById('navMenu');
-      if (nav) nav.classList.toggle('open');
-    }
-
-    // 建議放在頁面底部的 <script> 中
     fetch('../components/footer.html')
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-    });
+        .then(res => res.text())
+        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
 
+    // ✅ 綁定 hamburger 點擊事件
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-links');
+
+    document.addEventListener('click', function (e) {
+      const clickedInsideBtn = (e.target === hamburger || hamburger.contains(e.target));
+      const clickedInsideMenu = navMenu.contains(e.target);
+      const clickedLink = e.target.closest('a');
+
+      if (clickedInsideBtn) {
+        navMenu.classList.toggle('open');
+      } else if (clickedLink && clickedInsideMenu) {
+        navMenu.classList.remove('open');
+      } else if (!clickedInsideMenu) {
+        navMenu.classList.remove('open');
+      }
+    });
+  });
   </script>
 </body>
 </html>

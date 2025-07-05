@@ -144,12 +144,36 @@
   <!-- 🔽 footer -->
   <div id="footer-container"></div>
   <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    // ✅ 載入 nav.html 並綁定 hamburger 開關事件
+    fetch('/components/nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+
+        // 等 DOM 插入後綁定事件
+        requestAnimationFrame(() => {
+          const hamburger = document.querySelector('.hamburger');
+          const navMenu = document.querySelector('.nav-links');
+          if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+              navMenu.classList.toggle('open');
+            });
+          } else {
+            console.warn('⚠️ hamburger 或 nav-links 未正確載入，請檢查 nav.html');
+          }
+        });
+      });
+
+    // ✅ 載入 footer.html（也可加入其他效果）
     fetch('/components/footer.html')
       .then(res => res.text())
       .then(data => {
         document.getElementById('footer-container').innerHTML = data;
       });
-  </script>
+  });
+</script>
+
 
 </body>
 </html>

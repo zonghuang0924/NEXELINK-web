@@ -193,37 +193,56 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      fetch('/components/nav.html')
-        .then(res => res.text())
-        .then(data => document.getElementById('nav-placeholder').innerHTML = data);
+  window.addEventListener('DOMContentLoaded', () => {
+    // 導入 nav.html 並在插入後綁定 hamburger
+    fetch('/components/nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
 
-      fetch('/components/footer.html')
-        .then(res => res.text())
-        .then(data => {
-          document.getElementById('footer-placeholder').innerHTML = data;
-        });
+        // ✅ 綁定 hamburger 點擊事件
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-links');
 
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-          }
-        });
-      }, { threshold: 0.1 });
-
-      document.querySelectorAll('.section').forEach(section => observer.observe(section));
-
-      new Swiper('.swiper', {
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        spaceBetween: 20,
-        slidesPerView: 1,
+        if (hamburger && navMenu) {
+          hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+          });
+        } else {
+          console.warn('⚠️ hamburger 或 navMenu 不存在，請檢查 nav.html 結構');
+        }
       });
+
+    // 導入 footer.html
+    fetch('/components/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+
+    // Intersection Observer 動畫
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.section').forEach(section => observer.observe(section));
+
+    // Swiper 輪播初始化
+    new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      spaceBetween: 20,
+      slidesPerView: 1,
     });
-  </script>
+  });
+</script>
+
 </body>
 </html>

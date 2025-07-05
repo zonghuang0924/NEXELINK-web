@@ -56,14 +56,33 @@
   </main>
   <div id="footer-placeholder"></div>
   <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      fetch('../components/nav.html')
-        .then(res => res.text())
-        .then(data => document.getElementById('nav-placeholder').innerHTML = data);
-      fetch('../components/footer.html')
-        .then(res => res.text())
-        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-    });
-  </script>
+  window.addEventListener('DOMContentLoaded', () => {
+    // 導入 nav 並在插入後綁定漢堡事件
+    fetch('../components/nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+
+        // ✅ 綁定漢堡選單點擊事件
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-links');
+
+        if (hamburger && navMenu) {
+          hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+          });
+        } else {
+          console.warn("❗ hamburger 或 navMenu 未找到");
+        }
+      });
+
+    // 導入 footer（如需進一步操作，也要寫在 .then() 裡）
+    fetch('../components/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  });
+</script>
 </body>
 </html>

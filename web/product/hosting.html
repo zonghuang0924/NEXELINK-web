@@ -156,25 +156,46 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      fetch('/components/nav.html')
-        .then(res => res.text())
-        .then(data => document.getElementById('nav-placeholder').innerHTML = data);
+  window.addEventListener('DOMContentLoaded', () => {
+    // 載入 nav 並綁定 hamburger 功能
+    fetch('/components/nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
 
-      fetch('/components/footer.html')
-        .then(res => res.text())
-        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active');
+        // ✅ 綁定 hamburger（等插入完成後再綁定）
+        requestAnimationFrame(() => {
+          const hamburger = document.querySelector('.hamburger');
+          const navMenu = document.querySelector('.nav-links');
+          if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+              navMenu.classList.toggle('open');
+            });
+          } else {
+            console.warn('⚠️ hamburger 或 navMenu 沒找到，請確認 nav.html 結構正確');
           }
         });
-      }, { threshold: 0.1 });
+      });
 
-      document.querySelectorAll('.section').forEach(section => observer.observe(section));
-    });
-  </script>
+    // 載入 footer
+    fetch('/components/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+
+    // Intersection Observer：觀察 .section 滾動效果
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.section').forEach(section => observer.observe(section));
+  });
+</script>
+
 </body>
 </html>

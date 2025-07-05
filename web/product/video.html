@@ -156,25 +156,47 @@
   <div id="footer-placeholder"></div>
 
   <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      fetch('/components/nav.html')
-        .then(res => res.text())
-        .then(data => document.getElementById('nav-placeholder').innerHTML = data);
+  window.addEventListener('DOMContentLoaded', () => {
+    // 載入 nav.html 並綁定 hamburger
+    fetch('/components/nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
 
-      fetch('/components/footer.html')
-        .then(res => res.text())
-        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+        // ✅ 等 DOM 插入完成後綁定 hamburger 點擊事件
+        requestAnimationFrame(() => {
+          const hamburger = document.querySelector('.hamburger');
+          const navMenu = document.querySelector('.nav-links');
 
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active');
+          if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+              navMenu.classList.toggle('open');
+            });
+          } else {
+            console.warn('⚠️ hamburger 或 navMenu 找不到，請確認 nav.html 結構是否正確');
           }
         });
-      }, { threshold: 0.1 });
+      });
 
-      document.querySelectorAll('.section').forEach(section => observer.observe(section));
-    });
-  </script>
+    // 載入 footer.html
+    fetch('/components/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+
+    // IntersectionObserver：滾動動畫效果
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.section').forEach(section => observer.observe(section));
+  });
+</script>
+
 </body>
 </html>

@@ -179,14 +179,36 @@
   </main>
   <div id="footer-placeholder"></div>
   <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      fetch('../components/nav.html')
-        .then(res => res.text())
-        .then(data => document.getElementById('nav-placeholder').innerHTML = data);
-      fetch('../components/footer.html')
-        .then(res => res.text())
-        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-    });
-  </script>
+  window.addEventListener('DOMContentLoaded', () => {
+    // 載入 nav.html 並綁定漢堡選單事件
+    fetch('../components/nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+
+        // ⏳ 確保 DOM 插入後再綁定事件
+        requestAnimationFrame(() => {
+          const hamburger = document.querySelector('.hamburger');
+          const navMenu = document.querySelector('.nav-links');
+
+          if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+              navMenu.classList.toggle('open');
+            });
+          } else {
+            console.warn('找不到 .hamburger 或 .nav-links，請確認 nav.html 結構正確');
+          }
+        });
+      });
+
+    // 載入 footer.html
+    fetch('../components/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  });
+</script>
+
 </body>
 </html>

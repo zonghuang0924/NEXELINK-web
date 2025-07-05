@@ -102,31 +102,50 @@
 
   <div id="footer-placeholder"></div>
 
-  <script>
-    // 導入 nav 與 footer
-    window.addEventListener('DOMContentLoaded', () => {
-      fetch('../components/nav.html')
-        .then(res => res.text())
-        .then(data => document.getElementById('nav-placeholder').innerHTML = data);
-      fetch('../components/footer.html')
-        .then(res => res.text())
-        .then(data => {
-          document.getElementById('footer-placeholder').innerHTML = data;
+ <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    // 導入 nav
+    fetch('../components/nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
 
-          // 滾動隱藏/顯示 footer 效果
-          let lastScrollTop = 0;
-          const footer = document.getElementById('footer');
-          window.addEventListener('scroll', () => {
-            const st = window.pageYOffset || document.documentElement.scrollTop;
-            if (st > lastScrollTop) {
-              footer.classList.add('hide');
-            } else {
-              footer.classList.remove('hide');
-            }
-            lastScrollTop = st <= 0 ? 0 : st;
-          });
+        // 綁定事件（改為使用 class 選取）
+        requestAnimationFrame(() => {
+          const hamburger = document.querySelector('.hamburger');
+          const navMenu = document.querySelector('.nav-links');
+
+          if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+              navMenu.classList.toggle('open');
+            });
+          } else {
+            console.warn('🚨 hamburger 或 navMenu 找不到');
+          }
         });
-    });
-  </script>
+      });
+
+    // 導入 footer 與滾動隱藏效果
+    fetch('../components/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', () => {
+          const footer = document.getElementById('footer');
+          if (!footer) return;
+
+          const st = window.pageYOffset || document.documentElement.scrollTop;
+          if (st > lastScrollTop) {
+            footer.classList.add('hide');
+          } else {
+            footer.classList.remove('hide');
+          }
+          lastScrollTop = st <= 0 ? 0 : st;
+        });
+      });
+  });
+ </script>
 </body>
 </html>
