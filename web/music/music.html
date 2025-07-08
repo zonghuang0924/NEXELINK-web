@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>音樂術語查詢</title>
+ <section id="term-detail" style="background:#111827; color:#f1f5f9; padding:2rem; font-family:'Segoe UI', sans-serif;">
+  <style>
+    .music-card {
+      background: linear-gradient(145deg, #1e293b, #111827);
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 8px 24px rgba(250, 204, 21, 0.1);
+      max-width: 900px;
+      margin: auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .music-card::before {
+      content: "";
+      position: absolute;
+      top: -40%;
+      left: -30%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at center, rgba(250, 204, 21, 0.1), transparent 70%);
+      transform: rotate(30deg);
+      pointer-events: none;
+    }
+
+    .term-title {
+      font-size: 2rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .term-icon {
+      font-size: 1.5rem;
+      color: #facc15;
+    }
+
+    .term-section {
+      margin-top: 1rem;
+    }
+
+    .lang-table {
+      background: #0f172a;
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+
+    .lang-table th, .lang-table td {
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid #334155;
+      text-align: left;
+    }
+
+    .highlight {
+      color: #facc15;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-weight: bold;
+      margin-top: 1rem;
+      color: #e0e7ff;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+
+  <div class="music-card fade-in" id="term-card">
+    <div class="term-title"><span class="term-icon">🎵</span> 強く <span class="highlight">forte</span></div>
+
+    <div class="term-section">
+      <p class="subtitle">🗣 多語對照</p>
+      <table class="lang-table">
+        <tr><th>義大利文</th><td>forte</td></tr>
+        <tr><th>英文</th><td>strongly (loudly)</td></tr>
+        <tr><th>德文</th><td>laut</td></tr>
+        <tr><th>法文</th><td>fort</td></tr>
+        <tr><th>俄文</th><td>громко</td></tr>
+        <tr><th>日文</th><td>強く</td></tr>
+        <tr><th>中文</th><td>強地</td></tr>
+      </table>
+    </div>
+
+    <div class="term-section">
+      <p class="subtitle">📖 中文解釋</p>
+      <p>「強地」，為日語術語，意為<strong>以強音演奏</strong>。</p>
+    </div>
+
+    <div class="term-section">
+      <p class="subtitle">💬 範例</p>
+      <p>例如，19世紀初有些德語合唱譜以 <span class="highlight">Laut</span> 標示大聲，但現今已普遍改用義大利語的 <span class="highlight">f</span> 符號。</p>
+    </div>
+
+    <div class="term-section">
+      <p class="subtitle">🕰️ 小故事</p>
+      <p>早期德奧作曲家偶爾以母語標示如「Laut」（響亮），但後來均改用標準的 <strong>f 符號</strong>。</p>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const card = document.getElementById("term-card");
+      const rect = card.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        card.classList.add("visible");
+      }
+    });
+  </script>
+</section>
