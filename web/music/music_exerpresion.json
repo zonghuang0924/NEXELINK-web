@@ -1,0 +1,2484 @@
+[
+    {
+        "id": "dolce",
+        "category": "表情",
+        "original": {
+            "it": "Dolce",
+            "en": "Sweet; gentle",
+            "de": "lieblich; sanft",
+            "fr": "doux",
+            "ru": "нежно",
+            "ja": "優しく甘く",
+            "zh": "甜美的、溫柔的"
+        },
+        "chinese_explanation": "Dolce 是義大利文的音樂術語，意思為「甜美的、溫柔的」。常用來指示演奏者以甜美而溫柔的方式演奏。",
+        "example": "在樂譜上出現「Dolce」的標記時，演奏者需要甜美地演奏，營造出溫柔的氛圍。",
+        "story": "Dolce 在義大利語中意為「甜美」。在音樂上，作曲家用 dolce 來指示溫柔甜美的演奏風格。有趣的是，義大利人日常用 dolce 指甜點，彷彿暗示演奏也要如甜點般令人愉悅。演奏 dolce 時，通常需要放鬆力度、降低音量，以確保音色柔和悅耳。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "espressivo",
+        "category": "表情",
+        "original": {
+            "it": "Espressivo",
+            "en": "Expressive",
+            "de": "ausdrucksvoll",
+            "fr": "expressif",
+            "ru": "выразительно",
+            "ja": "表情豊かに",
+            "zh": "有表情地、充滿感情地"
+        },
+        "chinese_explanation": "Espressivo 是義大利文的音樂術語，意思為「有表情地、充滿感情地」。常用來指示演奏者以有表情而充滿感情的方式演奏。",
+        "example": "在樂譜上出現「Espressivo」的標記時，演奏者需要有表情地演奏，營造出充滿感情的氛圍。",
+        "story": "值得注意的是，Espressivo 強調的是音樂表情而非面部表情。有些音樂笑話說演奏 espressivo 並非要演奏者皺眉弄眼，而是要從音色和強弱變化上展現豐富的情感。Espressivo 和英文單字 espresso 同源，但千萬別和咖啡搞混了！",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "triste",
+        "category": "表情",
+        "original": {
+            "it": "Triste",
+            "en": "Sad",
+            "de": "traurig",
+            "fr": "triste",
+            "ru": "печально",
+            "ja": "悲しく",
+            "zh": "悲傷地、哀傷地"
+        },
+        "chinese_explanation": "Triste 是義大利文的音樂術語，意思為「悲傷地、哀傷地」。常用來指示演奏者以悲傷而哀傷的方式演奏。",
+        "example": "在樂譜上出現「Triste」的標記時，演奏者需要悲傷地演奏，營造出哀傷的氛圍。",
+        "story": "Triste 在義大利語中原義為「悲傷」。這個表情記號強調音樂中悲傷與哀傷的表情特質。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "agitato",
+        "category": "表情",
+        "original": {
+            "it": "Agitato",
+            "en": "Agitated; excited",
+            "de": "erregt; bewegt",
+            "fr": "agité",
+            "ru": "возбужденно",
+            "ja": "激しく",
+            "zh": "激動地、急促地"
+        },
+        "chinese_explanation": "Agitato 是義大利文的音樂術語，意思為「激動地、急促地」。常用來指示演奏者以激動而急促的方式演奏。",
+        "example": "在樂譜上出現「Agitato」的標記時，演奏者需要激動地演奏，營造出急促緊張的氛圍。",
+        "story": "Agitato 在義大利語中原義為「激動的、興奮的」。當樂譜標示 agitato，表示音樂充滿不安與激情，需要演奏出緊張激昂的效果，以刻畫劇烈起伏的情緒。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "animato",
+        "category": "表情",
+        "original": {
+            "it": "Animato",
+            "en": "Animated; lively",
+            "de": "belebt",
+            "fr": "animé",
+            "ru": "оживленно",
+            "ja": "生き生きと",
+            "zh": "生氣勃勃地、活潑地"
+        },
+        "chinese_explanation": "Animato 是義大利文的音樂術語，意思為「生氣勃勃地、活潑地」。常用來指示演奏者以生氣勃勃而活潑的方式演奏。",
+        "example": "在樂譜上出現「Animato」的標記時，演奏者需要活潑地演奏，營造出生氣蓬勃的氛圍。",
+        "story": "Animato 在義大利語中意為「有生命力的」。音樂標示 animato 時，表明演奏要充滿朝氣，速度和力度都應比平時更有活力，讓音樂呈現出生動熱烈的面貌。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "cantabile",
+        "category": "表情",
+        "original": {
+            "it": "Cantabile",
+            "en": "Singing; lyrical",
+            "de": "sanglich",
+            "fr": "chantant",
+            "ru": "певуче",
+            "ja": "歌うように",
+            "zh": "如歌地、歌唱般地"
+        },
+        "chinese_explanation": "Cantabile 是義大利文的音樂術語，意思為「如歌地、歌唱般地」。常用來指示演奏者以如歌的風格演奏，使旋律像在歌唱一樣悠揚流暢。",
+        "example": "在樂譜上出現「Cantabile」的標記時，演奏者需要如歌地演奏，使旋律宛如歌聲般流動。",
+        "story": "Cantabile 在義大利語中意為「可歌唱的」。當樂譜上標示 cantabile，意味著演奏要像歌唱般富有連貫的樂句和情感起伏。許多浪漫派的鋼琴或小提琴曲都常用 cantabile 來塑造柔美動人的旋律線條。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "leggiero",
+        "category": "表情",
+        "original": {
+            "it": "Leggiero",
+            "en": "Light; nimble",
+            "de": "leicht",
+            "fr": "léger",
+            "ru": "легко",
+            "ja": "軽快に",
+            "zh": "輕快地、輕盈地"
+        },
+        "chinese_explanation": "Leggiero 是義大利文的音樂術語，意思為「輕快地、輕盈地」。常用來指示演奏者以輕快而輕盈的方式演奏。",
+        "example": "在樂譜上出現「Leggiero」的標記時，演奏者需要輕快地演奏，營造出輕盈靈巧的氛圍。",
+        "story": "Leggiero 在義大利語中意為「輕巧的」。當看到這個標記時，演奏者會特別注意減輕觸鍵或運弓的重量，使音符聽起來輕盈飄逸，彷彿在空中舞動一般。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "maestoso",
+        "category": "表情",
+        "original": {
+            "it": "Maestoso",
+            "en": "Majestic",
+            "de": "majestätisch",
+            "fr": "majestueux",
+            "ru": "величественно",
+            "ja": "堂々と",
+            "zh": "莊嚴地、雄偉地"
+        },
+        "chinese_explanation": "Maestoso 是義大利文的音樂術語，意思為「莊嚴地、雄偉地」。常用來指示演奏者以莊嚴而雄偉的方式演奏。",
+        "example": "在樂譜上出現「Maestoso」的標記時，演奏者需要莊嚴地演奏，營造出雄偉壯麗的氛圍。",
+        "story": "Maestoso 在義大利語中意為「有威嚴的」。不少進行曲與頌歌會標示 maestoso，使音樂帶有皇室般的莊嚴感。例如樂隊演奏國歌時常採用 maestoso 的風格，展現出崇高與壯闊。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "marcato",
+        "category": "表情",
+        "original": {
+            "it": "Marcato",
+            "en": "Accented; marked",
+            "de": "markiert",
+            "fr": "marqué",
+            "ru": "отчетливо",
+            "ja": "はっきりと",
+            "zh": "著重地、強調地"
+        },
+        "chinese_explanation": "Marcato 是義大利文的音樂術語，意思為「著重地、強調地」。常用來指示演奏者以著重而清晰的方式演奏音符。",
+        "example": "在樂譜上出現「Marcato」的標記時，演奏者需要著重地演奏每個音符，營造出鮮明有力的氛圍。",
+        "story": "Marcato 在義大利語中意指「被做記號的」。這提醒演奏者須加重每個帶有 marcato 記號的音符，使之突出於其他聲音。比如在管弦樂中，銅管樂器常用 marcato 來增添音樂的氣勢與光彩。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "risoluto",
+        "category": "表情",
+        "original": {
+            "it": "Risoluto",
+            "en": "Resolute",
+            "de": "entschlossen",
+            "fr": "résolu",
+            "ru": "решительно",
+            "ja": "断固として",
+            "zh": "堅決地、果斷地"
+        },
+        "chinese_explanation": "Risoluto 是義大利文的音樂術語，意思為「堅決地、果斷地」。常用來指示演奏者以堅決而果斷的態度演奏。",
+        "example": "在樂譜上出現「Risoluto」的標記時，演奏者需要堅決地演奏，營造出果斷有力的氛圍。",
+        "story": "Risoluto 在義大利語中意為「堅決的」。這個記號要求演奏時帶有毅然決然的氣勢，不猶豫不退縮。尤其在終曲或勝利性的樂段中，risoluto 的運用能增強音樂的確定感和推進力。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "scherzando",
+        "category": "表情",
+        "original": {
+            "it": "Scherzando",
+            "en": "Playful; joking",
+            "de": "scherzhaft",
+            "fr": "enjoué",
+            "ru": "игриво",
+            "ja": "おどけて",
+            "zh": "詼諧地、開玩笑似地"
+        },
+        "chinese_explanation": "Scherzando 是義大利文的音樂術語，意思為「詼諧地、開玩笑似地」。常用來指示演奏者以詼諧幽默的方式演奏。",
+        "example": "在樂譜上出現「Scherzando」的標記時，演奏者需要詼諧地演奏，營造出幽默風趣的氛圍。",
+        "story": "Scherzando 在義大利語中源自「開玩笑」的意思。當樂曲標示 scherzando，表示音符之間可以帶點俏皮、遊戲般的趣味。例如莫札特和海頓的某些樂章會以輕快逗趣的 scherzando 風格進行，讓音樂充滿笑意。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "sostenuto",
+        "category": "表情",
+        "original": {
+            "it": "Sostenuto",
+            "en": "Sustained",
+            "de": "getragen",
+            "fr": "soutenu",
+            "ru": "протяжно",
+            "ja": "十分に延ばして",
+            "zh": "持續地、延宕地"
+        },
+        "chinese_explanation": "Sostenuto 是義大利文的音樂術語，意思為「持續地、延宕地」。常用來指示演奏者將音延長、飽滿地持續。",
+        "example": "在樂譜上出現「Sostenuto」的標記時，演奏者需要持續地演奏聲音，營造出延宕綿長的氛圍。",
+        "story": "Sostenuto 在義大利語中意指「被支撐著的」。這意味著音符需要被充分延長和保持，使旋律線條顯得寬廣而持重。鋼琴樂譜中若標示 sostenuto，演奏者或許還需要配合延音踏板，以確保聲音連綿不絕。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "tenuto",
+        "category": "表情",
+        "original": {
+            "it": "Tenuto",
+            "en": "Held; sustained",
+            "de": "gehalten",
+            "fr": "tenu",
+            "ru": "выдержанно",
+            "ja": "音を保って",
+            "zh": "保持音地"
+        },
+        "chinese_explanation": "Tenuto 是義大利文的音樂術語，意思為「保持音地」。常用來指示演奏者將音符充分地拉長保持。",
+        "example": "在樂譜上出現「Tenuto」的標記時，演奏者需要充分地拉長每個音符，使聲音保持連續。",
+        "story": "Tenuto 在義大利語中意為「支撐、保持」。當音符上方標有 tenuto 橫線時，代表該音需全值奏出並稍作停留，不能倉促收束。這種處理能讓旋律更富歌唱性，每個音都被細心對待。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "tranquillo",
+        "category": "表情",
+        "original": {
+            "it": "Tranquillo",
+            "en": "Calm; tranquil",
+            "de": "ruhig",
+            "fr": "tranquille",
+            "ru": "спокойно",
+            "ja": "静かに",
+            "zh": "寧靜地、平靜地"
+        },
+        "chinese_explanation": "Tranquillo 是義大利文的音樂術語，意思為「寧靜地、平靜地」。常用來指示演奏者以寧靜而平靜的方式演奏。",
+        "example": "在樂譜上出現「Tranquillo」的標記時，演奏者需要寧靜地演奏，營造出平和安寧的氛圍。",
+        "story": "Tranquillo 在義大利語中意味著「平靜的、安詳的」。當音樂標示 tranquillo，往往出現在柔和的樂章或段落，要求演奏者放鬆心情，減弱音量與速度，讓音樂如湖面般平靜，帶給聽眾沉澱的感受。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "doloroso",
+        "category": "表情",
+        "original": {
+            "it": "Doloroso",
+            "en": "Sorrowful; mournful",
+            "de": "schmerzlich; klagend",
+            "fr": "douloureux",
+            "ru": "скорбно",
+            "ja": "哀しみに満ちて",
+            "zh": "悲痛地、哀傷地"
+        },
+        "chinese_explanation": "Doloroso 是義大利文的音樂術語，意思為「悲痛地、哀傷地」。常用來指示演奏者以悲痛而哀傷的情感演奏。",
+        "example": "在樂譜上出現「Doloroso」的標記時，演奏者需要悲痛地演奏，營造出深沈哀傷的氛圍。",
+        "story": "Doloroso 在義大利語中源自 dolore（痛苦）。當樂曲標示 doloroso，意味著音樂應充滿悲痛與哀傷。演奏時可能放慢速度、加深音色，以傳達內心的痛楚與悔恨。例如哀歌或輓歌類型的樂曲經常運用 doloroso 來刻畫悲傷情緒。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "affettuoso",
+        "category": "表情",
+        "original": {
+            "it": "Affettuoso",
+            "en": "Affectionate; tender",
+            "de": "innig; liebevoll",
+            "fr": "affectueux",
+            "ru": "сердечно",
+            "ja": "愛情を込めて",
+            "zh": "深情地、親切地"
+        },
+        "chinese_explanation": "Affettuoso 是義大利文的音樂術語，意思為「深情地、親切地」。常用來指示演奏者以深情而親切的方式演奏。",
+        "example": "在樂譜上出現「Affettuoso」的標記時，演奏者需要深情地演奏，營造出溫馨親切的氛圍。",
+        "story": "Affettuoso 在義大利語中與情感（affetto）有關。在巴洛克和古典時期，協奏曲和奏鳴曲的慢板樂章常標示 affettuoso，意在讓音樂洋溢著親切溫柔的情懷。例如巴赫的某些小提琴協奏曲第二樂章標有 affettuoso，營造出親密而感人的音樂對話。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "amoroso",
+        "category": "表情",
+        "original": {
+            "it": "Amoroso",
+            "en": "Loving",
+            "de": "liebevoll",
+            "fr": "amoureusement",
+            "ru": "с любовью",
+            "ja": "愛を込めて",
+            "zh": "充滿愛意地、溫柔地"
+        },
+        "chinese_explanation": "Amoroso 是義大利文的音樂術語，意思為「充滿愛意地、溫柔地」。常用來指示演奏者以充滿愛意和溫柔的方式演奏。",
+        "example": "在樂譜上出現「Amoroso」的標記時，演奏者需要充滿愛意地演奏，營造出溫柔多情的氛圍。",
+        "story": "Amoroso 在義大利語中源自 amore（愛）。當音樂標示 amoroso，說明演奏須帶著戀人般的柔情蜜意。18世紀的慢板小步舞曲或浪漫派的抒情曲中，常以 amoroso 來營造甜蜜深情的音響效果。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "appassionato",
+        "category": "表情",
+        "original": {
+            "it": "Appassionato",
+            "en": "Passionate",
+            "de": "leidenschaftlich",
+            "fr": "passionné",
+            "ru": "страстно",
+            "ja": "情熱的に",
+            "zh": "熱情地、激昂地"
+        },
+        "chinese_explanation": "Appassionato 是義大利文的音樂術語，意思為「熱情地、激昂地」。常用來指示演奏者以熱情奔放且激昂的情緒演奏。",
+        "example": "在樂譜上出現「Appassionato」的標記時，演奏者需要充滿熱情地演奏，營造出激昂澎湃的氛圍。",
+        "story": "貝多芬《熱情奏鳴曲》的標題即來源於 Appassionato，可見此術語所代表的炙熱情感。在樂譜上標示 appassionato，演奏者往往須投入強烈的感情，音樂因此充滿激昂的力量。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "giocoso",
+        "category": "表情",
+        "original": {
+            "it": "Giocoso",
+            "en": "Joyous",
+            "de": "fröhlich; verspielt",
+            "fr": "joyeux",
+            "ru": "весело",
+            "ja": "愉快に",
+            "zh": "歡樂地、歡快地"
+        },
+        "chinese_explanation": "Giocoso 是義大利文的音樂術語，意思為「歡樂地、歡快地」。常用來指示演奏者以歡樂輕快的方式演奏。",
+        "example": "在樂譜上出現「Giocoso」的標記時，演奏者需要歡樂地演奏，營造出輕鬆愉快的氛圍。",
+        "story": "Giocoso 在義大利語中意為「歡樂的」。當音樂標示 giocoso，表示作品具有輕鬆愉快的特質。許多詼諧曲（Scherzo，本義即玩笑曲）都帶有 giocoso 的特點，透過活潑的節奏和明亮的旋律，帶給聽眾愉悅的感受。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "grandioso",
+        "category": "表情",
+        "original": {
+            "it": "Grandioso",
+            "en": "Grand; grandiose",
+            "de": "prächtig; großartig",
+            "fr": "grandiose",
+            "ru": "грандиозно",
+            "ja": "壮大に",
+            "zh": "宏偉地、壯麗地"
+        },
+        "chinese_explanation": "Grandioso 是義大利文的音樂術語，意思為「宏偉地、壯麗地」。常用來指示演奏者以宏偉壯麗的氣勢演奏。",
+        "example": "在樂譜上出現「Grandioso」的標記時，演奏者需要宏偉地演奏，營造出壯麗輝煌的氛圍。",
+        "story": "Grandioso 在義大利語中意指「宏大的、壯觀的」。標有 grandioso 的段落通常音量宏亮、和聲豐厚，給人一種莊嚴輝煌的感受。例如浪漫派協奏曲的結尾處，經常會出現 grandioso 的表情標記，將氣氛推向最巔峰。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "religioso",
+        "category": "表情",
+        "original": {
+            "it": "Religioso",
+            "en": "Religious; solemn",
+            "de": "andächtig",
+            "fr": "religieux",
+            "ru": "благоговейно",
+            "ja": "敬虔に",
+            "zh": "虔誠地、宗教風地"
+        },
+        "chinese_explanation": "Religioso 是義大利文的音樂術語，意思為「虔誠地、宗教風地」。常用來指示演奏者以虔誠莊重的方式演奏。",
+        "example": "在樂譜上出現「Religioso」的標記時，演奏者需要虔誠地演奏，營造出莊嚴神聖的氛圍。",
+        "story": "Religioso 在義大利語中意味著「宗教般的」。當音樂標示 religioso，樂手往往放緩動態並柔化音色，營造出教堂般肅穆的氣氛。例如布魯克納的宗教合唱作品，就常要求以 religioso 的態度來詮釋，傳達出崇敬與神聖感。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "misterioso",
+        "category": "表情",
+        "original": {
+            "it": "Misterioso",
+            "en": "Mysterious",
+            "de": "geheimnisvoll",
+            "fr": "mystérieux",
+            "ru": "загадочно",
+            "ja": "神秘的に",
+            "zh": "神秘地、不可思議地"
+        },
+        "chinese_explanation": "Misterioso 是義大利文的音樂術語，意思為「神秘地、不可思議地」。常用來指示演奏者以神秘莫測的方式演奏。",
+        "example": "在樂譜上出現「Misterioso」的標記時，演奏者需要神秘地演奏，營造出朦朧不可思議的氛圍。",
+        "story": "Misterioso 在義大利語中意為「神秘的」。這個標記常見於表現夢幻、玄妙場景的音樂中。例如德布西的鋼琴曲〈月光〉雖以法語標示，但其意境即屬 misterioso 的範疇：音響朦朧迷離，令人聯想到夜色中的秘密與幻想。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "lugubre",
+        "category": "表情",
+        "original": {
+            "it": "Lugubre",
+            "en": "Dismal; mournful",
+            "de": "düster",
+            "fr": "lugubre",
+            "ru": "мрачно",
+            "ja": "陰鬱に",
+            "zh": "陰鬱地、淒慘地"
+        },
+        "chinese_explanation": "Lugubre 是義大利文的音樂術語，意思為「陰鬱地、淒慘地」。常用來指示演奏者以陰鬱淒涼的方式演奏。",
+        "example": "在樂譜上出現「Lugubre」的標記時，演奏者需要陰鬱地演奏，營造出淒涼壓抑的氛圍。",
+        "story": "Lugubre 在義大利語中意指「哀傷陰沉的」。當音樂標示 lugubre，通常用於描繪葬禮或哀悼的場景，要求演奏出沉重陰鬱的色彩。19世紀浪漫派作曲家李斯特曾創作鋼琴曲《葬禮》，法語標題即為 \"Funérailles\"（與 lugubre 同源），充分展現了這種悲傷壓抑的氛圍。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "funebre",
+        "category": "表情",
+        "original": {
+            "it": "Funebre",
+            "en": "Funereal; somber",
+            "de": "feierlich; trauernd",
+            "fr": "funèbre",
+            "ru": "траурно",
+            "ja": "悲しみに沈んで",
+            "zh": "葬禮般地、哀悼地"
+        },
+        "chinese_explanation": "Funebre 是義大利文的音樂術語，意思為「葬禮般地、哀悼地」。常用來指示演奏者以如同葬禮進行曲般沉痛哀悼的方式演奏。",
+        "example": "在樂譜上出現「Funebre」的標記時，演奏者需要葬禮般地演奏，營造出沉痛哀悼的氛圍。",
+        "story": "Funebre 在義大利語中與葬禮（funeral）相關。當音樂標示 funebre，彷彿喚起緩慢低沉的葬禮進行曲。蕭邦《第二鋼琴奏鳴曲》第三樂章即著名的〈葬禮進行曲〉，樂譜上標示 funèbre，以極緩的三拍子和沉重的和聲，描繪出莊重悲痛的送葬情景。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "lacrimoso",
+        "category": "表情",
+        "original": {
+            "it": "Lacrimoso",
+            "en": "Tearful; lamenting",
+            "de": "klagend",
+            "fr": "larmoyant",
+            "ru": "слезно",
+            "ja": "涙ながらに",
+            "zh": "淚水般地、哭泣地"
+        },
+        "chinese_explanation": "Lacrimoso 是義大利文的音樂術語，意思為「淚水般地、哭泣地」。常用來指示演奏者以如泣如訴、充滿淚水的方式演奏。",
+        "example": "在樂譜上出現「Lacrimoso」的標記時，演奏者需要如泣如訴地演奏，營造出淚水盈眶的哀愁氛圍。",
+        "story": "Lacrimoso 在義大利語中來自 \"lacrima\"（淚）。作曲家使用 lacrimoso，期望演奏聽起來如同哭泣一般。蕭邦某些鋼琴抒情曲的樂譜上，即標有 dolcissimo e lacrimoso（極其甜美而哀淚地），要求演奏既柔美又帶著哭泣般的顫動，讓人深受觸動。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "pesante",
+        "category": "表情",
+        "original": {
+            "it": "Pesante",
+            "en": "Heavy",
+            "de": "schwer",
+            "fr": "lourd",
+            "ru": "тяжело",
+            "ja": "重々しく",
+            "zh": "沉重地、笨重地"
+        },
+        "chinese_explanation": "Pesante 是義大利文的音樂術語，意思為「沉重地、笨重地」。常用來指示演奏者以沉重有力的方式演奏。",
+        "example": "在樂譜上出現「Pesante」的標記時，演奏者需要沉重地演奏，營造出厚重穩健的氛圍。",
+        "story": "Pesante 在義大利語中意指「沉重的」。當樂曲需要突出莊嚴或沈穩感時，作曲家會標示 pesante，讓演奏者在力度和觸鍵上加重，彷彿每個音符都肩負重量。例如馬勒交響曲中的進行曲段落，常透過 pesante 的詮釋來營造壓迫感。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "furioso",
+        "category": "表情",
+        "original": {
+            "it": "Furioso",
+            "en": "Furious; wild",
+            "de": "stürmisch; wütend",
+            "fr": "furieux",
+            "ru": "яростно",
+            "ja": "荒々しく",
+            "zh": "狂怒地、猛烈地"
+        },
+        "chinese_explanation": "Furioso 是義大利文的音樂術語，意思為「狂怒地、猛烈地」。常用來指示演奏者以狂熱猛烈的情緒演奏。",
+        "example": "在樂譜上出現「Furioso」的標記時，演奏者需要猛烈地演奏，營造出狂怒激蕩的氛圍。",
+        "story": "Furioso 在義大利語中意為「狂怒的」。當音樂標示 furioso，彷彿音符被烈火點燃，需要演奏者傾注極大的能量和速度。例如貝多芬《熱情奏鳴曲》第三樂章開頭就帶有一股 furioso 的勁道，音符如暴風驟雨般傾瀉。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "energico",
+        "category": "表情",
+        "original": {
+            "it": "Energico",
+            "en": "Energetic",
+            "de": "energisch",
+            "fr": "énergique",
+            "ru": "энергично",
+            "ja": "精力的に",
+            "zh": "有活力地、精力充沛地"
+        },
+        "chinese_explanation": "Energico 是義大利文的音樂術語，意思為「有活力地、精力充沛地」。常用來指示演奏者以充滿活力和精力的方式演奏。",
+        "example": "在樂譜上出現「Energico」的標記時，演奏者需要精力充沛地演奏，營造出昂揚有力的氛圍。",
+        "story": "Energico 在義大利語中意指「有能量的」。當樂曲標示 energico，表示演奏需要展現出強大的精力和衝勁。這種標記多見於急板樂章或舞曲段落，透過堅定有力的節奏和重音，帶動聽眾的情緒。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "brillante",
+        "category": "表情",
+        "original": {
+            "it": "Brillante",
+            "en": "Brilliant; sparkling",
+            "de": "glänzend; brillant",
+            "fr": "brillant",
+            "ru": "блестяще",
+            "ja": "輝かしく",
+            "zh": "輝煌地、燦爛地"
+        },
+        "chinese_explanation": "Brillante 是義大利文的音樂術語，意思為「輝煌地、燦爛地」。常用來指示演奏者以光彩耀眼的方式演奏。",
+        "example": "在樂譜上出現「Brillante」的標記時，演奏者需要輝煌地演奏，營造出燦爛華麗的氛圍。",
+        "story": "Brillante 在義大利語中意為「燦爛奪目的」。演奏 brillante 的段落時，音符通常飛快流暢，音型在高音域閃耀，使人聯想到燈光下的水晶吊燈。許多炫技性的樂段（如華麗的八度和琶音）都標示 brillante，來凸顯技巧的輝煌。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "buffo",
+        "category": "表情",
+        "original": {
+            "it": "Buffo",
+            "en": "Comical",
+            "de": "witzig",
+            "fr": "bouffon",
+            "ru": "шутливо",
+            "ja": "滑稽に",
+            "zh": "滑稽地、詼諧地"
+        },
+        "chinese_explanation": "Buffo 是義大利文的音樂術語，意思為「滑稽地、詼諧地」。常用來指示演奏者以滑稽逗趣的方式演奏。",
+        "example": "在樂譜上出現「Buffo」的標記時，演奏者需要滑稽地演奏，營造出詼諧有趣的氛圍。",
+        "story": "Buffo 在義大利語中意為「滑稽可笑的」，在歌劇中指喜劇角色或詼諧唱段。當演奏標有 buffo 的段落時，表演者會以誇張逗趣的方式詮釋音樂，增加幽默效果。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "fresco",
+        "category": "表情",
+        "original": {
+            "it": "Fresco",
+            "en": "Fresh; bright",
+            "de": "frisch",
+            "fr": "frais",
+            "ru": "свежо",
+            "ja": "新鮮に",
+            "zh": "清新地、有朝氣地"
+        },
+        "chinese_explanation": "Fresco 是義大利文的音樂術語，意思為「清新地、有朝氣地」。常用來指示演奏者以清新有朝氣的方式演奏。",
+        "example": "在樂譜上出現「Fresco」的標記時，演奏者需要清新地演奏，營造出朝氣蓬勃的氛圍。",
+        "story": "Fresco 在義大利語中意指「新鮮、涼爽的」。音樂上的 fresco 表明演奏要帶有一種清新的活力，彷彿晨風拂面，使聽眾感受到音樂的明亮與爽朗。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "ardito",
+        "category": "表情",
+        "original": {
+            "it": "Ardito",
+            "en": "Bold; daring",
+            "de": "kühn",
+            "fr": "audacieux",
+            "ru": "смело",
+            "ja": "大胆に",
+            "zh": "大膽地、勇敢地"
+        },
+        "chinese_explanation": "Ardito 是義大利文的音樂術語，意思為「大膽地、勇敢地」。常用來指示演奏者以大膽無畏的態度演奏。",
+        "example": "在樂譜上出現「Ardito」的標記時，演奏者需要大膽地演奏，營造出勇往直前的氛圍。",
+        "story": "Ardito 在義大利語中意為「勇敢的、無畏的」。當作曲家希望音樂帶有冒險和果敢的性格時，會使用 ardito 這個標記。演奏者可能需加重力度、加快推進，以展現出音樂中勇猛精進的氣魄。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "frivolo",
+        "category": "表情",
+        "original": {
+            "it": "Frivolo",
+            "en": "Frivolous",
+            "de": "leichtfertig",
+            "fr": "frivole",
+            "ru": "легкомысленно",
+            "ja": "軽薄に",
+            "zh": "輕浮地、輕佻地"
+        },
+        "chinese_explanation": "Frivolo 是義大利文的音樂術語，意思為「輕浮地、輕佻地」。常用來指示演奏者以輕佻逕率、不拘謹的方式演奏。",
+        "example": "在樂譜上出現「Frivolo」的標記時，演奏者需要輕浮地演奏，營造出漫不經心的氛圍。",
+        "story": "Frivolo 在義大利語中意指「輕佻的、不嚴肅的」。當音樂標示 frivolo，表示作品帶有一種隨意漫不經心的趣味。演奏者可以略帶俏皮地處理節奏與力度，好似不經意間流露出的旋律，給人輕快又有些戲謔的感覺。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "generoso",
+        "category": "表情",
+        "original": {
+            "it": "Generoso",
+            "en": "Generous; noble",
+            "de": "großzügig; edel",
+            "fr": "généreux",
+            "ru": "великодушно",
+            "ja": "高潔に",
+            "zh": "寬宏地、高尚地"
+        },
+        "chinese_explanation": "Generoso 是義大利文的音樂術語，意思為「寬宏地、高尚地」。常用來指示演奏者以寬宏高尚、盛大有氣度的方式演奏。",
+        "example": "在樂譜上出現「Generoso」的標記時，演奏者需要寬宏地演奏，營造出高貴莊重的氛圍。",
+        "story": "Generoso 在義大利語中意為「慷慨、高尚的」。在音樂表情上，generoso 暗示著一種崇高宏大的氣質。演奏帶有 generoso 的段落時，應讓音樂聽起來寬廣而溫暖，有如陽光普照般的慈愛胸襟，給人高貴的印象。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "soave",
+        "category": "表情",
+        "original": {
+            "it": "Soave",
+            "en": "Soft; sweet",
+            "de": "zart",
+            "fr": "suave",
+            "ru": "ласково",
+            "ja": "優美に",
+            "zh": "柔和地、甜美地"
+        },
+        "chinese_explanation": "Soave 是義大利文的音樂術語，意思為「柔和地、甜美地」。常用來指示演奏者以柔和甜美的音色演奏。",
+        "example": "在樂譜上出現「Soave」的標記時，演奏者需要柔和地演奏，營造出甜美恬靜的氛圍。",
+        "story": "Soave 在義大利語中意為「溫柔可愛的」。作曲家標示 soave，往往是希望音色如絲絨般柔軟、旋律如呢喃般甜美。演奏者可透過輕巧的觸鍵和圓滑的連接，讓音符彼此融合，產生柔和悅耳的效果。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "semplice",
+        "category": "表情",
+        "original": {
+            "it": "Semplice",
+            "en": "Simple; plain",
+            "de": "einfach",
+            "fr": "simple",
+            "ru": "просто",
+            "ja": "素朴に",
+            "zh": "單純地、純樸地"
+        },
+        "chinese_explanation": "Semplice 是義大利文的音樂術語，意思為「單純地、純樸地」。常用來指示演奏者以單純質樸、不加矯飾的方式演奏。",
+        "example": "在樂譜上出現「Semplice」的標記時，演奏者需要單純地演奏，營造出樸實無華的氛圍。",
+        "story": "Semplice 在義大利語中意為「簡單的」。標示 semplice 的樂段通常旋律線條清澈，和聲運動平穩。演奏時不宜過度詮釋，而應讓音樂自然流露。這種質樸無華的美感，常見於古典時期的小步舞曲或浪漫派的簡歌中。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "nobilmente",
+        "category": "表情",
+        "original": {
+            "it": "Nobilmente",
+            "en": "Nobly",
+            "de": "würdig",
+            "fr": "noblement",
+            "ru": "благородно",
+            "ja": "高貴に",
+            "zh": "高貴地、莊重地"
+        },
+        "chinese_explanation": "Nobilmente 是義大利文的音樂術語，意思為「高貴地、莊重地」。常用來指示演奏者以高貴莊重的氣度演奏。",
+        "example": "在樂譜上出現「Nobilmente」的標記時，演奏者需要高貴地演奏，營造出莊嚴典雅的氛圍。",
+        "story": "Nobilmente 在義大利語中帶有「貴族般地、崇高地」之意。當作品標示 nobilmente，表示音樂應呈現出大方穩重、尊貴典雅的風範。如同國王步入大殿時的背景樂般，散發出莊嚴與氣派。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "patetico",
+        "category": "表情",
+        "original": {
+            "it": "Patetico",
+            "en": "With pathos",
+            "de": "pathetisch",
+            "fr": "pathétique",
+            "ru": "патетически",
+            "ja": "悲痛に",
+            "zh": "悲愴地、淒切地"
+        },
+        "chinese_explanation": "Patetico 是義大利文的音樂術語，意思為「悲愴地、淒切地」。常用來指示演奏者以悲愴淒切的情感演奏。",
+        "example": "在樂譜上出現「Patetico」的標記時，演奏者需要悲愴地演奏，營造出淒切動人的氛圍。",
+        "story": "「Patetico」在義大利語中與「悲憫、感傷」有關。貝多芬將他的第8號鋼琴奏鳴曲命名為《悲愴》（Pathétique，即法語的 Patetico），凸顯出作品憂傷且激動的風格。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "elegiaco",
+        "category": "表情",
+        "original": {
+            "it": "Elegiaco",
+            "en": "Elegiac",
+            "de": "elegisch",
+            "fr": "élégiaque",
+            "ru": "элегически",
+            "ja": "哀歌風に",
+            "zh": "哀婉地、如挽歌般地"
+        },
+        "chinese_explanation": "Elegiaco 是義大利文的音樂術語，意思為「哀婉地、如挽歌般地」。常用來指示演奏者以哀婉如輓歌的方式演奏。",
+        "example": "在樂譜上出現「Elegiaco」的標記時，演奏者需要哀婉地演奏，營造出哀悼追思的氛圍。",
+        "story": "Elegiaco 在義大利語中意為「哀歌般的」。這類標記多見於輓歌、安魂曲等作品中，提醒演奏者表現出深沈的悼念之情。例如拉赫瑪尼諾夫以法語將兩首鋼琴三重奏命名為 Élégiaque（哀歌），內涵即對逝者的哀悼。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "desolato",
+        "category": "表情",
+        "original": {
+            "it": "Desolato",
+            "en": "Desolate",
+            "de": "trostlos",
+            "fr": "désolé",
+            "ru": "безутешно",
+            "ja": "絶望的に",
+            "zh": "絕望地、淒涼地"
+        },
+        "chinese_explanation": "Desolato 是義大利文的音樂術語，意思為「絕望地、淒涼地」。常用來指示演奏者以絕望淒涼的情緒演奏。",
+        "example": "在樂譜上出現「Desolato」的標記時，演奏者需要淒涼地演奏，營造出孤寂絕望的氛圍。",
+        "story": "Desolato 在義大利語中意指「孤獨淒涼的」。當音樂標示 desolato，彷彿展現出一幅荒涼無人的景象，聽者能感受到內心的絕望與孤寂。演奏者通常會放慢速度、淡化音量，以營造出空曠無依的聽覺空間。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "affannoso",
+        "category": "表情",
+        "original": {
+            "it": "Affannoso",
+            "en": "Anxious; breathless",
+            "de": "atemlos",
+            "fr": "haletant",
+            "ru": "с волнением",
+            "ja": "息を切らして",
+            "zh": "氣喘吁吁地、焦急地"
+        },
+        "chinese_explanation": "Affannoso 是義大利文的音樂術語，意思為「氣喘吁吁地、焦急地」。常用來指示演奏者以氣息不穩、焦急不安的方式演奏。",
+        "example": "在樂譜上出現「Affannoso」的標記時，演奏者需要帶著喘息感地演奏，營造出焦躁不安的氛圍。",
+        "story": "Affannoso 在義大利語中源自 affanno（喘息、焦慮）。當音樂標示 affannoso，表示情緒急促緊張，彷彿演奏者剛跑完步般氣喘吁吁。這種效果常用於表現恐懼或焦躁的段落，透過忽快忽慢的節奏和斷續的旋律來呈現慌亂的心境。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "calando",
+        "category": "表情",
+        "original": {
+            "it": "Calando",
+            "en": "Diminishing (sound)",
+            "de": "nachlassend",
+            "fr": "en diminuant",
+            "ru": "затихая",
+            "ja": "だんだん弱く",
+            "zh": "漸漸減弱地"
+        },
+        "chinese_explanation": "Calando 是義大利文的音樂術語，意思為「漸漸減弱地」。常用來指示演奏者逐漸減弱音量並放緩速度。",
+        "example": "在樂譜上出現「Calando」的標記時，演奏者需要漸漸減弱地演奏，使音樂逐步平息下去。",
+        "story": "Calando 在義大利語中意為「漸漸平息」。這通常表示音樂要逐漸變弱、變慢，就像遠去的腳步聲般淡出。Calando 與 decrescendo 或 ritardando 相似，但更側重整體氣氛的平靜下來，彷彿餘音袅袅地消散。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "morendo",
+        "category": "表情",
+        "original": {
+            "it": "Morendo",
+            "en": "Dying away",
+            "de": "verklingend",
+            "fr": "en mourant",
+            "ru": "затухая",
+            "ja": "消えるように",
+            "zh": "漸息地、漸弱地"
+        },
+        "chinese_explanation": "Morendo 是義大利文的音樂術語，意思為「漸息地、漸弱地」。常用來指示演奏者讓聲音逐漸減弱消逝。",
+        "example": "在樂譜上出現「Morendo」的標記時，演奏者需要漸息地演奏，讓聲音逐漸消散無聲。",
+        "story": "Morendo 在義大利語中意為「逐漸死去」。音樂標示 morendo，就像燭光慢慢熄滅一樣，要求演奏者讓音量和能量逐步消減直至無聲。這種手法經常用在樂曲的結尾，營造出餘音冉冉逝去的氛圍。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "perdendosi",
+        "category": "表情",
+        "original": {
+            "it": "Perdendosi",
+            "en": "Fading away",
+            "de": "verlöschend",
+            "fr": "en se perdant",
+            "ru": "теряясь",
+            "ja": "消え入るように",
+            "zh": "漸隱地、逐漸消失地"
+        },
+        "chinese_explanation": "Perdendosi 是義大利文的音樂術語，意思為「漸隱地、逐漸消失地」。常用來指示演奏者讓聲音漸漸消失，直至無聲。",
+        "example": "在樂譜上出現「Perdendosi」的標記時，演奏者需要逐漸弱下去地演奏，直到聲音完全消逝。",
+        "story": "Perdendosi 在義大利語中意為「迷失、消散」。當音樂標示 perdendosi，表示旋律和聲音如同迷失在遠方一般，最終聽不見。這通常暗示演奏者需結合漸弱（decrescendo）與漸慢（ritardando），讓音樂緩緩地淡出，留給聽眾無限遐想。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "smorzando",
+        "category": "表情",
+        "original": {
+            "it": "Smorzando",
+            "en": "Dying away, extinguishing",
+            "de": "verhallend",
+            "fr": "en s'évanouissant",
+            "ru": "замирая",
+            "ja": "だんだん静かに",
+            "zh": "漸漸消音地"
+        },
+        "chinese_explanation": "Smorzando 是義大利文的音樂術語，意思為「漸漸消音地」。常用來指示演奏者讓聲音逐漸減弱直至消失。",
+        "example": "在樂譜上出現「Smorzando」的標記時，演奏者需要漸漸消音地演奏，讓聲音慢慢變得微弱以至於無聲。",
+        "story": "Smorzando 在義大利語中意為「熄滅般地」。這種表情術語要求演奏者彷彿將音符的生命之火逐漸熄滅一般，使音量和色彩一點點地淡去。常用於浪漫派樂曲結束時的漸弱處理，營造出悠遠的尾聲效果。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con amore",
+        "category": "表情",
+        "original": {
+            "it": "Con amore",
+            "en": "With love",
+            "de": "mit Liebe",
+            "fr": "avec amour",
+            "ru": "с любовью",
+            "ja": "愛情を込めて",
+            "zh": "充滿愛意地"
+        },
+        "chinese_explanation": "Con amore 是義大利文的音樂術語，意思為「充滿愛意地」。常用來指示演奏者以充滿愛意的方式演奏。",
+        "example": "在樂譜上出現「Con amore」的標記時，演奏者需要飽含深情地演奏，營造出溫柔多情的氛圍。",
+        "story": "「Con」在義大利語中意為「帶著」，「amore」意為「愛」。因此 Con amore 字面意思是「帶著愛」，要求演奏帶有愛意與溫情，使音樂流露出柔和感人的情感。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con brio",
+        "category": "表情",
+        "original": {
+            "it": "Con brio",
+            "en": "With vigor; spirited",
+            "de": "mit Schwung",
+            "fr": "avec brio",
+            "ru": "живо",
+            "ja": "生き生きと",
+            "zh": "有活力地、生氣蓬勃地"
+        },
+        "chinese_explanation": "Con brio 是義大利文的音樂術語，意思為「有活力地、生氣蓬勃地」。常用來指示演奏者以充滿活力的方式演奏。",
+        "example": "在樂譜上出現「Con brio」的標記時，演奏者需要精神飽滿地演奏，營造出生氣蓬勃的氛圍。",
+        "story": "Con brio 字面意思是「帶著活力」。貝多芬的《第五號交響曲》開頭樂章標示 Allegro con brio，就是要樂隊以昂揚的精神和勁頭來演奏。這種表情術語能讓音樂充滿朝氣，聽眾也不禁跟著熱血沸騰。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con fuoco",
+        "category": "表情",
+        "original": {
+            "it": "Con fuoco",
+            "en": "With fire",
+            "de": "mit Feuer",
+            "fr": "avec feu",
+            "ru": "с огнем",
+            "ja": "熱烈に",
+            "zh": "熱情如火地"
+        },
+        "chinese_explanation": "Con fuoco 是義大利文的音樂術語，意思為「熱情如火地」。常用來指示演奏者以如火般熱情的方式演奏。",
+        "example": "在樂譜上出現「Con fuoco」的標記時，演奏者需要熱情如火地演奏，營造出火熱激昂的氛圍。",
+        "story": "「Fuoco」在義大利語中是「火」。因此 Con fuoco 就是「帶著火一樣」，象徵音樂要火焰般熱烈。李斯特的鋼琴曲經常使用 con fuoco 來要求演奏者全身心投入、指尖如燃燒般奔放，使音樂迸發出炙熱的光彩。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con moto",
+        "category": "表情",
+        "original": {
+            "it": "Con moto",
+            "en": "With motion",
+            "de": "mit Bewegung",
+            "fr": "avec mouvement",
+            "ru": "с движением",
+            "ja": "活発に",
+            "zh": "有動感地"
+        },
+        "chinese_explanation": "Con moto 是義大利文的音樂術語，意思為「有動感地」。常用來指示演奏者以有律動感的方式演奏。",
+        "example": "在樂譜上出現「Con moto」的標記時，演奏者需要充滿律動地演奏，讓音樂富有前進的動感。",
+        "story": "Con moto 字面意思是「帶著動態」。當樂曲標示 con moto，表示雖不需非常快速，但演奏中應保持流動的動力，不可過於靜止沉滯。蕭邦《夜曲》中有 Andante con moto 的標記，即指在行板速度下依然帶著流動感，避免陷入停滯。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con grazia",
+        "category": "表情",
+        "original": {
+            "it": "Con grazia",
+            "en": "With grace",
+            "de": "mit Anmut",
+            "fr": "avec grâce",
+            "ru": "изящно",
+            "ja": "優雅に",
+            "zh": "優雅地"
+        },
+        "chinese_explanation": "Con grazia 是義大利文的音樂術語，意思為「優雅地」。常用來指示演奏者以優雅從容的方式演奏。",
+        "example": "在樂譜上出現「Con grazia」的標記時，演奏者需要優雅地演奏，營造出典雅柔美的氛圍。",
+        "story": "「Grazia」在義大利語中是「優雅、優美」。Con grazia 表明音樂應帶有優雅的氣質。很多圓舞曲和小步舞曲的樂譜上常見 con grazia，要求演奏舉止從容、線條柔美，給人以高貴文雅的印象。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con forza",
+        "category": "表情",
+        "original": {
+            "it": "Con forza",
+            "en": "With force",
+            "de": "mit Kraft",
+            "fr": "avec force",
+            "ru": "с силой",
+            "ja": "力強く",
+            "zh": "強而有力地"
+        },
+        "chinese_explanation": "Con forza 是義大利文的音樂術語，意思為「強而有力地」。常用來指示演奏者以強力有勁的方式演奏。",
+        "example": "在樂譜上出現「Con forza」的標記時，演奏者需要強而有力地演奏，營造出堅定有力的氛圍。",
+        "story": "「Forza」在義大利語中意為「力量」。當音樂標示 con forza，就要求演奏必須展現出強大的力量感。比如貝多芬的《第三交響曲》末樂章就充滿 con forza 的特質，每個樂句都以堅毅的力道推進，使人感受到巨大的能量。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con spirito",
+        "category": "表情",
+        "original": {
+            "it": "Con spirito",
+            "en": "With spirit",
+            "de": "lebhaft",
+            "fr": "avec esprit",
+            "ru": "воодушевленно",
+            "ja": "活気よく",
+            "zh": "精神抖擻地、活潑地"
+        },
+        "chinese_explanation": "Con spirito 是義大利文的音樂術語，意思為「精神抖擻地、活潑地」。常用來指示演奏者以精神飽滿、活潑有朝氣的方式演奏。",
+        "example": "在樂譜上出現「Con spirito」的標記時，演奏者需要充滿精神地演奏，營造出活潑有朝氣的氛圍。",
+        "story": "「Spirito」在義大利語中是「精神、靈魂」。Con spirito 表明音樂要有靈魂、有生命力。常見於古典和浪漫派作品的快速樂章中，提示演奏者不要呆板地讀譜，而要賦予音符生氣，使樂曲聽起來充滿活力與神采。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con anima",
+        "category": "表情",
+        "original": {
+            "it": "Con anima",
+            "en": "With soul, feeling",
+            "de": "beseelt",
+            "fr": "avec âme",
+            "ru": "одухотворенно",
+            "ja": "魂を込めて",
+            "zh": "有精神地、有生氣地"
+        },
+        "chinese_explanation": "Con anima 是義大利文的音樂術語，意思為「有精神地、有生氣地」。常用來指示演奏者以富有生氣和精神的方式演奏。",
+        "example": "在樂譜上出現「Con anima」的標記時，演奏者需要生氣勃勃地演奏，營造出充滿生命力的氛圍。",
+        "story": "「Anima」在義大利語中意為「靈魂、生命」。Con anima 表示音樂要富含生命力與熱情。某些樂譜上也會使用 \"Animato\" 或 \"Animé\"（法文）傳達相似概念，都是為了讓音樂聽起來富於生氣、絕不沉悶。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con tenerezza",
+        "category": "表情",
+        "original": {
+            "it": "Con tenerezza",
+            "en": "With tenderness",
+            "de": "mit Zärtlichkeit",
+            "fr": "avec tendresse",
+            "ru": "с нежностью",
+            "ja": "優しく愛情深く",
+            "zh": "溫柔地、柔情地"
+        },
+        "chinese_explanation": "Con tenerezza 是義大利文的音樂術語，意思為「溫柔地、柔情地」。常用來指示演奏者以溫柔而柔情的方式演奏。",
+        "example": "在樂譜上出現「Con tenerezza」的標記時，演奏者需要溫柔地演奏，營造出柔情的氛圍。",
+        "story": "Con tenerezza 在義大利語中原義為「溫柔」。這個表情記號強調音樂中溫柔與柔情的表情特質。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con dolore",
+        "category": "表情",
+        "original": {
+            "it": "Con dolore",
+            "en": "With grief",
+            "de": "mit Schmerz",
+            "fr": "avec douleur",
+            "ru": "с болью",
+            "ja": "悲しみを込めて",
+            "zh": "悲痛地、帶著哀傷"
+        },
+        "chinese_explanation": "Con dolore 是義大利文的音樂術語，意思為「悲痛地、帶著哀傷」。常用來指示演奏者以悲痛哀傷的情緒演奏。",
+        "example": "在樂譜上出現「Con dolore」的標記時，演奏者需要帶著悲傷地演奏，營造出哀慟感懷的氛圍。",
+        "story": "「Dolore」在義大利語中是「痛苦、悲傷」。Con dolore 表示音樂蘊含深刻的悲痛。蕭邦《第二鋼琴奏鳴曲》中的葬禮進行曲頁面就標示 Lento, con gran dolore（緩板，極度悲痛），將悲傷情緒推向極致，演奏者必須全心投入才能傳遞其中的沉痛。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con slancio",
+        "category": "表情",
+        "original": {
+            "it": "Con slancio",
+            "en": "With enthusiasm",
+            "de": "überschwänglich",
+            "fr": "avec élan",
+            "ru": "с порывом",
+            "ja": "勢いよく",
+            "zh": "熱情奔放地"
+        },
+        "chinese_explanation": "Con slancio 是義大利文的音樂術語，意思為「熱情奔放地」。常用來指示演奏者以熱情奔放、全力投入的方式演奏。",
+        "example": "在樂譜上出現「Con slancio」的標記時，演奏者需要熱情奔放地演奏，營造出激昂奔放的氛圍。",
+        "story": "「Slancio」在義大利語中意為「衝勁、猛衝」。Con slancio 指音樂要有一往無前的衝力和熱忱。這種標記多用於華麗的樂段或樂曲高潮處，演奏者須不遺餘力地將能量釋放出來，帶給聽眾震撼人心的體驗。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con larghezza",
+        "category": "表情",
+        "original": {
+            "it": "Con larghezza",
+            "en": "Broadly",
+            "de": "breit",
+            "fr": "largement",
+            "ru": "широко",
+            "ja": "ゆったりと",
+            "zh": "寬廣地、從容地"
+        },
+        "chinese_explanation": "Con larghezza 是義大利文的音樂術語，意思為「寬廣地、從容地」。常用來指示演奏者以寬廣從容的氣度演奏。",
+        "example": "在樂譜上出現「Con larghezza」的標記時，演奏者需要從容地演奏，營造出廣闊莊重的氛圍。",
+        "story": "「Larghezza」在義大利語中與「寬廣」相關。Con larghezza 表示音樂的進行要像遼闊的地平線般從容不迫。演奏者應保持穩健的節奏，讓音樂線條顯得寬鬆舒展，適合用於表現莊嚴或英雄主題。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con espressione",
+        "category": "表情",
+        "original": {
+            "it": "Con espressione",
+            "en": "With expression",
+            "de": "ausdrucksvoll",
+            "fr": "avec expression",
+            "ru": "выразительно",
+            "ja": "表情豊かに",
+            "zh": "充滿表情地"
+        },
+        "chinese_explanation": "Con espressione 是義大利文的音樂術語，意思為「充滿表情地」。常用來指示演奏者以充滿感情表情的方式演奏。",
+        "example": "在樂譜上出現「Con espressione」的標記時，演奏者需要充滿表情地演奏，營造出豐富情感的氛圍。",
+        "story": "Con espressione 與 espressivo 意義相近，都是要求演奏充分投入情感。這提醒演奏者不要平板地彈奏，而要透過旋律起伏和力度變化，來傳達音樂中的細膩感情。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con ironia",
+        "category": "表情",
+        "original": {
+            "it": "Con ironia",
+            "en": "With irony",
+            "de": "ironisch",
+            "fr": "avec ironie",
+            "ru": "с иронией",
+            "ja": "皮肉を込めて",
+            "zh": "帶著諷刺地"
+        },
+        "chinese_explanation": "Con ironia 是義大利文的音樂術語，意思為「帶著諷刺地」。常用來指示演奏者以帶有諷刺意味的風格演奏。",
+        "example": "在樂譜上出現「Con ironia」的標記時，演奏者需要帶著諷刺地演奏，營造出幽默挖苦的氛圍。",
+        "story": "音樂中很少直接標示諷刺（ironia）的情緒，但20世紀有些作曲家會特別註明 con ironia，以確保演奏者了解其中的嘲諷意味。例如肖斯塔科維奇的某些樂段就充滿諷刺性，適合以 con ironia 的態度來詮釋。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "molto dolce",
+        "category": "表情",
+        "original": {
+            "it": "Molto dolce",
+            "en": "Very sweet, gentle",
+            "de": "sehr sanft",
+            "fr": "très doux",
+            "ru": "очень нежно",
+            "ja": "非常にやさしく",
+            "zh": "非常溫柔地"
+        },
+        "chinese_explanation": "Molto dolce 是義大利文的音樂術語，意思為「非常溫柔地」。常用來指示演奏者以極為溫柔甜美的方式演奏。",
+        "example": "在樂譜上出現「Molto dolce」的標記時，演奏者需要非常溫柔地演奏，營造出格外甜美的氛圍。",
+        "story": "「Molto」在義大利語中意為「非常、很」。因此 Molto dolce 就是「非常溫柔甜美」。作曲家使用這個術語來強調，比起一般的 dolce，音樂要更加柔和、更加細膩地表達出甜美的情感。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "molto espressivo",
+        "category": "表情",
+        "original": {
+            "it": "Molto espressivo",
+            "en": "Very expressive",
+            "de": "sehr ausdrucksvoll",
+            "fr": "très expressif",
+            "ru": "очень выразительно",
+            "ja": "非常に表情豊かに",
+            "zh": "非常富有表情地"
+        },
+        "chinese_explanation": "Molto espressivo 是義大利文的音樂術語，意思為「非常富有表情地」。常用來指示演奏者極為投入地演奏，充分展現情感。",
+        "example": "在樂譜上出現「Molto espressivo」的標記時，演奏者需要非常有表情地演奏，使樂曲充滿強烈的情感。",
+        "story": "「Molto」意為「非常」，Molto espressivo 即「非常有表現力地」。當作曲家標示此術語，表示希望演奏者比平時更誇張、更強烈地表達情感。例如慢板樂章結尾處標上 molto espressivo，可以使音樂的深情達到極致，深深打動聽眾。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "molto cantabile",
+        "category": "表情",
+        "original": {
+            "it": "Molto cantabile",
+            "en": "Very singing",
+            "de": "sehr sanglich",
+            "fr": "très chantant",
+            "ru": "очень певуче",
+            "ja": "非常に歌うように",
+            "zh": "極為如歌地"
+        },
+        "chinese_explanation": "Molto cantabile 是義大利文的音樂術語，意思為「極為如歌地」。常用來指示演奏者以極其歌唱的風格演奏。",
+        "example": "在樂譜上出現「Molto cantabile」的標記時，演奏者需要極其如歌地演奏，使旋律尤為歌唱般流暢。",
+        "story": "Molto cantabile 字面意思是「非常如歌」。比起一般的 cantabile，molto cantabile 更強調旋律的歌唱性。貝多芬《第30號鋼琴奏鳴曲》第三樂章標題即為 Andante molto cantabile ed espressivo，要求演奏極其歌唱且富有表情，可見作曲家對歌唱性表現的重視。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "molto tranquillo",
+        "category": "表情",
+        "original": {
+            "it": "Molto tranquillo",
+            "en": "Very calm",
+            "de": "sehr ruhig",
+            "fr": "très tranquille",
+            "ru": "очень спокойно",
+            "ja": "非常に静かに",
+            "zh": "非常寧靜地"
+        },
+        "chinese_explanation": "Molto tranquillo 是義大利文的音樂術語，意思為「非常寧靜地」。常用來指示演奏者以極為平靜安寧的方式演奏。",
+        "example": "在樂譜上出現「Molto tranquillo」的標記時，演奏者需要非常寧靜地演奏，營造出特別平和的氛圍。",
+        "story": "Molto tranquillo 表示比 tranquillo 更進一步的寧靜。當音樂標示 molto tranquillo，表示作曲家希望此處音樂異常平和，如止水般安靜。演奏者需壓低音量、放緩呼吸，讓樂音細緻地流淌，給人深沉寧靜的感受。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "molto sostenuto",
+        "category": "表情",
+        "original": {
+            "it": "Molto sostenuto",
+            "en": "Very sustained",
+            "de": "sehr getragen",
+            "fr": "très soutenu",
+            "ru": "очень сдержанно",
+            "ja": "非常に伸びやかに",
+            "zh": "非常持續地"
+        },
+        "chinese_explanation": "Molto sostenuto 是義大利文的音樂術語，意思為「非常持續地」。常用來指示演奏者極為延續地保持音符。",
+        "example": "在樂譜上出現「Molto sostenuto」的標記時，演奏者需要非常持續地演奏，使聲音極度綿延不絕。",
+        "story": "Molto sostenuto 表示比一般 sostenuto 更加延宕持續。20世紀作曲家雷格爾的《四首音詩》緩樂章就註明 Molto sostenuto，暗示樂音如絲綢般長久縈繞。同時在德文譜上附註 \"aber nie schleppend\"（但不要拖沓），說明即便持續也須保持有機流動，不可過於遲滯。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "molto agitato",
+        "category": "表情",
+        "original": {
+            "it": "Molto agitato",
+            "en": "Very agitated",
+            "de": "sehr erregt",
+            "fr": "très agité",
+            "ru": "очень возбужденно",
+            "ja": "非常に激しく",
+            "zh": "非常激動地"
+        },
+        "chinese_explanation": "Molto agitato 是義大利文的音樂術語，意思為「非常激動地」。常用來指示演奏者以極度激動不安的情緒演奏。",
+        "example": "在樂譜上出現「Molto agitato」的標記時，演奏者需要非常激動地演奏，營造出極度緊張的氛圍。",
+        "story": "當作曲家在樂譜上標示 Molto agitato，表示此處的情緒相比一般的 agitato 要更加劇烈。演奏者或須顫抖雙手、加重顫音，以表現出極度的不安與狂亂。例如蕭邦《c小調練習曲》（革命練習曲）的開頭部分常被形容為 Molto agitato 的典範，左手密集的八度如怒濤洶湧，完美詮釋了這一情緒。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "legatissimo",
+        "category": "表情",
+        "original": {
+            "it": "Legatissimo",
+            "en": "Very legato",
+            "de": "sehr gebunden",
+            "fr": "très lié",
+            "ru": "очень связно",
+            "ja": "極めて滑らかに",
+            "zh": "非常連貫地、極度連奏地"
+        },
+        "chinese_explanation": "Legatissimo 是義大利文的音樂術語，意思為「非常連貫地、極度連奏地」。常用來指示演奏者以極為連貫順滑的方式演奏。",
+        "example": "在樂譜上出現「Legatissimo」的標記時，演奏者需要極度連貫地演奏，使音符之間毫無間隙地連接。",
+        "story": "Legatissimo 是 legato（連奏）的最高級表達，要求演奏幾乎沒有任何斷裂。鋼琴演奏 legatissimo 時，常需要輔以踏板來消除音與音之間的縫隙；弦樂演奏則要運弓平滑均勻，使旋律線如絲帶般連綿不絕。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "dolcissimo",
+        "category": "表情",
+        "original": {
+            "it": "Dolcissimo",
+            "en": "Very sweet, soft",
+            "de": "äußerst sanft",
+            "fr": "très doux",
+            "ru": "очень нежно",
+            "ja": "極めて優しく",
+            "zh": "極其柔美地"
+        },
+        "chinese_explanation": "Dolcissimo 是義大利文的音樂術語，意思為「極其柔美地」。常用來指示演奏者以最柔美的方式演奏。",
+        "example": "在樂譜上出現「Dolcissimo」的標記時，演奏者需要極其柔美地演奏，營造出如夢似幻的柔和氛圍。",
+        "story": "Dolcissimo 是 dolce 的最高級形式，字面即「非常甜美」。當音樂標示 dolcissimo，表示作曲家希望此處音色格外溫柔。演奏者或須將手幾乎飄浮於琴鍵上，或弓毛僅輕貼弦上，以創造出若有似無、近乎耳語的美妙聲響。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "quasi recitativo",
+        "category": "表情",
+        "original": {
+            "it": "Quasi recitativo",
+            "en": "Like a recitative",
+            "de": "wie im Rezitativ",
+            "fr": "comme un récitatif",
+            "ru": "как речитатив",
+            "ja": "レチタティーヴォのように",
+            "zh": "近似宣敘調地"
+        },
+        "chinese_explanation": "Quasi recitativo 是義大利文的音樂術語，意思為「近似宣敘調地」。常用來指示演奏者以接近聲樂宣敘調的風格自由演奏。",
+        "example": "在樂譜上出現「Quasi recitativo」的標記時，演奏者需要近似宣敘調地演奏，使旋律如同自由吟誦般展開。",
+        "story": "古典樂派中，作曲家偶爾使用 Quasi recitativo 來指示演奏要如同聲樂的宣敘調般自由。這種寫法讓樂器模仿說話的語氣，增強了音樂的戲劇性，如同在訴說故事。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "come un sospiro",
+        "category": "表情",
+        "original": {
+            "it": "Come un sospiro",
+            "en": "Like a sigh",
+            "de": "wie ein Seufzer",
+            "fr": "comme un soupir",
+            "ru": "как вздох",
+            "ja": "ため息のように",
+            "zh": "宛如一聲嘆息地"
+        },
+        "chinese_explanation": "Come un sospiro 是義大利文的音樂術語，意思為「宛如一聲嘆息地」。常用來指示演奏者以如同嘆息般短促輕柔的方式演奏。",
+        "example": "在樂譜上出現「Come un sospiro」的標記時，演奏者需要如嘆息般地演奏，營造出輕微飄渺的氛圍。",
+        "story": "作曲家有時會在樂句旁註記 Come un sospiro，要求演奏像嘆息一樣短暫而輕柔，讓音樂充滿呼吸般的抒情感。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "sospirando",
+        "category": "表情",
+        "original": {
+            "it": "Sospirando",
+            "en": "Sighing",
+            "de": "seufzend",
+            "fr": "en soupirant",
+            "ru": "вздыхая",
+            "ja": "ため息をつくように",
+            "zh": "嘆息般地"
+        },
+        "chinese_explanation": "Sospirando 是義大利文的音樂術語，意思為「嘆息般地」。常用來指示演奏者以如嘆息般的語氣演奏。",
+        "example": "在樂譜上出現「Sospirando」的標記時，演奏者需要嘆息般地演奏，營造出傷感感懷的氛圍。",
+        "story": "Sospirando 來自義大利語 sospirare（嘆息）。當樂曲標示 sospirando，意味著旋律彷彿帶著一聲聲嘆息。演奏者或需在音符間稍作停頓，好似每句樂思結尾都伴隨一聲輕嘆，使人感受到音樂中的哀愁與無奈。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "piangendo",
+        "category": "表情",
+        "original": {
+            "it": "Piangendo",
+            "en": "Weeping",
+            "de": "weinend",
+            "fr": "en pleurant",
+            "ru": "плача",
+            "ja": "泣くように",
+            "zh": "如泣如訴地"
+        },
+        "chinese_explanation": "Piangendo 是義大利文的音樂術語，意思為「如泣如訴地」。常用來指示演奏者以如同哭泣訴說般的情感演奏。",
+        "example": "在樂譜上出現「Piangendo」的標記時，演奏者需要如泣如訴地演奏，營造出抽泣悲啼的氛圍。",
+        "story": "Piangendo 在義大利語中意指「哭泣地」。當音樂標示 piangendo，演奏者須讓旋律如同啜泣般斷續哽咽，表達強烈的悲傷。這在浪漫派的悲歌或悲劇場景配樂中特別常見，音符間的顫抖和裝飾音模擬著哭聲，使聽者感同身受。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "lamentoso",
+        "category": "表情",
+        "original": {
+            "it": "Lamentoso",
+            "en": "Lamenting",
+            "de": "klagend",
+            "fr": "plaintif",
+            "ru": "жалобно",
+            "ja": "嘆くように",
+            "zh": "悲嘆地、哀悽地"
+        },
+        "chinese_explanation": "Lamentoso 是義大利文的音樂術語，意思為「悲嘆地、哀悽地」。常用來指示演奏者以悲嘆哀悽的情感演奏。",
+        "example": "在樂譜上出現「Lamentoso」的標記時，演奏者需要悲嘆地演奏，營造出淒楚哀悽的氛圍。",
+        "story": "Lamentoso 在義大利語中與「悲嘆」（lament）相關。標示 lamentoso 說明樂段洋溢著悲傷訴苦之意。演奏者需讓旋律帶有哭腔，可能運用下滑音、柔和的裝飾音等技巧增添哭泣的色彩，使人仿若聽見淚水在音符間滑落。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "innocente",
+        "category": "表情",
+        "original": {
+            "it": "Innocente",
+            "en": "Innocent(ly)",
+            "de": "unschuldig",
+            "fr": "innocent",
+            "ru": "невинно",
+            "ja": "無邪気に",
+            "zh": "天真地、純潔地"
+        },
+        "chinese_explanation": "Innocente 是義大利文的音樂術語，意思為「天真地、純潔地」。常用來指示演奏者以天真無邪、純潔樸實的方式演奏。",
+        "example": "在樂譜上出現「Innocente」的標記時，演奏者需要天真地演奏，營造出純真無邪的氛圍。",
+        "story": "Innocente 在義大利語中意為「純真無辜的」。當音樂標示 innocente，往往出現在描寫童真或田園場景的樂段中。演奏者應避免過度雕琢音樂，而讓旋律自然流露出單純美好的情感，就像小孩子純真的笑容般沁人心脾。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "eroico",
+        "category": "表情",
+        "original": {
+            "it": "Eroico",
+            "en": "Heroic",
+            "de": "heldenhaft",
+            "fr": "héroïque",
+            "ru": "героически",
+            "ja": "英雄的に",
+            "zh": "英勇地、英雄般地"
+        },
+        "chinese_explanation": "Eroico 是義大利文的音樂術語，意思為「英勇地、英雄般地」。常用來指示演奏者以英雄氣概的方式演奏。",
+        "example": "在樂譜上出現「Eroico」的標記時，演奏者需要英勇地演奏，營造出英雄壯烈的氛圍。",
+        "story": "Eroico 在義大利語中意為「英雄的」。貝多芬的《第三交響曲》（英雄交響曲）即取名 Eroica，象徵著英雄主義的崇高精神。當音樂標示 eroico，演奏者須展現威嚴豪邁的氣勢，仿佛音符化身為身披鎧甲的英雄人物，激昂壯麗。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "marziale",
+        "category": "表情",
+        "original": {
+            "it": "Marziale",
+            "en": "Martial; march-like",
+            "de": "marschähnlich",
+            "fr": "martial",
+            "ru": "маршево",
+            "ja": "行進曲風に",
+            "zh": "進行曲風地"
+        },
+        "chinese_explanation": "Marziale 是義大利文的音樂術語，意思為「進行曲風地」。常用來指示演奏者以進行曲的風格演奏。",
+        "example": "在樂譜上出現「Marziale」的標記時，演奏者需要以進行曲的步調演奏，營造出莊嚴雄偉的氛圍。",
+        "story": "Marziale 來自義大利語 \"marzia\"（行軍）。當音樂標示 marziale，意味著節奏要像行進曲般規整，重音落在強拍，帶有明確的步伐感。軍樂、閱兵等場合的配樂常以 marziale 風格寫成，聽者彷彿能想見士兵整齊劃一的步伐。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "deciso",
+        "category": "表情",
+        "original": {
+            "it": "Deciso",
+            "en": "Decisive",
+            "de": "entschieden",
+            "fr": "décidé",
+            "ru": "решительно",
+            "ja": "決然と",
+            "zh": "堅決地、果斷地"
+        },
+        "chinese_explanation": "Deciso 是義大利文的音樂術語，意思為「堅決地、果斷地」。常用來指示演奏者以堅決果斷的態度演奏。",
+        "example": "在樂譜上出現「Deciso」的標記時，演奏者需要堅決地演奏，營造出果斷剛毅的氛圍。",
+        "story": "Deciso 在義大利語中意指「堅決的、果敢的」。當音樂標示 deciso，表示旋律和節奏都要明確有力，毫不遲疑。這常用於強調音樂中的決心或戲劇轉折點，演奏者需確保每個音符都堅定落地，傳達出不容置疑的信念。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "calmo",
+        "category": "表情",
+        "original": {
+            "it": "Calmo",
+            "en": "Calm",
+            "de": "ruhig",
+            "fr": "calme",
+            "ru": "спокойно",
+            "ja": "穏やかに",
+            "zh": "平靜地、沈著地"
+        },
+        "chinese_explanation": "Calmo 是義大利文的音樂術語，意思為「平靜地、沈著地」。常用來指示演奏者以平靜沈著的情緒演奏。",
+        "example": "在樂譜上出現「Calmo」的標記時，演奏者需要平靜地演奏，營造出沈著安定的氛圍。",
+        "story": "Calmo 在義大利語中意為「冷靜的」。音樂標示 calmo，說明此處需保持心平氣和，不可過度激動。演奏時可稍放鬆節奏與力度，使音樂聽起來穩健從容。這種標記常見於暴風驟雨後的平靜段落，如同暴雨過後寧靜的天空。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "sotto voce",
+        "category": "表情",
+        "original": {
+            "it": "Sotto voce",
+            "en": "Subdued, under the breath",
+            "de": "gedämpft",
+            "fr": "à mi-voix",
+            "ru": "вполголоса",
+            "ja": "小声で",
+            "zh": "柔聲地、小聲地"
+        },
+        "chinese_explanation": "Sotto voce 是義大利文的音樂術語，意思為「柔聲地、小聲地」。常用來指示演奏者壓低聲音，如同低聲耳語般演奏。",
+        "example": "在樂譜上出現「Sotto voce」的標記時，演奏者需要壓低音量地演奏，營造出神秘幽微的氛圍。",
+        "story": "「Sotto」在義大利語意為「在…之下」，「voce」是「聲音」。Sotto voce 原指壓低聲音說話，在音樂中則要求以幾乎耳語的音量演奏，營造神秘且靜謐的效果。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "alla marcia",
+        "category": "表情",
+        "original": {
+            "it": "Alla marcia",
+            "en": "In march style",
+            "de": "wie ein Marsch",
+            "fr": "comme une marche",
+            "ru": "как марш",
+            "ja": "行進曲のように",
+            "zh": "進行曲風地"
+        },
+        "chinese_explanation": "Alla marcia 是義大利文的音樂術語，意思為「進行曲風地」。常用來指示演奏者以進行曲的風格和節奏演奏。",
+        "example": "在樂譜上出現「Alla marcia」的標記時，演奏者需要以進行曲般有力的步伐演奏，營造出莊嚴雄偉的氛圍。",
+        "story": "Alla marcia 字面意為「如同進行曲一般」。這表示音樂應該帶有進行曲規整的節拍感和鼓動人心的氣勢。許多軍隊進行曲、本身就是按照 alla marcia 的原則寫成，也有一些交響作品的段落藉此模擬莊重的行進效果。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "alla zingarese",
+        "category": "表情",
+        "original": {
+            "it": "Alla zingarese",
+            "en": "In gypsy style",
+            "de": "im Zigeunerstil",
+            "fr": "à la tzigane",
+            "ru": "по-цыгански",
+            "ja": "ジプシー風に",
+            "zh": "吉普賽風格地"
+        },
+        "chinese_explanation": "Alla zingarese 是義大利文的音樂術語，意思為「吉普賽風格地」。常用來指示演奏者以吉普賽音樂的風格演奏。",
+        "example": "在樂譜上出現「Alla zingarese」的標記時，演奏者需要以吉普賽風格演奏，營造出熱情浪漫的民族風情。",
+        "story": "「Zingarese」在義大利語意為「吉普賽的」。19世紀浪漫派作曲家常以吉普賽民族音樂元素增添熱情奔放的色彩，標註 Alla zingarese 即要求演奏帶有吉普賽音樂的風格。布拉姆斯《g小調鋼琴四重奏》第四樂章的標題 Rondo alla zingarese 就是此用法的例子。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "senza espressione",
+        "category": "表情",
+        "original": {
+            "it": "Senza espressione",
+            "en": "Without expression",
+            "de": "ohne Ausdruck",
+            "fr": "sans expression",
+            "ru": "без выражения",
+            "ja": "無表情に",
+            "zh": "毫無表情地"
+        },
+        "chinese_explanation": "Senza espressione 是義大利文的音樂術語，意思為「毫無表情地」。常用來指示演奏者以毫無情感起伏、冷漠平淡的方式演奏。",
+        "example": "在樂譜上出現「Senza espressione」的標記時，演奏者需要毫無表情地演奏，營造出冷峻機械的氛圍。",
+        "story": "Senza espressione 意為「沒有表情、沒有感情」。當代有些作曲家會要求某段音樂 senza espressione，以創造機械、疏離的效果，彷彿由沒有情感的機器所奏出，形成強烈的對比和諷刺意味。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "sognante",
+        "category": "表情",
+        "original": {
+            "it": "Sognante",
+            "en": "Dreamy",
+            "de": "träumerisch",
+            "fr": "rêveur",
+            "ru": "мечтательно",
+            "ja": "夢見るように",
+            "zh": "夢幻地、如夢似幻地"
+        },
+        "chinese_explanation": "Sognante 是義大利文的音樂術語，意思為「夢幻地、如夢似幻地」。常用來指示演奏者以夢幻朦朧的方式演奏。",
+        "example": "在樂譜上出現「Sognante」的標記時，演奏者需要夢幻地演奏，營造出如夢境般的氛圍。",
+        "story": "Sognante 在義大利語中意為「夢一般的、出神的」。當音樂標示 sognante，聽眾彷彿被帶入夢境。演奏者通常會採用柔和的音色和自由的節奏，使旋律漂浮流動，增添模糊飄渺的感覺。此術語在印象派和現代作品中偶有出現，營造恍惚的意境。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "alienato",
+        "category": "表情",
+        "original": {
+            "it": "Alienato",
+            "en": "Alienated; estranged",
+            "de": "entfremdet",
+            "fr": "aliéné",
+            "ru": "отчужденно",
+            "ja": "茫然と",
+            "zh": "疏離地、失神落魄地"
+        },
+        "chinese_explanation": "Alienato 是義大利文的音樂術語，意思為「疏離地、失神落魄地」。常用來指示演奏者以疏離、恍惚的狀態演奏。",
+        "example": "在樂譜上出現「Alienato」的標記時，演奏者需要帶著疏離的感覺演奏，營造出冷漠孤絕的氛圍。",
+        "story": "Alienato 在義大利語中意為「被疏遠的、精神恍惚的」。此術語屬於較現代的表情描述，在現代音樂中較少見，但能為音樂營造獨特的氛圍。演奏者若遇到 alienato，可嘗試用空洞的音色與機械的節奏，來傳達內心的麻木和疏離感。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "statico",
+        "category": "表情",
+        "original": {
+            "it": "Statico",
+            "en": "Static; motionless",
+            "de": "statisch",
+            "fr": "statique",
+            "ru": "неподвижно",
+            "ja": "静止したように",
+            "zh": "靜止地、停滯地"
+        },
+        "chinese_explanation": "Statico 是義大利文的音樂術語，意思為「靜止地、停滯地」。常用來指示演奏者以近乎靜止、不流動的方式演奏。",
+        "example": "在樂譜上出現「Statico」的標記時，演奏者需要靜止地演奏，營造出凝滯停頓的氛圍。",
+        "story": "Statico 在義大利語中意指「靜止的」。此術語在現代音樂中較少見，但能為音樂營造獨特的氛圍。標示 statico 表明音樂暫時失去向前推進的動力，彷彿時間凝結一般。演奏者或會拉長音符持續時間、減少律動，使聽者感受到停滯不前的張力。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "disperato",
+        "category": "表情",
+        "original": {
+            "it": "Disperato",
+            "en": "Desperate",
+            "de": "verzweifelt",
+            "fr": "désespéré",
+            "ru": "отчаянно",
+            "ja": "絶望的に",
+            "zh": "絕望地、拼命地"
+        },
+        "chinese_explanation": "Disperato 是義大利文的音樂術語，意思為「絕望地、拼命地」。常用來指示演奏者以絕望或孤注一擲的情緒演奏。",
+        "example": "在樂譜上出現「Disperato」的標記時，演奏者需要拼命地演奏，營造出走投無路的絕望氛圍。",
+        "story": "Disperato 在義大利語中意為「絕望的」。當音樂標示 disperato，樂句中往往充滿不協和與劇烈起伏，演奏者須展現一種孤注一擲的張力。這種表情在戲劇性很強的作品裡出現，用來描繪人物走向毀滅前的瘋狂與絕望。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "angoscioso",
+        "category": "表情",
+        "original": {
+            "it": "Angoscioso",
+            "en": "Anguished; anxious",
+            "de": "angstvoll",
+            "fr": "angoissé",
+            "ru": "тревожно",
+            "ja": "苦しげに",
+            "zh": "極度不安地、苦惱地"
+        },
+        "chinese_explanation": "Angoscioso 是義大利文的音樂術語，意思為「極度不安地、苦惱地」。常用來指示演奏者以極度焦慮苦惱的情緒演奏。",
+        "example": "在樂譜上出現「Angoscioso」的標記時，演奏者需要苦惱地演奏，營造出極度不安的氛圍。",
+        "story": "Angoscioso 在義大利語中含有「痛苦焦慮」之意。當音樂標示 angoscioso，表示旋律可能糾結不安、和聲充滿張力。演奏者須將這種內心煎熬的感覺傳達出來，例如用緊張的顫音或不協和的音響，讓聽眾彷彿感同身受音樂中的焦慮與痛楚。此術語在現代音樂中較少見，但能為音樂營造獨特的氛圍。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "vigoroso",
+        "category": "表情",
+        "original": {
+            "it": "Vigoroso",
+            "en": "Vigorous",
+            "de": "kräftig",
+            "fr": "vigoureux",
+            "ru": "бодро",
+            "ja": "力強く",
+            "zh": "有力地、精力充沛地"
+        },
+        "chinese_explanation": "Vigoroso 是義大利文的音樂術語，意思為「有力地、精力充沛地」。常用來指示演奏者以有力且充滿精力的方式演奏。",
+        "example": "在樂譜上出現「Vigoroso」的標記時，演奏者需要有力地演奏，營造出強而有力、生氣勃勃的氛圍。",
+        "story": "Vigoroso 在義大利語中意為「精力旺盛的」。當樂曲標示 vigoroso，通常伴隨較快的速度與強勁的節奏，演奏者須展現出蓬勃的生機與氣勢。如同昂首闊步的青年一般，讓音符間充滿力量與朝氣。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "spiritoso",
+        "category": "表情",
+        "original": {
+            "it": "Spiritoso",
+            "en": "Witty; spirited",
+            "de": "geistvoll",
+            "fr": "spirituel",
+            "ru": "остроумно",
+            "ja": "機知に富んで",
+            "zh": "詼諧地、機智地"
+        },
+        "chinese_explanation": "Spiritoso 是義大利文的音樂術語，意思為「詼諧地、機智地」。常用來指示演奏者以機智風趣的方式演奏。",
+        "example": "在樂譜上出現「Spiritoso」的標記時，演奏者需要詼諧地演奏，營造出機智幽默的氛圍。",
+        "story": "Spiritoso 在義大利語中含有機敏風趣之意。當樂譜標示 spiritoso，表示音樂帶有詼諧機智的性格，演奏者需展現出活潑幽默的情緒，使樂曲富有生氣和巧思。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "gioioso",
+        "category": "表情",
+        "original": {
+            "it": "Gioioso",
+            "en": "Joyous",
+            "de": "fröhlich; verspielt",
+            "fr": "joyeux",
+            "ru": "радостно",
+            "ja": "陽気に",
+            "zh": "快樂地、喜悅地"
+        },
+        "chinese_explanation": "Gioioso 是義大利文的音樂術語，意思為「快樂地、喜悅地」。常用來指示演奏者以開心愉悅的情緒演奏。",
+        "example": "在樂譜上出現「Gioioso」的標記時，演奏者需要快樂地演奏，營造出欣喜歡騰的氛圍。",
+        "story": "Gioioso 在義大利語中意為「歡喜的」。當音樂標示 gioioso，音符間彷彿洋溢著笑容與喜悅，演奏者需將這種幸福感傳達給聽眾。許多節慶或舞曲場景的音樂會使用 gioioso，讓人聯想到歡慶時人們的愉快心情。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "turbato",
+        "category": "表情",
+        "original": {
+            "it": "Turbato",
+            "en": "Disturbed; troubled",
+            "de": "verstört",
+            "fr": "troublé",
+            "ru": "встревоженно",
+            "ja": "動揺して",
+            "zh": "不安地、煩惱地"
+        },
+        "chinese_explanation": "Turbato 是義大利文的音樂術語，意思為「不安地、煩惱地」。常用來指示演奏者以內心不安煩亂的情緒演奏。",
+        "example": "在樂譜上出現「Turbato」的標記時，演奏者需要不安地演奏，營造出內心煩亂的氛圍。",
+        "story": "Turbato 在義大利語中意為「心緒不寧的」。音樂標示 turbato，往往暗示旋律可能顫抖不穩、節奏略顯混亂，以反映內心的煩躁與焦慮。演奏者須把握這種不安定的美感，使聽者體會到音樂中暗湧的焦躁情緒。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "stridente",
+        "category": "表情",
+        "original": {
+            "it": "Stridente",
+            "en": "Harsh; shrill",
+            "de": "schrill",
+            "fr": "strident",
+            "ru": "резко",
+            "ja": "耳障りに",
+            "zh": "刺耳地、尖銳地"
+        },
+        "chinese_explanation": "Stridente 是義大利文的音樂術語，意思為「刺耳地、尖銳地」。常用來指示演奏者以刺耳尖銳的音色演奏。",
+        "example": "在樂譜上出現「Stridente」的標記時，演奏者需要刺耳地演奏，營造出尖銳強烈的氛圍。",
+        "story": "Stridente 在義大利語中意指「刺耳的、尖銳的」。當音樂標示 stridente，表示音響應帶有生硬尖厲的性質。演奏者可能會加強弓弦的壓力或使用銳利的吹奏角度，使聲音變得刺耳，以營造出緊張不安、甚至令人不適的效果。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "sommesso",
+        "category": "表情",
+        "original": {
+            "it": "Sommesso",
+            "en": "Subdued; soft",
+            "de": "gedämpft",
+            "fr": "étouffé",
+            "ru": "приглушенно",
+            "ja": "抑えた声で",
+            "zh": "柔和地、壓低聲地"
+        },
+        "chinese_explanation": "Sommesso 是義大利文的音樂術語，意思為「柔和地、壓低聲地」。常用來指示演奏者以柔和、音量壓低的方式演奏。",
+        "example": "在樂譜上出現「Sommesso」的標記時，演奏者需要壓低聲音地演奏，營造出柔和沈靜的氛圍。",
+        "story": "Sommesso 在義大利語中意為「低聲的、壓抑的」。當音樂標示 sommesso，表示聲音應壓低如耳語般輕柔。這在需要突出神秘或遙遠感的樂段中十分有效，演奏者彷彿輕聲細語地訴說音樂，使聽者凝神細聽。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "ardente",
+        "category": "表情",
+        "original": {
+            "it": "Ardente",
+            "en": "Ardent; burning",
+            "de": "glühend",
+            "fr": "ardent",
+            "ru": "пламенно",
+            "ja": "熱く",
+            "zh": "熱烈地、燃燒般地"
+        },
+        "chinese_explanation": "Ardente 是義大利文的音樂術語，意思為「熱烈地、燃燒般地」。常用來指示演奏者以熱烈似火的情感演奏。",
+        "example": "在樂譜上出現「Ardente」的標記時，演奏者需要熱烈地演奏，營造出熊熊燃燒的激情氛圍。",
+        "story": "Ardente 在義大利語中意為「燃燒的、熾熱的」。音樂標示 ardente，說明情感達到白熱化，演奏者須毫無保留地投入，讓音符彷彿燃燒起來。例如拉威爾《波麗露》漸強至高潮處，可用 ardente 來形容其熱力四射的情感爆發。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "devoto",
+        "category": "表情",
+        "original": {
+            "it": "Devoto",
+            "en": "Devout; devoted",
+            "de": "ehrfürchtig",
+            "fr": "pieux",
+            "ru": "благочестиво",
+            "ja": "敬虔に",
+            "zh": "虔敬地、忠實地"
+        },
+        "chinese_explanation": "Devoto 是義大利文的音樂術語，意思為「虔敬地、忠實地」。常用來指示演奏者以虔誠恭敬的態度演奏。",
+        "example": "在樂譜上出現「Devoto」的標記時，演奏者需要虔敬地演奏，營造出莊嚴肅穆的氛圍。",
+        "story": "Devoto 在義大利語中來自 devozione（虔誠）。音樂標示 devoto，與 religioso 類似，表示演奏應帶著敬畏與虔敬。尤其在宗教音樂中，devoto 要求演唱者和演奏者保持一種虔敬的心境，如同在聖堂中吟唱祈禱般，讓樂音充滿靈性。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "fiero",
+        "category": "表情",
+        "original": {
+            "it": "Fiero",
+            "en": "Proud",
+            "de": "stolz",
+            "fr": "fier",
+            "ru": "гордо",
+            "ja": "誇らしげに",
+            "zh": "驕傲地、自豪地"
+        },
+        "chinese_explanation": "Fiero 是義大利文的音樂術語，意思為「驕傲地、自豪地」。常用來指示演奏者以自豪挺拔的態度演奏。",
+        "example": "在樂譜上出現「Fiero」的標記時，演奏者需要驕傲地演奏，營造出自信昂揚的氛圍。",
+        "story": "Fiero 在義大利語中意味著「驕傲的、自尊的」。當樂曲標示 fiero，表示音樂帶有自信昂揚的氣質。演奏者應想像自己昂首挺胸，將這份自豪感融入音符。這種表情常見於歌劇中英雄角色的詠嘆調，音樂散發出無比的自信與榮耀感。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "minaccioso",
+        "category": "表情",
+        "original": {
+            "it": "Minaccioso",
+            "en": "Menacing",
+            "de": "drohend",
+            "fr": "menaçant",
+            "ru": "угрожающе",
+            "ja": "威嚇するように",
+            "zh": "威脅地、陰森地"
+        },
+        "chinese_explanation": "Minaccioso 是義大利文的音樂術語，意思為「威脅地、陰森地」。常用來指示演奏者以帶有威脅、不祥的語調演奏。",
+        "example": "在樂譜上出現「Minaccioso」的標記時，演奏者需要帶著威脅地演奏，營造出陰森逼人的氛圍。",
+        "story": "Minaccioso 在義大利語中意指「威脅的、恐嚇的」。當音樂標示 minaccioso，通常旋律中出現低音持續音或不協和和聲，營造出緊張不安感。演奏者可以透過強烈的重音和陰暗的音色，讓音樂聽起來如同潛藏的威脅逐步逼近。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "oscuro",
+        "category": "表情",
+        "original": {
+            "it": "Oscuro",
+            "en": "Dark; gloomy",
+            "de": "dunkel; finster",
+            "fr": "sombre",
+            "ru": "сумрачно",
+            "ja": "暗く陰気に",
+            "zh": "陰暗地、晦暗地"
+        },
+        "chinese_explanation": "Oscuro 是義大利文的音樂術語，意思為「陰暗地、晦暗地」。常用來指示演奏者以陰暗晦澀的音色演奏。",
+        "example": "在樂譜上出現「Oscuro」的標記時，演奏者需要陰暗地演奏，營造出幽暗陰鬱的氛圍。",
+        "story": "Oscuro 在義大利語中意味著「黑暗的」。當音樂標示 oscuro，通常指示音色要暗沉、動態偏弱，甚至可能要求使用弱音器，以製造出幽暗籠罩的聲音效果。這在表現夜晚、地牢或陰沉心境的樂曲中十分常見。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "brutale",
+        "category": "表情",
+        "original": {
+            "it": "Brutale",
+            "en": "Brutal; rough",
+            "de": "brutal",
+            "fr": "brutal",
+            "ru": "грубо",
+            "ja": "乱暴に",
+            "zh": "粗野地、殘酷地"
+        },
+        "chinese_explanation": "Brutale 是義大利文的音樂術語，意思為「粗野地、殘酷地」。常用來指示演奏者以粗獷殘酷的方式演奏。",
+        "example": "在樂譜上出現「Brutale」的標記時，演奏者需要粗野地演奏，營造出野蠻殘酷的氛圍。",
+        "story": "Brutale 在義大利語中意為「粗暴的」。當音樂標示 brutale，表示作品需要一種野性失控的力量感。演奏者可不必追求音色的優美，反而應以猛烈生硬的方式擊打音符，彷彿野獸怒吼般，讓音樂呈現出殘酷原始的張力。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "pastorale",
+        "category": "表情",
+        "original": {
+            "it": "Pastorale",
+            "en": "Pastoral",
+            "de": "ländlich",
+            "fr": "pastoral",
+            "ru": "пасторально",
+            "ja": "牧歌的に",
+            "zh": "田園風地、牧歌風地"
+        },
+        "chinese_explanation": "Pastorale 是義大利文的音樂術語，意思為「田園風地、牧歌風地」。常用來指示演奏者以田園詩般恬靜的風格演奏。",
+        "example": "在樂譜上出現「Pastorale」的標記時，演奏者需要田園風地演奏，營造出恬淡純樸的氛圍。",
+        "story": "Pastorale 直譯為「田園的」。音樂標示 pastorale，常出現在模仿鄉村田園景色的樂曲中，如平靜的牧歌、羊飼笛聲等。演奏者應該以輕柔連綿的音色和從容的節拍，勾勒出大自然的和諧與純真。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "scintillante",
+        "category": "表情",
+        "original": {
+            "it": "Scintillante",
+            "en": "Sparkling",
+            "de": "funkelnd",
+            "fr": "scintillant",
+            "ru": "блестяще",
+            "ja": "きらびやかに",
+            "zh": "閃爍地、閃亮地"
+        },
+        "chinese_explanation": "Scintillante 是義大利文的音樂術語，意思為「閃爍地、閃亮地」。常用來指示演奏者以閃閃發光般明亮華麗的方式演奏。",
+        "example": "在樂譜上出現「Scintillante」的標記時，演奏者需要閃亮地演奏，營造出璀璨奪目的氛圍。",
+        "story": "Scintillante 在義大利語中意為「閃閃發光的」。這通常用於要求音樂如同星光或鑽石般閃耀。鋼琴演奏 scintillante 段落時，常運用快速的高音階和琶音，讓人彷彿看到音符在空中飛舞閃爍，營造出華麗炫目的視聽效果。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "mezza voce",
+        "category": "表情",
+        "original": {
+            "it": "Mezza voce",
+            "en": "Half voice; softly",
+            "de": "halblaut",
+            "fr": "demi-voix",
+            "ru": "вполголоса",
+            "ja": "半声で",
+            "zh": "半聲地、柔聲地"
+        },
+        "chinese_explanation": "Mezza voce 是義大利文的音樂術語，意思為「半聲地、柔聲地」。常用來指示演奏者以半聲量、柔和的音調演唱或演奏。",
+        "example": "在樂譜上出現「Mezza voce」的標記時，演唱者需要以半聲音量唱出旋律，使聲音溫柔朦朧。",
+        "story": "「Mezza」在義大利語中是「一半」，「voce」是「聲音」。Mezza voce 要求演唱或演奏時使用半聲量，音量溫和不強烈，常用於聲樂曲中表達柔和細緻的情感。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "quasi niente",
+        "category": "表情",
+        "original": {
+            "it": "Quasi niente",
+            "en": "Almost nothing",
+            "de": "fast nichts",
+            "fr": "presque rien",
+            "ru": "почти ничего",
+            "ja": "ほとんど聞こえないように",
+            "zh": "幾乎無聲地"
+        },
+        "chinese_explanation": "Quasi niente 是義大利文的音樂術語，意思為「幾乎無聲地」。常用來指示演奏者將聲音壓到幾乎聽不見的程度。",
+        "example": "在樂譜上出現「Quasi niente」的標記時，演奏者需要將音量降至幾乎無聲，營造出虛無縹緲的氛圍。",
+        "story": "Quasi niente 字面意為「幾乎沒有」。作曲家在需要極度的弱音時會標註此術語，使音樂彷彿遠在天邊、若有似無。這種處理常用在片尾漸弱，讓音樂最終消逝於寂靜之中。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "come prima",
+        "category": "表情",
+        "original": {
+            "it": "Come prima",
+            "en": "As before",
+            "de": "wie vorher",
+            "fr": "comme avant",
+            "ru": "как раньше",
+            "ja": "最初のように",
+            "zh": "回到先前的速度或方式"
+        },
+        "chinese_explanation": "Come prima 是義大利文的音樂術語，意思為「回到先前的速度或方式」。常用來指示演奏者恢復到前面出現過的速度或表情風格。",
+        "example": "在樂譜上出現「Come prima」的標記時，演奏者需要回到先前的速度與表情來演奏該段落。",
+        "story": "「Come prima」在義大利語中意為「如同最初」。在樂譜中出現 Come prima 時，表示音樂要回復到之前的速度或表情，常用於指示樂段重複時以原有風貌演奏。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con bravura",
+        "category": "表情",
+        "original": {
+            "it": "Con bravura",
+            "en": "With bravura; skill",
+            "de": "bravourös",
+            "fr": "brillamment",
+            "ru": "виртуозно",
+            "ja": "華々しく",
+            "zh": "華麗地、炫技地"
+        },
+        "chinese_explanation": "Con bravura 是義大利文的音樂術語，意思為「華麗地、炫技地」。常用來指示演奏者以華麗炫目的技巧方式演奏。",
+        "example": "在樂譜上出現「Con bravura」的標記時，演奏者需要華麗地演奏，展現出炫目的技巧與光彩。",
+        "story": "「Bravura」在義大利語中與「勇敢、高超技巧」有關。Con bravura 代表音樂帶有炫技的性質，需要演奏者大膽地展現技巧，如飛速的音階、華麗的裝飾音等。李斯特和帕格尼尼的作品中常能感受到這種 bravura 的精湛炫技風格。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con calma",
+        "category": "表情",
+        "original": {
+            "it": "Con calma",
+            "en": "Calmly",
+            "de": "mit Ruhe",
+            "fr": "calmement",
+            "ru": "спокойно",
+            "ja": "落ち着いて",
+            "zh": "平靜地、冷靜地"
+        },
+        "chinese_explanation": "Con calma 是義大利文的音樂術語，意思為「平靜地、冷靜地」。常用來指示演奏者以平靜冷靜的心情演奏。",
+        "example": "在樂譜上出現「Con calma」的標記時，演奏者需要冷靜地演奏，營造出平和安定的氛圍。",
+        "story": "「Calma」在義大利語中是「平靜、冷靜」。Con calma 表示音樂要以鎮定的態度進行，不焦不躁。這常用於需要舒緩心緒的段落，演奏者可稍放慢速度、柔化音色，使音樂傳達出一種沉著自若的從容感。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con delicatezza",
+        "category": "表情",
+        "original": {
+            "it": "Con delicatezza",
+            "en": "With delicacy",
+            "de": "zart; mit Feinheit",
+            "fr": "délicatement",
+            "ru": "деликатно",
+            "ja": "繊細に",
+            "zh": "纖細地、精巧地"
+        },
+        "chinese_explanation": "Con delicatezza 是義大利文的音樂術語，意思為「纖細地、精巧地」。常用來指示演奏者以纖細精巧的方式演奏。",
+        "example": "在樂譜上出現「Con delicatezza」的標記時，演奏者需要纖細地演奏，營造出精緻細膩的氛圍。",
+        "story": "「Delicatezza」在義大利語中意指「細緻、精巧」。Con delicatezza 強調音樂的每一處細節都要雕琢得細膩柔和。演奏者可能需要格外注意觸鍵/運弓的輕重緩急，確保音樂如同精緻蕾絲般優雅細膩。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con fermezza",
+        "category": "表情",
+        "original": {
+            "it": "Con fermezza",
+            "en": "With firmness",
+            "de": "fest; mit Bestimmtheit",
+            "fr": "fermement",
+            "ru": "твердо",
+            "ja": "しっかりと",
+            "zh": "堅定地、果斷地"
+        },
+        "chinese_explanation": "Con fermezza 是義大利文的音樂術語，意思為「堅定地、果斷地」。常用來指示演奏者以堅定果斷的態度演奏。",
+        "example": "在樂譜上出現「Con fermezza」的標記時，演奏者需要堅定地演奏，營造出果決剛毅的氛圍。",
+        "story": "「Fermezza」在義大利語中意為「堅定」。Con fermezza 類似於 deciso，要求演奏表現出堅定不移的特質。演奏者應加強重音的明確度，以確保每個樂句都帶有決斷的語氣，使音樂充滿自信與力量。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con gioia",
+        "category": "表情",
+        "original": {
+            "it": "Con gioia",
+            "en": "With joy",
+            "de": "mit Freude",
+            "fr": "joyeusement",
+            "ru": "радостно",
+            "ja": "喜びをもって",
+            "zh": "愉快地、充滿喜悅地"
+        },
+        "chinese_explanation": "Con gioia 是義大利文的音樂術語，意思為「愉快地、充滿喜悅地」。常用來指示演奏者以愉快歡欣的情緒演奏。",
+        "example": "在樂譜上出現「Con gioia」的標記時，演奏者需要愉快地演奏，營造出歡欣鼓舞的氛圍。",
+        "story": "「Gioia」在義大利語中是「喜悅、高興」。Con gioia 表示音樂充滿歡樂之情。演奏帶有 con gioia 的旋律時，音符間彷彿跳動著笑容，讓人感受到純粹的快樂。這種愉悅的表情常見於節慶樂曲或兒童歌曲中，帶給聽眾輕鬆愉快的感受。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con malinconia",
+        "category": "表情",
+        "original": {
+            "it": "Con malinconia",
+            "en": "With melancholy",
+            "de": "mit Melancholie",
+            "fr": "mélancoliquement",
+            "ru": "с меланхолией",
+            "ja": "物悲しく",
+            "zh": "憂鬱地、帶著惆悵"
+        },
+        "chinese_explanation": "Con malinconia 是義大利文的音樂術語，意思為「憂鬱地、帶著惆悵」。常用來指示演奏者以憂鬱惆悵的情感演奏。",
+        "example": "在樂譜上出現「Con malinconia」的標記時，演奏者需要憂鬱地演奏，營造出深沉惆悵的氛圍。",
+        "story": "「Malinconia」在義大利語中意為「憂鬱、惆悵」。Con malinconia 說明音樂籠罩在一片淡淡的哀愁中。演奏者可以在音色上稍加壓抑、放緩語氣，好似若有所思般地訴說旋律，將那股若即若離的感傷傳遞給聽者。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con passione",
+        "category": "表情",
+        "original": {
+            "it": "Con passione",
+            "en": "With passion",
+            "de": "mit Leidenschaft",
+            "fr": "passionnément",
+            "ru": "страстно",
+            "ja": "情熱を込めて",
+            "zh": "充滿熱情地"
+        },
+        "chinese_explanation": "Con passione 是義大利文的音樂術語，意思為「充滿熱情地」。常用來指示演奏者以充沛熱情的情感演奏。",
+        "example": "在樂譜上出現「Con passione」的標記時，演奏者需要充滿熱情地演奏，營造出強烈動人的氛圍。",
+        "story": "「Passione」在義大利語中是「熱情、激情」。Con passione 表示音樂應充盈著炙熱的情感。這在浪漫派樂曲中特別常見，演奏者須全情投入，以強烈的心跳般節奏和濃烈的音色，將激情洋溢於音符之間。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con rabbia",
+        "category": "表情",
+        "original": {
+            "it": "Con rabbia",
+            "en": "With rage",
+            "de": "mit Wut",
+            "fr": "avec rage",
+            "ru": "с яростью",
+            "ja": "怒りを込めて",
+            "zh": "憤怒地、暴躁地"
+        },
+        "chinese_explanation": "Con rabbia 是義大利文的音樂術語，意思為「憤怒地、暴躁地」。常用來指示演奏者以憤怒激憤的情緒演奏。",
+        "example": "在樂譜上出現「Con rabbia」的標記時，演奏者需要憤怒地演奏，營造出暴躁激烈的氛圍。",
+        "story": "「Rabbia」在義大利語中意為「憤怒」。Con rabbia 告訴演奏者，音樂中飽含怒火。演奏時往往強調猛烈的重音和快速尖銳的樂句，如同怒吼般噴薄而出。例如普羅科菲耶夫的某些樂章就具有 con rabbia 的特質，充滿著不可遏止的怒意。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "con tristezza",
+        "category": "表情",
+        "original": {
+            "it": "Con tristezza",
+            "en": "With sadness",
+            "de": "mit Traurigkeit",
+            "fr": "avec tristesse",
+            "ru": "с печалью",
+            "ja": "悲しみを込めて",
+            "zh": "悲傷地、淒楚地"
+        },
+        "chinese_explanation": "Con tristezza 是義大利文的音樂術語，意思為「悲傷地、淒楚地」。常用來指示演奏者以悲傷淒楚的情緒演奏。",
+        "example": "在樂譜上出現「Con tristezza」的標記時，演奏者需要悲傷地演奏，營造出淒楚哀傷的氛圍。",
+        "story": "「Tristezza」在義大利語中意為「悲傷」。Con tristezza 表示音樂籠罩在憂傷的情緒中。演奏者應使旋律帶有哭泣般的顫音與細緻的漸弱，讓聽眾感受到那股無以言喻的哀愁。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "arioso",
+        "category": "表情",
+        "original": {
+            "it": "Arioso",
+            "en": "Arioso (song-like)",
+            "de": "gesangvoll",
+            "fr": "chantant",
+            "ru": "как ария",
+            "ja": "アリオーソ風に",
+            "zh": "如詠唱般地"
+        },
+        "chinese_explanation": "Arioso 是義大利文的音樂術語，意思為「如詠唱般地」。常用來指示演奏者以接近歌曲詠唱的方式演奏，使旋律富有歌唱性。",
+        "example": "在樂譜上出現「Arioso」的標記時，演奏者需要如詠唱般地演奏，使音樂帶有聲樂般的流暢與抒情。",
+        "story": "Arioso 原為歌劇用語，指介於詠嘆調與宣敘調之間、富歌唱性的段落。當器樂標示 arioso，表示旋律要有如人聲歌唱般的表情與流動感。巴赫在清唱劇和受難曲中常用 arioso 樂段，讓獨奏樂器模仿人聲，以增添音樂的抒情性。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "celeste",
+        "category": "表情",
+        "original": {
+            "it": "Celeste",
+            "en": "Heavenly",
+            "de": "himmlisch",
+            "fr": "céleste",
+            "ru": "небесно",
+            "ja": "天上のように",
+            "zh": "如天堂般地"
+        },
+        "chinese_explanation": "Celeste 是義大利文的音樂術語，意思為「如天堂般地」。常用來指示演奏者以聖潔空靈的方式演奏。",
+        "example": "在樂譜上出現「Celeste」的標記時，演奏者需要如天堂般地演奏，營造出純淨神聖的氛圍。",
+        "story": "Celeste 在義大利語中意指「天上的、神聖的」。音樂標示 celeste，通常用於表現超凡脫俗或宗教神聖的場景。演奏者可採用柔和透明的音色，並保持穩定的和聲背景，讓音樂如同天國聖歌般純淨潔白。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "solenne",
+        "category": "表情",
+        "original": {
+            "it": "Solenne",
+            "en": "Solemn",
+            "de": "feierlich",
+            "fr": "solennel",
+            "ru": "торжественно",
+            "ja": "荘厳に",
+            "zh": "莊嚴地、隆重地"
+        },
+        "chinese_explanation": "Solenne 是義大利文的音樂術語，意思為「莊嚴地、隆重地」。常用來指示演奏者以莊嚴隆重的方式演奏。",
+        "example": "在樂譜上出現「Solenne」的標記時，演奏者需要莊嚴地演奏，營造出隆重神聖的氛圍。",
+        "story": "Solenne 在義大利語中意味著「盛大的、莊嚴的」。當音樂標示 solenne，通常用在頌歌、聖歌或典禮音樂中，要求演奏氣勢宏偉，充滿敬意與崇高感。例如韓德爾《彌賽亞》終曲 Hallelujah 合唱便充滿 solenne 的氣氛，音響堂皇莊重。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "ritmico",
+        "category": "表情",
+        "original": {
+            "it": "Ritmico",
+            "en": "Rhythmic",
+            "de": "rhythmisch",
+            "fr": "rythmique",
+            "ru": "ритмично",
+            "ja": "律動的に",
+            "zh": "有節奏地"
+        },
+        "chinese_explanation": "Ritmico 是義大利文的音樂術語，意思為「有節奏地」。常用來指示演奏者強調節奏感，律動明顯地演奏。",
+        "example": "在樂譜上出現「Ritmico」的標記時，演奏者需要有節奏地演奏，凸顯出強烈的律動感。",
+        "story": "Ritmico 在義大利語中與「節奏」（ritmo）相關。當音樂標示 ritmico，意味著要著重強調拍點和節奏型的清晰。演奏者可以更明確地突出節拍、加重重音，使音樂充滿舞蹈般的律動，帶動聽眾一同搖擺。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "poetico",
+        "category": "表情",
+        "original": {
+            "it": "Poetico",
+            "en": "Poetic",
+            "de": "poetisch",
+            "fr": "poétique",
+            "ru": "поэтично",
+            "ja": "詩的に",
+            "zh": "富於詩意地"
+        },
+        "chinese_explanation": "Poetico 是義大利文的音樂術語，意思為「富於詩意地」。常用來指示演奏者以富有詩意、想像力的方式演奏。",
+        "example": "在樂譜上出現「Poetico」的標記時，演奏者需要富於詩意地演奏，營造出優雅夢幻的氛圍。",
+        "story": "Poetico 在義大利語中意為「詩意的」。當音樂標示 poetico，表示作品具有如詩般的意境與想像空間。演奏者應細膩地處理音色與表情，使音樂宛如優美的詩行。在蕭邦的許多夜曲中，就可以感受到 poetico 的氣質：旋律婉轉、氛圍夢幻，充滿藝術的感染力。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "feroce",
+        "category": "表情",
+        "original": {
+            "it": "Feroce",
+            "en": "Ferocious; fierce",
+            "de": "wild; heftig",
+            "fr": "féroce",
+            "ru": "свирепо",
+            "ja": "獰猛に",
+            "zh": "兇猛地、激烈地"
+        },
+        "chinese_explanation": "Feroce 是義大利文的音樂術語，意思為「兇猛地、激烈地」。常用來指示演奏者以兇猛激烈的方式演奏。",
+        "example": "在樂譜上出現「Feroce」的標記時，演奏者需要兇猛地演奏，營造出狂野猛烈的氛圍。",
+        "story": "Feroce 在義大利語中意指「兇猛的」。當樂曲標示 feroce，彷彿猛獸撲擊般，音樂充斥著野性與暴烈。演奏者須釋放出原始的能量，例如運用急促的節奏和強力的重音，使音樂咆哮如猛獸、勢不可擋。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "meditativo",
+        "category": "表情",
+        "original": {
+            "it": "Meditativo",
+            "en": "Meditative",
+            "de": "nachdenklich; kontemplativ",
+            "fr": "méditatif",
+            "ru": "созерцательно",
+            "ja": "瞑想的に",
+            "zh": "冥想地、沉思地"
+        },
+        "chinese_explanation": "Meditativo 是義大利文的音樂術語，意思為「冥想地、沉思地」。常用來指示演奏者以冥想沉思的情緒演奏。",
+        "example": "在樂譜上出現「Meditativo」的標記時，演奏者需要沉思地演奏，營造出靜謐思索的氛圍。",
+        "story": "Meditativo 在義大利語中意為「沉思默想的」。當音樂標示 meditativo，往往節奏緩慢、旋律如低聲自語，演奏者應當引領聽者進入一種內省的狀態。這種表情常見於緩板樂章或鋼琴小品中，讓音符間流露出深沉的哲思。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "mistico",
+        "category": "表情",
+        "original": {
+            "it": "Mistico",
+            "en": "Mystical",
+            "de": "mystisch",
+            "fr": "mystique",
+            "ru": "мистически",
+            "ja": "神秘的に",
+            "zh": "神祕地、奧妙地"
+        },
+        "chinese_explanation": "Mistico 是義大利文的音樂術語，意思為「神祕地、奧妙地」。常用來指示演奏者以帶有神祕色彩的方式演奏。",
+        "example": "在樂譜上出現「Mistico」的標記時，演奏者需要神祕地演奏，營造出深奧莫測的氛圍。",
+        "story": "Mistico 在義大利語中意為「神秘的、奧妙的」。當音樂標示 mistico，通常暗示著某種靈性的或超自然的氛圍。演奏者或許會運用輕聲顫音、空弦泛音等手法，使聲響帶有飄渺的質感，引領聽眾進入玄妙莫測的聲音領域。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "scorrevole",
+        "category": "表情",
+        "original": {
+            "it": "Scorrevole",
+            "en": "Flowing; smooth",
+            "de": "fließend",
+            "fr": "fluide",
+            "ru": "плавно",
+            "ja": "滑らかに",
+            "zh": "流暢地、流動地"
+        },
+        "chinese_explanation": "Scorrevole 是義大利文的音樂術語，意思為「流暢地、流動地」。常用來指示演奏者以流暢順滑的方式演奏。",
+        "example": "在樂譜上出現「Scorrevole」的標記時，演奏者需要流暢地演奏，營造出連綿不絕的氛圍。",
+        "story": "Scorrevole 在義大利語中意指「流動的」。當音樂標示 scorrevole，表示音符間要如流水般連貫順暢。演奏者需注意連接與過渡，使旋律線條絲毫不斷裂。例如在鋼琴快速跑動的音階中標示 scorrevole，能提醒演奏者放鬆手腕，讓音符如行雲流水般傾瀉。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "sentito",
+        "category": "表情",
+        "original": {
+            "it": "Sentito",
+            "en": "With feeling; heartfelt",
+            "de": "innig; empfunden",
+            "fr": "ému",
+            "ru": "прочувствованно",
+            "ja": "心を込めて",
+            "zh": "深刻地、充滿感情地"
+        },
+        "chinese_explanation": "Sentito 是義大利文的音樂術語，意思為「深刻地、充滿感情地」。常用來指示演奏者以深刻動情的方式演奏。",
+        "example": "在樂譜上出現「Sentito」的標記時，演奏者需要深刻地演奏，營造出充滿感情的氛圍。",
+        "story": "Sentito 在義大利語中與「感受」（sentire）相關，意指「發自內心地」。當音樂標示 sentito，說明演奏者要將自身情感傾注於音樂之中，使旋律聽來格外真摯感人。這種真情流露的表情，最能打動聽眾的心。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "teneramente",
+        "category": "表情",
+        "original": {
+            "it": "Teneramente",
+            "en": "Tenderly",
+            "de": "zärtlich",
+            "fr": "tendrement",
+            "ru": "нежно",
+            "ja": "優しく",
+            "zh": "溫柔地、慈愛地"
+        },
+        "chinese_explanation": "Teneramente 是義大利文的音樂術語，意思為「溫柔地、慈愛地」。常用來指示演奏者以溫柔慈愛的情感演奏。",
+        "example": "在樂譜上出現「Teneramente」的標記時，演奏者需要溫柔地演奏，營造出充滿慈愛的氛圍。",
+        "story": "Teneramente 在義大利語中意為「溫柔地」。與 con tenerezza 同源，都要求演奏散發出柔情。當樂譜標示 teneramente，演奏者須像哄嬰兒入睡般輕柔呵護地對待每個音符，使音樂充滿慈愛與憐惜。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "improvvisando",
+        "category": "表情",
+        "original": {
+            "it": "Improvvisando",
+            "en": "Freely (improvising)",
+            "de": "improvisiert; frei",
+            "fr": "improvisé",
+            "ru": "импровизируя",
+            "ja": "即興的に",
+            "zh": "即興地、自由地"
+        },
+        "chinese_explanation": "Improvvisando 是義大利文的音樂術語，意思為「即興地、自由地」。常用來指示演奏者以即興般自由的方式演奏。",
+        "example": "在樂譜上出現「Improvvisando」的標記時，演奏者可以自由地演奏，彷彿即興創作音樂。",
+        "story": "Improvvisando 來自 improvvisare（即興創作）。當音樂標示 improvvisando，表示演奏者可不拘泥節拍，隨興地塑造旋律，就像現場即興演出一般。這在華彩段或需表現自由浪漫色彩的樂段中十分適用。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "parlando",
+        "category": "表情",
+        "original": {
+            "it": "Parlando",
+            "en": "In speaking style",
+            "de": "sprechend",
+            "fr": "parlé",
+            "ru": "речитативно",
+            "ja": "語るように",
+            "zh": "如語言般地"
+        },
+        "chinese_explanation": "Parlando 是義大利文的音樂術語，意思為「如語言般地」。常用來指示演奏者以接近說話的口吻演奏旋律。",
+        "example": "在樂譜上出現「Parlando」的標記時，演奏者需要像說話一樣地演奏，使旋律帶有清晰的語言節奏。",
+        "story": "Parlando 在義大利語中意為「說話地」。音樂標示 parlando，通常見於帶有敘事性的段落，如小提琴或大提琴獨奏模仿人在講述故事般。演奏者可略微自由處理節奏和重音，就像講話時的抑揚頓挫，讓音樂富有語言的親切感。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "bruscamente",
+        "category": "表情",
+        "original": {
+            "it": "Bruscamente",
+            "en": "Abruptly; brusquely",
+            "de": "schroff; plötzlich",
+            "fr": "brusquement",
+            "ru": "резко",
+            "ja": "突然に",
+            "zh": "粗暴地、突然地"
+        },
+        "chinese_explanation": "Bruscamente 是義大利文的音樂術語，意思為「粗暴地、突然地」。常用來指示演奏者以粗率突然的方式演奏。",
+        "example": "在樂譜上出現「Bruscamente」的標記時，演奏者需要突然地演奏，營造出猛然轉變的效果。",
+        "story": "Bruscamente 在義大利語中意指「粗魯地、唐突地」。當音樂標示 bruscamente，常意味著接下來會有劇烈的對比或突如其來的轉折。演奏者應該毫無預警地改變音量或節奏，給聽眾一種措手不及的震撼感。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "tetro",
+        "category": "表情",
+        "original": {
+            "it": "Tetro",
+            "en": "Gloomy; dark",
+            "de": "finster",
+            "fr": "ténébreux",
+            "ru": "мрачно",
+            "ja": "陰気に",
+            "zh": "陰森地、陰沉地"
+        },
+        "chinese_explanation": "Tetro 是義大利文的音樂術語，意思為「陰森地、陰沉地」。常用來指示演奏者以陰森陰沉的音調演奏。",
+        "example": "在樂譜上出現「Tetro」的標記時，演奏者需要陰森地演奏，營造出陰沉壓抑的氛圍。",
+        "story": "Tetro 在義大利語中意指「陰暗的、陰森的」。當音樂標示 tetro，演奏者須讓音色變得黯淡無光，仿佛陽光全無的黑暗角落。此術語多用於描寫恐怖、神秘場景的樂段，聽者彷彿置身於陰森的古堡或幽暗的森林中。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "cupo",
+        "category": "表情",
+        "original": {
+            "it": "Cupo",
+            "en": "Dark; bleak",
+            "de": "düster; dumpf",
+            "fr": "sombre",
+            "ru": "угрюмо",
+            "ja": "沈鬱に",
+            "zh": "沉鬱地、幽暗地"
+        },
+        "chinese_explanation": "Cupo 是義大利文的音樂術語，意思為「沉鬱地、幽暗地」。常用來指示演奏者以沉鬱幽暗的音調演奏。",
+        "example": "在樂譜上出現「Cupo」的標記時，演奏者需要沉鬱地演奏，營造出幽暗沉悶的氛圍。",
+        "story": "Cupo 在義大利語中意為「深沉的、陰暗的」。音樂標示 cupo，通常用於刻畫內心的鬱結與環境的幽暗。演奏者可以加重低音、降低亮度，使音樂聽起來悶悶不樂，有一種壓抑的重量感。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "macabro",
+        "category": "表情",
+        "original": {
+            "it": "Macabro",
+            "en": "Macabre; grim",
+            "de": "makaber",
+            "fr": "macabre",
+            "ru": "жутко",
+            "ja": "不気味に",
+            "zh": "陰森地、恐怖地"
+        },
+        "chinese_explanation": "Macabro 是義大利文的音樂術語，意思為「陰森地、恐怖地」。常用來指示演奏者以陰森恐怖的氣氛演奏。",
+        "example": "在樂譜上出現「Macabro」的標記時，演奏者需要陰森地演奏，營造出令人毛骨悚然的氛圍。",
+        "story": "Macabro 在義大利語中與「死亡之舞」（Danse Macabre）概念相關。當音樂標示 macabro，意味著要營造出恐怖詭異的效果。演奏者可運用猙獰的和聲、突如其來的強音，讓音樂如萬聖節夜晚群魔亂舞般，令人不寒而慄。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "tranquillissimo",
+        "category": "表情",
+        "original": {
+            "it": "Tranquillissimo",
+            "en": "Very tranquil",
+            "de": "äußerst ruhig",
+            "fr": "très tranquille",
+            "ru": "предельно спокойно",
+            "ja": "極めて静かに",
+            "zh": "極度寧靜地"
+        },
+        "chinese_explanation": "Tranquillissimo 是義大利文的音樂術語，意思為「極度寧靜地」。常用來指示演奏者以極為寧靜平和的狀態演奏。",
+        "example": "在樂譜上出現「Tranquillissimo」的標記時，演奏者需要極度寧靜地演奏，營造出近乎靜止的安寧氛圍。",
+        "story": "Tranquillissimo 是 tranquillo 的最高級形式，表示音樂要達到前所未有的平靜程度。演奏此標記時，彷彿連時間都放慢了腳步，聽眾的呼吸與心跳也隨之平穩下來，完全沈浸在音樂營造的祥和之中。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "caloroso",
+        "category": "表情",
+        "original": {
+            "it": "Caloroso",
+            "en": "Warm; ardent",
+            "de": "warm; herzlich",
+            "fr": "chaleureux",
+            "ru": "тепло",
+            "ja": "温かく",
+            "zh": "溫暖地、熱情地"
+        },
+        "chinese_explanation": "Caloroso 是義大利文的音樂術語，意思為「溫暖地、熱情地」。常用來指示演奏者以溫暖熱情的情感演奏。",
+        "example": "在樂譜上出現「Caloroso」的標記時，演奏者需要溫暖地演奏，營造出熱情洋溢的氛圍。",
+        "story": "Caloroso 在義大利語中與「熱度」（calore）相關。當音樂標示 caloroso，表示旋律應充滿溫度與熱情。演奏者應以飽滿的音色和柔和的強弱對比，使音符像陽光般溫暖人心，給聽眾帶來被關愛的感受。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "esitante",
+        "category": "表情",
+        "original": {
+            "it": "Esitante",
+            "en": "Hesitant",
+            "de": "zögernd",
+            "fr": "hésitant",
+            "ru": "нерешительно",
+            "ja": "ためらいがちに",
+            "zh": "躊躇地、猶豫地"
+        },
+        "chinese_explanation": "Esitante 是義大利文的音樂術語，意思為「躊躇地、猶豫地」。常用來指示演奏者以稍顯遲疑、不確定的語氣演奏。",
+        "example": "在樂譜上出現「Esitante」的標記時，演奏者需要猶豫地演奏，營造出不確定、欲言又止的氛圍。",
+        "story": "Esitante 在義大利語中意為「猶豫的」。當音樂標示 esitante，表示旋律線條可能會斷斷續續或節奏略顯停頓，彷彿在思考下一步般。演奏者可藉由稍延遲某些音符的進入，或在樂句間加上微小的停頓，來傳達躊躇不決的感覺。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "nostalgico",
+        "category": "表情",
+        "original": {
+            "it": "Nostalgico",
+            "en": "Nostalgic",
+            "de": "nostalgisch",
+            "fr": "nostalgique",
+            "ru": "ностальгически",
+            "ja": "懐かしそうに",
+            "zh": "懷舊地、思鄉地"
+        },
+        "chinese_explanation": "Nostalgico 是義大利文的音樂術語，意思為「懷舊地、思鄉地」。常用來指示演奏者以帶有懷舊思念的情感演奏。",
+        "example": "在樂譜上出現「Nostalgico」的標記時，演奏者需要懷舊地演奏，營造出思念過往的氛圍。",
+        "story": "Nostalgico 在義大利語中意為「懷舊的」。當音樂標示 nostalgico，往往旋律優美哀愁，如老人憶起往事。演奏者可在音符間注入淡淡的惆悵，使樂曲帶有歲月流逝、物是人非的感傷色彩。許多懷鄉曲、紀念曲常用此表情來傳遞思舊之情。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "quasi una fantasia",
+        "category": "表情",
+        "original": {
+            "it": "Quasi una fantasia",
+            "en": "Like a fantasy",
+            "de": "wie eine Fantasie",
+            "fr": "comme une fantaisie",
+            "ru": "как фантазия",
+            "ja": "幻想曲のように",
+            "zh": "宛如幻想曲般"
+        },
+        "chinese_explanation": "Quasi una fantasia 是義大利文的音樂術語，意思為「宛如幻想曲般」。常用在樂曲標題或段落說明中，表示作品的形式和風格近似幻想曲。",
+        "example": "貝多芬《月光奏鳴曲》的原標題含有「Quasi una fantasia」，說明該曲帶有如幻想曲般自由的結構。",
+        "story": "「Quasi una fantasia」意為「近似一首幻想曲」。貝多芬的《月光奏鳴曲》原題即含有此字樣，表示該曲的形式和風格不同於傳統奏鳴曲，而更自由如幻想曲般。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "alla polacca",
+        "category": "表情",
+        "original": {
+            "it": "Alla polacca",
+            "en": "In polonaise style",
+            "de": "im Polonaise-Stil",
+            "fr": "à la polonaise",
+            "ru": "в стиле полонеза",
+            "ja": "ポロネーズ風に",
+            "zh": "波蘭舞曲風地"
+        },
+        "chinese_explanation": "Alla polacca 是義大利文的音樂術語，意思為「波蘭舞曲風地」。常用來指示演奏者以波蘭舞曲（波洛奈茲）的節奏和風格演奏。",
+        "example": "在樂譜上出現「Alla polacca」的標記時，演奏者需要以波洛奈茲舞曲的風格演奏，營造出莊重華麗的宮廷舞蹈氛圍。",
+        "story": "「Polacca」在義大利語意指「波蘭的（波洛奈茲舞曲）」。Alla polacca 表示音樂帶有波蘭舞曲波洛奈茲的風格節奏，例如強調重拍和莊重的三拍子節奏。貝多芬的《三重協奏曲》終樂章即標示 Rondo alla polacca。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "alla turca",
+        "category": "表情",
+        "original": {
+            "it": "Alla turca",
+            "en": "In Turkish style",
+            "de": "im türkischen Stil",
+            "fr": "à la turque",
+            "ru": "в турецком стиле",
+            "ja": "トルコ風に",
+            "zh": "土耳其風格地"
+        },
+        "chinese_explanation": "Alla turca 是義大利文的音樂術語，意思為「土耳其風格地」。常用來指示演奏者以土耳其風格的方式演奏。",
+        "example": "在樂譜上出現「Alla turca」的標記時，演奏者需要土耳其風格地演奏，營造出土耳其風格的氛圍。",
+        "story": "「Turca」在義大利語是「土耳其的」。18世紀歐洲曾流行模仿鄂圖曼土耳其軍樂的風潮，Alla turca 標記要求以土耳其風格演奏，例如強調打擊樂般的節奏。莫札特的著名鋼琴曲《土耳其進行曲》即以此命名。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "mesto",
+        "category": "表情",
+        "original": {
+            "it": "Mesto",
+            "en": "Sad; mournful",
+            "de": "schwermütig",
+            "fr": "triste",
+            "ru": "тоскливо",
+            "ja": "哀愁を帯びて",
+            "zh": "憂傷地、淒切地"
+        },
+        "chinese_explanation": "Mesto 是義大利文的音樂術語，意思為「憂傷地、淒切地」。常用來指示演奏者以憂傷淒切的情感演奏。",
+        "example": "在樂譜上出現「Mesto」的標記時，演奏者需要憂傷地演奏，營造出淒切動人的氛圍。",
+        "story": "Mesto 在義大利語中意為「憂鬱的、悲傷的」。貝多芬第三鋼琴協奏曲第二樂章標題 Largo mesto，就表明該樂章帶著深沈的悲愴情緒。演奏 mesto 段落時，應讓音樂充滿哀愁，引人共鳴。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "comodo",
+        "category": "表情",
+        "original": {
+            "it": "Comodo",
+            "en": "At ease; comfortably",
+            "de": "bequem; gemächlich",
+            "fr": "commodément",
+            "ru": "неторопливо",
+            "ja": "ゆったりと",
+            "zh": "從容地、悠閒地"
+        },
+        "chinese_explanation": "Comodo 是義大利文的音樂術語，意思為「從容地、悠閒地」。常用來指示演奏者以從容悠閒、不緊不慢的方式演奏。",
+        "example": "在樂譜上出現「Comodo」的標記時，演奏者需要從容地演奏，營造出悠閒自在的氛圍。",
+        "story": "Comodo 在義大利語中意為「舒適的、自在的」。Tempo comodo 常用來表示舒適的速度，不疾不徐。當樂曲標示 comodo，演奏者可稍微放鬆，不必太講究嚴格的拍點，以營造出輕鬆自得的感覺。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "elegante",
+        "category": "表情",
+        "original": {
+            "it": "Elegante",
+            "en": "Elegant",
+            "de": "elegant",
+            "fr": "élégant",
+            "ru": "элегантно",
+            "ja": "優雅に",
+            "zh": "優雅地、高雅地"
+        },
+        "chinese_explanation": "Elegante 是義大利文的音樂術語，意思為「優雅地、高雅地」。常用來指示演奏者以優雅高貴的氣質演奏。",
+        "example": "在樂譜上出現「Elegante」的標記時，演奏者需要優雅地演奏，營造出高雅迷人的氛圍。",
+        "story": "Elegante 在義大利語中意指「高雅的」。當音樂標示 elegante，旋律線條通常流暢細膩，節奏不慌不忙。演奏者須掌握好分寸，不過於誇張，也不流於平淡，讓音樂散發出如貴族舞會般雍容的氣度。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "pensieroso",
+        "category": "表情",
+        "original": {
+            "it": "Pensieroso",
+            "en": "Pensive; thoughtful",
+            "de": "nachdenklich",
+            "fr": "pensif",
+            "ru": "задумчиво",
+            "ja": "物思いにふけって",
+            "zh": "沈思地、默想地"
+        },
+        "chinese_explanation": "Pensieroso 是義大利文的音樂術語，意思為「沈思地、默想地」。常用來指示演奏者以沈思默想的情緒演奏。",
+        "example": "在樂譜上出現「Pensieroso」的標記時，演奏者需要沈思地演奏，營造出深思冥想的氛圍。",
+        "story": "Pensieroso 在義大利語中意為「沈思的」。當音樂標示 pensieroso，音符間彷彿停頓著思考的空白。演奏者可在樂句結尾稍作停留，或柔化音色，讓樂音帶有沉靜思索的色彩。這種表情常見於哲理性或抒情性的獨奏曲中。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "secco",
+        "category": "表情",
+        "original": {
+            "it": "Secco",
+            "en": "Dry; short",
+            "de": "trocken",
+            "fr": "sec",
+            "ru": "сухо",
+            "ja": "短くはっきりと",
+            "zh": "乾燥地、簡短地"
+        },
+        "chinese_explanation": "Secco 是義大利文的音樂術語，意思為「乾燥地、簡短地」。常用來指示演奏者以短促乾脆的方式演奏音符。",
+        "example": "在樂譜上出現「Secco」的標記時，演奏者需要簡短有力地演奏，使聲音乾脆俐落。",
+        "story": "Secco 在義大利語中意為「乾的」。音樂標示 secco，通常出現在宣敘調伴奏（recitativo secco）等處，要求伴奏的和弦簡短有力，不加延音。這種乾脆的奏法能使節奏更明確，句子之間的停頓更清晰。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "giubiloso",
+        "category": "表情",
+        "original": {
+            "it": "Giubiloso",
+            "en": "Jubilant",
+            "de": "jubelnd",
+            "fr": "joyeux",
+            "ru": "ликующе",
+            "ja": "歓喜に満ちて",
+            "zh": "歡欣鼓舞地"
+        },
+        "chinese_explanation": "Giubiloso 是義大利文的音樂術語，意思為「歡欣鼓舞地」。常用來指示演奏者以極其歡欣喜悅的方式演奏。",
+        "example": "在樂譜上出現「Giubiloso」的標記時，演奏者需要歡欣鼓舞地演奏，營造出慶祝勝利般的熱烈氛圍。",
+        "story": "Giubiloso 在義大利語中源自 giubilo（歡騰）。音樂標示 giubiloso，充滿了勝利歡呼的氣氛。演奏者須熱情洋溢地釋放能量，讓音符如節慶的禮炮般迸射出喜悅。這種表情在凱旋進行曲或慶典樂章中尤其常見。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "volubile",
+        "category": "表情",
+        "original": {
+            "it": "Volubile",
+            "en": "Fickle; volatile",
+            "de": "launisch",
+            "fr": "volubile",
+            "ru": "изменчиво",
+            "ja": "移り気に",
+            "zh": "反覆無常地、易變地"
+        },
+        "chinese_explanation": "Volubile 是義大利文的音樂術語，意思為「反覆無常地、易變地」。常用來指示演奏者以情緒多變的方式演奏。",
+        "example": "在樂譜上出現「Volubile」的標記時，演奏者需要多變地演奏，營造出忽喜忽悲的多變氛圍。",
+        "story": "Volubile 在義大利語中意為「多變的、不穩定的」。當音樂標示 volubile，表示作品情緒像變色龍般瞬息萬變。演奏者須靈活掌握速度與力度的轉換，時而輕快，時而突然轉為陰鬱，讓聽者如坐雲霄飛車般體驗情緒的起伏變化。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "rabbioso",
+        "category": "表情",
+        "original": {
+            "it": "Rabbioso",
+            "en": "Angry; raging",
+            "de": "wütend",
+            "fr": "furieux",
+            "ru": "яростно",
+            "ja": "激怒して",
+            "zh": "暴怒地、狂暴地"
+        },
+        "chinese_explanation": "Rabbioso 是義大利文的音樂術語，意思為「暴怒地、狂暴地」。常用來指示演奏者以極度憤怒狂暴的狀態演奏。",
+        "example": "在樂譜上出現「Rabbioso」的標記時，演奏者需要狂暴地演奏，營造出烈火般暴怒的氛圍。",
+        "story": "Rabbioso 在義大利語中意為「暴怒的」。當音樂標示 rabbioso，意味著情緒已達到暴烈的頂點，演奏者須如狂風暴雨般傾瀉音符。這常出現在描寫憤怒或戰鬥的樂段中，透過狂飆突進的節奏和驟然的強音，表現出壓抑不住的怒火。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "bizzarro",
+        "category": "表情",
+        "original": {
+            "it": "Bizzarro",
+            "en": "Bizarre; odd",
+            "de": "seltsam",
+            "fr": "bizarre",
+            "ru": "странно",
+            "ja": "奇妙に",
+            "zh": "古怪地、怪誕地"
+        },
+        "chinese_explanation": "Bizzarro 是義大利文的音樂術語，意思為「古怪地、怪誕地」。常用來指示演奏者以怪誕離奇的風格演奏。",
+        "example": "在樂譜上出現「Bizzarro」的標記時，演奏者需要古怪地演奏，營造出荒誕奇異的氛圍。",
+        "story": "Bizzarro 在義大利語中意指「奇異的、怪誕的」。當音樂標示 bizzarro，表示作品充滿難以預測的轉折和怪異的色彩。演奏者可誇大對比、使用不尋常的音色或奏法，讓音樂呈現出離經叛道的趣味。",
+        "created_date": "2025-07-08"
+    },
+    {
+        "id": "rubato",
+        "category": "表情",
+        "original": {
+            "it": "Rubato",
+            "en": "Robbed time (flexible tempo)",
+            "de": "frei im Tempo",
+            "fr": "librement",
+            "ru": "свободно",
+            "ja": "自由に (ルバート)",
+            "zh": "自由地"
+        },
+        "chinese_explanation": "Rubato 是義大利文的音樂術語，意思為「自由地」。常用來指示演奏者以自由的方式演奏。",
+        "example": "在樂譜上出現「Rubato」的標記時，演奏者需要自由地演奏，營造出自由的氛圍。",
+        "story": "「Rubato」在義大利語中原意是「偷盜的」，在音樂上指自由伸縮節奏的技巧。作曲家蕭邦非常強調節奏的自由，常在演奏中運用 rubato，使音樂更具抒情性和表現力。",
+        "created_date": "2025-07-08"
+    }
+]
