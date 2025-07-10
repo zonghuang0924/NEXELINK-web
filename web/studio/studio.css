@@ -66,11 +66,6 @@ body {
 .studio-sidebar:hover {
   width: 180px;
 }
-.studio-sidebar hr {
-  margin: 10px 8px;
-  border: none;
-  border-top: 1px solid #334155;
-}
 
 .module {
   display: flex;
@@ -78,6 +73,7 @@ body {
   padding: 10px 12px;
   cursor: grab;
   transition: background 0.2s;
+  color: white;
 }
 .module:hover {
   background-color: rgba(0, 216, 255, 0.15);
@@ -85,6 +81,7 @@ body {
 .module i {
   font-size: 18px;
   width: 30px;
+  color: white;
 }
 .module .label {
   opacity: 0;
@@ -100,53 +97,50 @@ body {
 .studio-canvas {
   flex: 1;
   background: #e2e8f0;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(30, 30px);
-  grid-template-rows: repeat(30, 30px);
-  gap: 1px;
-  overflow: auto;
-}
-
-.grid-cell {
-  width: 30px;
-  height: 30px;
-  background: #fff;
-  border: 1px dashed #cbd5e1;
-  transition: background-color 0.1s ease;
-}
-
-.grid-cell.selected {
-  background-color: #bae6fd;
-}
-
-/* ===== 可插入模組樣式（未來模組區塊用） ===== */
-.block {
-  background-color: white;
-  border: 1px solid #94a3b8;
   position: relative;
-  padding: 8px;
-  min-height: 40px;
-  z-index: 2;
+  overflow: auto;
+  padding: 20px;
 }
 
-/* ===== 區塊右上角「更多操作」三點按鈕 ===== */
-.block .block-tools {
+.canvas-block {
+  position: absolute;
+  background: #fff;
+  border: 2px dashed #0ea5e9;
+  min-width: 100px;
+  min-height: 80px;
+  padding: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+}
+
+.canvas-block .block-tools {
   position: absolute;
   top: 4px;
   right: 4px;
   display: none;
 }
-.block:hover .block-tools {
+.canvas-block:hover .block-tools {
   display: flex;
+  gap: 6px;
 }
-.block .block-tools button {
+.canvas-block .block-tools button {
   background: transparent;
   border: none;
   color: #64748b;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
 }
-.block .block-tools button:hover {
+.canvas-block .block-tools button:hover {
   color: #00d8ff;
+}
+
+/* Footer 載入區塊 */
+#footer {
+  width: 100%;
+  height: auto;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
 }

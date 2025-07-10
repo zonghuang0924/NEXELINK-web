@@ -1,12 +1,22 @@
-// 假設你使用 Firebase Auth
-firebase.auth().onAuthStateChanged(user => {
-  if (!user) {
-    alert("請先登入後使用 Nexelink Studio");
-    window.location.href = "/login.html";
+// ===== 裝置與登入檢查 =====
+window.onload = () => {
+  const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+  if (isMobile) {
+    alert("Nexelink Studio 僅限桌機／筆電使用，請使用電腦開啟。")
+    window.location.href = "/";
   }
-});
 
-// 返回首頁前的提示
+  firebase.auth().onAuthStateChanged(user => {
+    if (!user) {
+      alert("請先登入後使用 Nexelink Studio");
+      window.location.href = "/login.html";
+    } else {
+      loadSavedBlocks();
+    }
+  });
+};
+
+// ===== LOGO 點擊返回首頁前警告 =====
 document.getElementById("logo").addEventListener("click", (e) => {
   e.preventDefault();
   const confirmLeave = confirm("⚠️ 離開前請確認是否已儲存專案！");
@@ -15,51 +25,13 @@ document.getElementById("logo").addEventListener("click", (e) => {
   }
 });
 
-// 產生 30x30 的畫布格子
+// ===== 拖曳模組插入邏輯 =====
 const canvas = document.getElementById("canvas");
-const ROWS = 30, COLS = 30;
-for (let i = 0; i < ROWS * COLS; i++) {
-  const cell = document.createElement("div");
-  cell.classList.add("grid-cell");
-  canvas.appendChild(cell);
-}
-
-// 框選格子行為
-let isSelecting = false;
-let selectedCells = [];
-
-canvas.addEventListener("mousedown", (e) => {
-  if (!e.target.classList.contains("grid-cell")) return;
-  clearSelection();
-  isSelecting = true;
-  e.target.classList.add("selected");
-  selectedCells.push(e.target);
-});
-
-canvas.addEventListener("mouseover", (e) => {
-  if (isSelecting && e.target.classList.contains("grid-cell")) {
-    if (!selectedCells.includes(e.target)) {
-      e.target.classList.add("selected");
-      selectedCells.push(e.target);
-    }
-  }
-});
-
-canvas.addEventListener("mouseup", () => {
-  isSelecting = false;
-});
-
-// 清除框選狀態
-function clearSelection() {
-  selectedCells.forEach(cell => cell.classList.remove("selected"));
-  selectedCells = [];
-}
-
-// 拖拉模組插入區塊
 const modules = document.querySelectorAll(".module[draggable]");
+
 modules.forEach(mod => {
   mod.addEventListener("dragstart", (e) => {
-    e.dataTransfer.setData("text/plain", mod.title);
+    e.dataTransfer.setData("text/plain", mod.dataset.type);
   });
 });
 
@@ -70,74 +42,113 @@ canvas.addEventListener("dragover", (e) => {
 canvas.addEventListener("drop", (e) => {
   e.preventDefault();
   const type = e.dataTransfer.getData("text/plain");
-  if (selectedCells.length === 0) {
-    alert("請先框選畫布區塊再拖入模組！");
-    return;
-  }
-  insertModule(type, selectedCells);
-  clearSelection();
+  const rect = canvas.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  createBlock(x, y, type);
 });
 
-// 插入模組區塊
-function insertModule(type, cells) {
-  const firstCell = cells[0];
+// ===== 建立畫布區塊 =====
+function createBlock(x, y, type, id = generateID()) {
   const block = document.createElement("div");
-  block.classList.add("block");
+  block.className = "canvas-block";
+  block.style.left = `${x}px`;
+  block.style.top = `${y}px`;
+  block.id = id;
 
-  // 工具欄（三個點）
   const tools = document.createElement("div");
-  tools.classList.add("block-tools");
+  tools.className = "block-tools";
   tools.innerHTML = `
     <button onclick="changeBlockColor(this)">🎨</button>
     <button onclick="removeBlock(this)">🗑️</button>
   `;
   block.appendChild(tools);
 
-  // 模組內容簡易示意
+  const content = document.createElement("div");
+  content.innerHTML = generateContent(type);
+  block.appendChild(content);
+
+  const label = document.createElement("div");
+  label.className = "block-label";
+  label.innerText = `ID: ${id}`;
+  block.appendChild(label);
+
+  canvas.appendChild(block);
+  saveBlocks();
+}
+
+// ===== 產生模組內容 =====
+function generateContent(type) {
   switch (type) {
     case "圖片":
-      block.innerHTML += `<img src="https://placekitten.com/120/80" alt="示意圖" style="width:100%;">`;
-      break;
+      return `<img src="https://placekitten.com/160/100" style="width:100%;" />`;
     case "文字":
-      block.innerHTML += `<p>這是一段文字</p>`;
-      break;
+      return `<p>這是一段文字</p>`;
     case "影片":
-      block.innerHTML += `<iframe width="100%" height="100" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>`;
-      break;
+      return `<iframe width="100%" height="100" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"></iframe>`;
     case "音樂":
-      block.innerHTML += `<audio controls><source src="your-music.mp3" type="audio/mpeg" /></audio>`;
-      break;
+      return `<audio controls><source src="your-music.mp3" type="audio/mpeg" /></audio>`;
     case "按鈕":
-      block.innerHTML += `<button style="padding: 6px 12px;">點我</button>`;
-      break;
-    case "Icon":
-      block.innerHTML += `<i class="fas fa-star"></i>`;
-      break;
+      return `<button>點我</button>`;
     case "表單":
-      block.innerHTML += `<input type="text" placeholder="輸入內容" style="width:100%;">`;
-      break;
+      return `<input type="text" placeholder="輸入內容" style="width:100%;" />`;
     case "地圖":
-      block.innerHTML += `<iframe width="100%" height="100" src="https://maps.google.com/maps?q=Taipei&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"></iframe>`;
-      break;
+      return `<iframe width="100%" height="100" src="https://maps.google.com/maps?q=Taipei&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>`;
     default:
-      block.innerHTML += `<p>[${type}] 區塊</p>`;
+      return `<p>[${type}] 模組</p>`;
   }
-
-  // 插入位置
-  firstCell.innerHTML = "";
-  firstCell.appendChild(block);
-  firstCell.classList.remove("selected");
 }
 
-// 刪除模組區塊
+// ===== 區塊儲存與載入功能 =====
+function saveBlocks() {
+  const blocks = Array.from(document.querySelectorAll(".canvas-block")).map(block => ({
+    id: block.id,
+    x: block.style.left,
+    y: block.style.top,
+    html: block.innerHTML
+  }));
+  localStorage.setItem("studio_blocks", JSON.stringify(blocks));
+}
+
+function loadSavedBlocks() {
+  const data = JSON.parse(localStorage.getItem("studio_blocks") || "[]");
+  data.forEach(b => {
+    const div = document.createElement("div");
+    div.className = "canvas-block";
+    div.id = b.id;
+    div.style.left = b.x;
+    div.style.top = b.y;
+    div.innerHTML = b.html;
+    canvas.appendChild(div);
+  });
+}
+
+// ===== 工具功能 =====
 function removeBlock(btn) {
-  const block = btn.closest(".block");
-  block.parentElement.innerHTML = ""; // 清空 grid-cell
+  const block = btn.closest(".canvas-block");
+  block.remove();
+  saveBlocks();
 }
 
-// 更改區塊顏色
 function changeBlockColor(btn) {
-  const block = btn.closest(".block");
-  const color = prompt("請輸入區塊背景顏色（可填 HEX、英文色名等）：", "#fcd34d");
+  const block = btn.closest(".canvas-block");
+  const color = prompt("請輸入背景顏色 HEX／英文名：", "#fff");
   if (color) block.style.backgroundColor = color;
+  saveBlocks();
 }
+
+function generateID() {
+  return Math.random().toString(36).substring(2, 10);
+}
+
+// ===== 畫布縮放功能（Ctrl + 滾輪） =====
+let zoomLevel = 1;
+canvas.addEventListener("wheel", (e) => {
+  if (e.ctrlKey) {
+    e.preventDefault();
+    zoomLevel += e.deltaY * -0.001;
+    zoomLevel = Math.min(Math.max(zoomLevel, 0.5), 2);
+    canvas.style.transform = `scale(${zoomLevel})`;
+    canvas.style.transformOrigin = "0 0";
+  }
+});
