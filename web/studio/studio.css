@@ -1,0 +1,152 @@
+/* ===== 全域樣式 ===== */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+/* ===== 導覽列 NavBar ===== */
+.studio-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 24px;
+  background: #0a192f;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.studio-nav a {
+  color: #00d8ff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.studio-nav .nav-right button {
+  margin-left: 10px;
+  padding: 6px 14px;
+  background: #00d8ff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.studio-nav .nav-right button:hover {
+  background: #38e2ff;
+}
+
+/* ===== 主體容器 ===== */
+.studio-container {
+  display: flex;
+  height: calc(100vh - 56px);
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ===== Sidebar 側邊欄 ===== */
+.studio-sidebar {
+  width: 60px;
+  background-color: #1e293b;
+  color: white;
+  transition: width 0.3s ease;
+  overflow-y: auto;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.studio-sidebar:hover {
+  width: 180px;
+}
+.studio-sidebar hr {
+  margin: 10px 8px;
+  border: none;
+  border-top: 1px solid #334155;
+}
+
+.module {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  cursor: grab;
+  transition: background 0.2s;
+}
+.module:hover {
+  background-color: rgba(0, 216, 255, 0.15);
+}
+.module i {
+  font-size: 18px;
+  width: 30px;
+}
+.module .label {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  color: white;
+}
+.studio-sidebar:hover .label {
+  opacity: 1;
+}
+
+/* ===== 畫布區 Canvas ===== */
+.studio-canvas {
+  flex: 1;
+  background: #e2e8f0;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(30, 30px);
+  grid-template-rows: repeat(30, 30px);
+  gap: 1px;
+  overflow: auto;
+}
+
+.grid-cell {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 1px dashed #cbd5e1;
+  transition: background-color 0.1s ease;
+}
+
+.grid-cell.selected {
+  background-color: #bae6fd;
+}
+
+/* ===== 可插入模組樣式（未來模組區塊用） ===== */
+.block {
+  background-color: white;
+  border: 1px solid #94a3b8;
+  position: relative;
+  padding: 8px;
+  min-height: 40px;
+  z-index: 2;
+}
+
+/* ===== 區塊右上角「更多操作」三點按鈕 ===== */
+.block .block-tools {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: none;
+}
+.block:hover .block-tools {
+  display: flex;
+}
+.block .block-tools button {
+  background: transparent;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 16px;
+}
+.block .block-tools button:hover {
+  color: #00d8ff;
+}
