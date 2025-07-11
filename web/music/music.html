@@ -1,128 +1,255 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>音樂術語查詢</title>
- <section id="term-detail" style="background:#111827; color:#f1f5f9; padding:2rem; font-family:'Segoe UI', sans-serif;">
+  <link rel="stylesheet" href="/components/nav.css">
+  <link rel="stylesheet" href="/components/footer.css">
   <style>
-    .music-card {
-      background: linear-gradient(145deg, #1e293b, #111827);
-      border: 1px solid #334155;
-      border-radius: 12px;
-      padding: 2rem;
-      box-shadow: 0 8px 24px rgba(250, 204, 21, 0.1);
-      max-width: 900px;
-      margin: auto;
-      position: relative;
-      overflow: hidden;
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      background: linear-gradient(to bottom, #f3e3d3, #d2b48c);
+      color: #3e2c1e;
     }
 
-    .music-card::before {
-      content: "";
-      position: absolute;
-      top: -40%;
-      left: -30%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle at center, rgba(250, 204, 21, 0.1), transparent 70%);
-      transform: rotate(30deg);
-      pointer-events: none;
+    header, main {
+      padding: 1rem;
     }
 
-    .term-title {
-      font-size: 2rem;
-      font-weight: bold;
+    .search-bar {
       display: flex;
       align-items: center;
+      gap: 10px;
+      background: #fff0e0;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .search-bar input {
+      flex: 1;
+      border: none;
+      font-size: 1rem;
+      background: transparent;
+      outline: none;
+    }
+
+    .search-bar button {
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    .category-tabs {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
       gap: 0.5rem;
-      margin-bottom: 0.5rem;
     }
 
-    .term-icon {
-      font-size: 1.5rem;
-      color: #facc15;
+    .category-tabs button {
+      background: #a67c52;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s;
     }
 
-    .term-section {
+    .category-tabs button.active {
+      background: #5c3a1a;
+    }
+
+    .terms-container {
       margin-top: 1rem;
     }
 
-    .lang-table {
-      background: #0f172a;
-      border-collapse: collapse;
-      width: 100%;
-      margin-top: 0.5rem;
+    .term-card {
+      background: #fff8ec;
+      border-left: 5px solid #a67c52;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
-    .lang-table th, .lang-table td {
-      padding: 0.5rem 0.75rem;
-      border-bottom: 1px solid #334155;
-      text-align: left;
+    .az-index {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
     }
 
-    .highlight {
-      color: #facc15;
+    .az-index a {
+      color: #5c3a1a;
+      text-decoration: none;
       font-weight: bold;
     }
-
-    .subtitle {
-      font-weight: bold;
-      margin-top: 1rem;
-      color: #e0e7ff;
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
     }
 
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.6s ease;
+    .page-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
+    .content {
+      flex: 1;
+    }
+
+    @media (max-width: 768px) {
+      .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+      }
     }
   </style>
+</head>
+<body>
+  <div id="nav"></div>
 
-  <div class="music-card fade-in" id="term-card">
-    <div class="term-title"><span class="term-icon">🎵</span> 強く <span class="highlight">forte</span></div>
-
-    <div class="term-section">
-      <p class="subtitle">🗣 多語對照</p>
-      <table class="lang-table">
-        <tr><th>義大利文</th><td>forte</td></tr>
-        <tr><th>英文</th><td>strongly (loudly)</td></tr>
-        <tr><th>德文</th><td>laut</td></tr>
-        <tr><th>法文</th><td>fort</td></tr>
-        <tr><th>俄文</th><td>громко</td></tr>
-        <tr><th>日文</th><td>強く</td></tr>
-        <tr><th>中文</th><td>強地</td></tr>
-      </table>
+  <main>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="輸入術語或語言..." />
+      <button onclick="startVoiceSearch()">🎙️</button>
+      <button onclick="filterTerms()">🔍</button>
     </div>
 
-    <div class="term-section">
-      <p class="subtitle">📖 中文解釋</p>
-      <p>「強地」，為日語術語，意為<strong>以強音演奏</strong>。</p>
+    <div class="category-tabs">
+      <button class="active" onclick="setCategory('all')">All</button>
+      <button onclick="setCategory('dynamics')">力度術語</button>
+      <button onclick="setCategory('expression')">表情術語</button>
+      <button onclick="setCategory('technique')">演奏術語</button>
+      <button onclick="setCategory('tempo')">速度術語</button>
+      <button onclick="setCategory('ornament')">裝飾術語</button>
     </div>
 
-    <div class="term-section">
-      <p class="subtitle">💬 範例</p>
-      <p>例如，19世紀初有些德語合唱譜以 <span class="highlight">Laut</span> 標示大聲，但現今已普遍改用義大利語的 <span class="highlight">f</span> 符號。</p>
-    </div>
+    <div id="azIndex" class="az-index"></div>
 
-    <div class="term-section">
-      <p class="subtitle">🕰️ 小故事</p>
-      <p>早期德奧作曲家偶爾以母語標示如「Laut」（響亮），但後來均改用標準的 <strong>f 符號</strong>。</p>
+    <div class="terms-container" id="termsContainer">
+      <!-- 動態生成術語卡片 -->
     </div>
-  </div>
+  </main>
+
+  <div id="footer"></div>
 
   <script>
-    window.addEventListener('scroll', () => {
-      const card = document.getElementById("term-card");
-      const rect = card.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 100) {
-        card.classList.add("visible");
-      }
-    });
+    // nav/footer 導入
+    fetch('/components/nav.html').then(res => res.text()).then(html => document.getElementById('nav').innerHTML = html);
+    fetch('/components/footer.html').then(res => res.text()).then(html => document.getElementById('footer').innerHTML = html);
+
+    let allTerms = [];
+    let currentCategory = 'all';
+
+    // 載入 JSON 範例（可多檔整合）
+    async function loadTerms() {
+      const responses = await Promise.all([
+        fetch('/data/terms_dynamics.json'),
+        fetch('/data/terms_expression.json'),
+        fetch('/data/terms_technique.json'),
+        fetch('/data/terms_tempo.json'),
+        fetch('/data/terms_ornament.json')
+      ]);
+      const jsons = await Promise.all(responses.map(r => r.json()));
+      allTerms = jsons.flat();
+      renderTerms();
+    }
+
+    function renderAZIndex() {
+      const container = document.getElementById('azIndex');
+      container.innerHTML = '';
+      if (currentCategory !== 'all') return;
+      const letters = [...new Set(allTerms.map(t => t.term[0].toUpperCase()))].sort();
+      letters.forEach(l => {
+        const link = document.createElement('a');
+        link.href = `#section-${l}`;
+        link.textContent = l;
+        container.appendChild(link);
+      });
+    }
+
+    function renderTerms() {
+      const container = document.getElementById('termsContainer');
+      container.innerHTML = '';
+
+      const filtered = allTerms.filter(term => {
+        return currentCategory === 'all' || term.category === currentCategory;
+      });
+
+      const grouped = {};
+      filtered.forEach(t => {
+        const key = t.term[0].toUpperCase();
+        if (!grouped[key]) grouped[key] = [];
+        grouped[key].push(t);
+      });
+
+      Object.keys(grouped).sort().forEach(letter => {
+        if (currentCategory === 'all') {
+          const sectionHeader = document.createElement('h2');
+          sectionHeader.id = `section-${letter}`;
+          sectionHeader.textContent = letter;
+          container.appendChild(sectionHeader);
+        }
+
+        grouped[letter].forEach(term => {
+          const card = document.createElement('div');
+          card.className = 'term-card';
+          card.innerHTML = `<h3>${term.term} (${term.language})</h3><p>${term.definition}</p>`;
+          container.appendChild(card);
+        });
+      });
+
+      renderAZIndex();
+    }
+
+    function setCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.category-tabs button').forEach(btn => btn.classList.remove('active'));
+      document.querySelector(`.category-tabs button[onclick="setCategory('${cat}')"]`).classList.add('active');
+      renderTerms();
+    }
+
+    function filterTerms() {
+      const keyword = document.getElementById('searchInput').value.toLowerCase();
+      const filtered = allTerms.filter(t =>
+        t.term.toLowerCase().includes(keyword) ||
+        t.definition.toLowerCase().includes(keyword) ||
+        t.language.toLowerCase().includes(keyword)
+      );
+      displayFilteredTerms(filtered);
+    }
+
+    function displayFilteredTerms(terms) {
+      const container = document.getElementById('termsContainer');
+      container.innerHTML = '';
+      terms.forEach(term => {
+        const card = document.createElement('div');
+        card.className = 'term-card';
+        card.innerHTML = `<h3>${term.term} (${term.language})</h3><p>${term.definition}</p>`;
+        container.appendChild(card);
+      });
+      document.getElementById('azIndex').innerHTML = '';
+    }
+
+    function startVoiceSearch() {
+      const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+      recognition.lang = 'zh-TW';
+      recognition.onresult = function (event) {
+        document.getElementById('searchInput').value = event.results[0][0].transcript;
+        filterTerms();
+      };
+      recognition.start();
+    }
+
+    window.onload = loadTerms;
   </script>
-</section>
+</body>
+</html>
