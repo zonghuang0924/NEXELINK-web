@@ -152,9 +152,9 @@
     // 載入 JSON 範例（可多檔整合）
     async function loadTerms() {
       const responses = await Promise.all([
-        fetch('/data/terms_dynamics.json'),
-        fetch('/data/terms_expression.json'),
-        fetch('/data/terms_technique.json'),
+        fetch('/web/music/music_exerpresion.json'),
+        fetch('/web/music/music_strength.json'),
+        fetch('/web/music/music_tempo.json'),
         fetch('/data/terms_tempo.json'),
         fetch('/data/terms_ornament.json')
       ]);
